@@ -101,7 +101,7 @@
     <string name="camera_disabled">由于安全政策的限制，相机已被停用。</string>
     <string name="camera_error_title">相机故障</string>
     <string name="camera_facedetection_sub_option_hint">已开启实验室功能</string>
-    <string name="camera_label">相机</string>
+    <string name="camera_label">ANX相机</string>
     <string name="camera_liveshot_off_tip">动态照片已关闭</string>
     <string name="camera_liveshot_on_tip">动态照片</string>
     <string name="camera_mode_options">模式选择</string>

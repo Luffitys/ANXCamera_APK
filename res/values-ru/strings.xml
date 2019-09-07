@@ -78,7 +78,7 @@
     <string name="camera_disabled">Камера была отключена из-за политики безопасности</string>
     <string name="camera_error_title">Ошибка камеры</string>
     <string name="camera_facedetection_sub_option_hint">Экспериментальная функция</string>
-    <string name="camera_label">Камера</string>
+    <string name="camera_label">ANXКамера</string>
     <string name="camera_mode_options">Режимы</string>
     <string name="camera_setting">Камера</string>
     <string name="camera_settings_label">Камера</string>

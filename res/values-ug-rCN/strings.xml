@@ -101,7 +101,7 @@
     <string name="camera_disabled">بىخەتەرلىك سىياسىتى چەكلىدى،كامېرا ئىشلەشتىن توختىدى</string>
     <string name="camera_error_title">كامېرادا خاتالىق كۆرۈلدى</string>
     <string name="camera_facedetection_sub_option_hint">تەجرىبىخانا ئىقتىدارى ئېچىلدى</string>
-    <string name="camera_label">كامېرا</string>
+    <string name="camera_label">ANXكامېرا</string>
     <string name="camera_liveshot_off_tip">ھەرىكەتلىك رەسىم تاقالدى</string>
     <string name="camera_liveshot_on_tip">ھەرىكەتلىك رەسىم</string>
     <string name="camera_mode_options">ھالەت تاللاش</string>

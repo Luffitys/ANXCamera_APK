@@ -96,7 +96,7 @@
     <string name="button_normal_video_title">Запіс відэа</string>
     <string name="camera_disabled">Камера была адключана</string>
     <string name="camera_error_title">Памылка камеры</string>
-    <string name="camera_label">Камера</string>
+    <string name="camera_label">ANXКамера</string>
     <string name="camera_liveshot_off_tip">Дынамічныя здымкі адключаныя</string>
     <string name="camera_liveshot_on_tip">Дынамічныя здымкі</string>
     <string name="camera_mode_options">Рэжымы</string>

@@ -102,7 +102,7 @@
     <string name="button_normal_video_title">Videófelvétel</string>
     <string name="camera_disabled">Biztonsági okokból a Kamera letiltva</string>
     <string name="camera_error_title">Kamerahiba</string>
-    <string name="camera_label">Kamera</string>
+    <string name="camera_label">ANXKamera</string>
     <string name="camera_liveshot_off_tip">A dinamikus felvételek kikapcsolása</string>
     <string name="camera_liveshot_on_tip">Dinamikus felvételek</string>
     <string name="camera_mode_options">Módok</string>

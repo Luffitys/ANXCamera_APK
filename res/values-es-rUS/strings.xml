@@ -56,7 +56,7 @@ y optimiza sus fotos basada en esta información"</string>
     <string name="camera_disabled">Se deshabilitó la cámara</string>
     <string name="camera_error_title">Error de cámara</string>
     <string name="camera_facedetection_sub_option_hint">Característica experimental</string>
-    <string name="camera_label">Cámara</string>
+    <string name="camera_label">ANXCámara</string>
     <string name="camera_mode_options">Modos</string>
     <string name="camera_setting">Cámara</string>
     <string name="camera_settings_label">Cámara</string>

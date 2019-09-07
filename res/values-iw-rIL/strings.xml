@@ -96,7 +96,7 @@
     <string name="button_normal_video_title">הקלט וידאו</string>
     <string name="camera_disabled">המצלמה הושבתה</string>
     <string name="camera_error_title">שגיאת מצלמה</string>
-    <string name="camera_label">מצלמה</string>
+    <string name="camera_label">ANXמצלמה</string>
     <string name="camera_liveshot_off_tip">כבה צילום דינאמי</string>
     <string name="camera_liveshot_on_tip">צילום דינאמי</string>
     <string name="camera_mode_options">מצבים</string>

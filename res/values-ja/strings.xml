@@ -22,7 +22,7 @@
     <string name="camera_disabled">カメラが無効になっています</string>
     <string name="camera_error_title">カメラのエラー</string>
     <string name="camera_facedetection_sub_option_hint">実験的な機能</string>
-    <string name="camera_label">カメラ</string>
+    <string name="camera_label">ANXカメラ</string>
     <string name="camera_mode_options">モード</string>
     <string name="camera_setting">カメラ</string>
     <string name="camera_settings_label">カメラ</string>

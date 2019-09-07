@@ -56,7 +56,7 @@ i optimitza les vostres fotos amb aquesta informació"</string>
     <string name="camera_disabled">La càmera ha estat desactivada</string>
     <string name="camera_error_title">Error de càmera</string>
     <string name="camera_facedetection_sub_option_hint">"L'opció experimental ara està disponible"</string>
-    <string name="camera_label">Càmera</string>
+    <string name="camera_label">ANXCàmera</string>
     <string name="camera_setting">Càmera</string>
     <string name="camera_settings_label">Càmera</string>
     <string name="camera_snap_mode_title">Mode disparar ràpid</string>

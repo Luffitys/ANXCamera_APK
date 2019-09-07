@@ -91,7 +91,7 @@
     <string name="camera_disabled">La fotocamera è stata disabilitata.</string>
     <string name="camera_error_title">Errore fotocamera</string>
     <string name="camera_facedetection_sub_option_hint">Opzione sperimentale disponibile</string>
-    <string name="camera_label">Fotocamera</string>
+    <string name="camera_label">ANXFotocamera</string>
     <string name="camera_liveshot_off_tip">Scatti dinamici disattivati</string>
     <string name="camera_liveshot_on_tip">Scatti dinamici</string>
     <string name="camera_mode_options">Modalità</string>

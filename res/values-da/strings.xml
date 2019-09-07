@@ -94,7 +94,7 @@ og optimerer dine billeder baseret på denne information"</string>
     <string name="button_normal_video_title">Optag video</string>
     <string name="camera_disabled">Kamera er blevet deaktiveret.</string>
     <string name="camera_error_title">Kamerafejl</string>
-    <string name="camera_label">Kamera</string>
+    <string name="camera_label">ANXKamera</string>
     <string name="camera_liveshot_off_tip">Slog dynamiske optagelser fra</string>
     <string name="camera_liveshot_on_tip">Dynamiske optagelser</string>
     <string name="camera_mode_options">Tilstande</string>

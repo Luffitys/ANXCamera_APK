@@ -101,7 +101,7 @@
     <string name="camera_disabled">བདེ་འཇགས་སྲིད་ཇུས་ཀྱི་ཚད་བཀག་གི་དབང་གིས་པར་ཆས་ཀྱི་སྒོ་བརྒྱབ་ཟིན།</string>
     <string name="camera_error_title">པར་ཆས་ལ་ཆག་སྐྱོན་བྱུང་བ།</string>
     <string name="camera_facedetection_sub_option_hint">ཚོད་ལྟ་ཁང་གི་བྱེད་ནུས་ཁ་ཕྱེ་ཟིན།</string>
-    <string name="camera_label">པར་ཆས།</string>
+    <string name="camera_label">ANXཔར་ཆས།</string>
     <string name="camera_liveshot_off_tip">འགུལ་རིས་པར་རིས་ཁ་བརྒྱབ་ཟིན།</string>
     <string name="camera_liveshot_on_tip">འགུལ་རིས་པར་རིས།</string>
     <string name="camera_mode_options">དཔེ་ཚུལ་འདེམ་པ།</string>

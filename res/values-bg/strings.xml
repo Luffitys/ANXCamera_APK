@@ -97,7 +97,7 @@
     <string name="button_normal_video_title">Запишете видео</string>
     <string name="camera_disabled">Камерата беше деактивирана.</string>
     <string name="camera_error_title">Грешка на камерата</string>
-    <string name="camera_label">Камера</string>
+    <string name="camera_label">ANXКамера</string>
     <string name="camera_liveshot_off_tip">Изключване на Динамични снимки</string>
     <string name="camera_liveshot_on_tip">Динамични снимки</string>
     <string name="camera_mode_options">Режими</string>

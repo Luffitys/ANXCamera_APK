@@ -95,7 +95,7 @@ aog optimerer bildene dine basert på denne informasjonen"</string>
     <string name="button_normal_video_title">Ta opp video</string>
     <string name="camera_disabled">Kameraet har blitt deaktivert</string>
     <string name="camera_error_title">Kamerafeil</string>
-    <string name="camera_label">Kamera</string>
+    <string name="camera_label">ANXKamera</string>
     <string name="camera_liveshot_off_tip">Skrudde av dynamiske bilder</string>
     <string name="camera_liveshot_on_tip">Dynamiske bilder</string>
     <string name="camera_mode_options">Moduser</string>

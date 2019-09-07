@@ -96,7 +96,7 @@
     <string name="button_normal_video_title">ဗီဒီယို မှတ်တမ်းတင်ပါ</string>
     <string name="camera_disabled">ကင်မရာအား ပိတ်ထားသည်</string>
     <string name="camera_error_title">ကင်မရာ အမှား</string>
-    <string name="camera_label">ကင်မရာ</string>
+    <string name="camera_label">ANXကင်မရာ</string>
     <string name="camera_liveshot_off_tip">လှုပ်လှုပ်ရှားရှား ဓာတ်ပုံအား ပိတ်ထားသည်</string>
     <string name="camera_liveshot_on_tip">လှုပ်လှုပ်ရှားရှား ဓာတ်ပုံ</string>
     <string name="camera_mode_options">မုဒ်များ</string>

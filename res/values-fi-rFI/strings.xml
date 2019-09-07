@@ -97,7 +97,7 @@ ja optimoi valokuvasi näiden tietojen perusteella"</string>
     <string name="camera_disabled">Kamera on poistettu käytöstä</string>
     <string name="camera_error_title">Kameravirhe</string>
     <string name="camera_facedetection_sub_option_hint">Kokeellinen ominaisuus</string>
-    <string name="camera_label">Kamera</string>
+    <string name="camera_label">ANXKamera</string>
     <string name="camera_liveshot_off_tip">Poistettiin dynaamiset otokset käytöstä</string>
     <string name="camera_liveshot_on_tip">Dynaamiset otokset</string>
     <string name="camera_mode_options">Tilat</string>

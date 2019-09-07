@@ -103,7 +103,7 @@
     <string name="camera_disabled">Aparat został wyłączony</string>
     <string name="camera_error_title">Błąd aparatu</string>
     <string name="camera_facedetection_sub_option_hint">Opcja eksperymentalna jest już dostępna</string>
-    <string name="camera_label">Aparat</string>
+    <string name="camera_label">ANXAparat</string>
     <string name="camera_liveshot_off_tip">Wyłączono dynamiczne ujęcia</string>
     <string name="camera_liveshot_on_tip">Dynamiczne ujęcia</string>
     <string name="camera_mode_options">Tryby</string>

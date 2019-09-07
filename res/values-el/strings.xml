@@ -96,7 +96,7 @@
     <string name="button_normal_video_title">Εγγραφή Video</string>
     <string name="camera_disabled">Η κάμερα έχει απενεργοποιηθεί</string>
     <string name="camera_error_title">Σφάλμα Κάμερας</string>
-    <string name="camera_label">Κάμερα</string>
+    <string name="camera_label">ANXΚάμερα</string>
     <string name="camera_liveshot_off_tip">Απενεργοποίηση δυναμικής λήψης</string>
     <string name="camera_liveshot_on_tip">Δυναμικές λήψεις</string>
     <string name="camera_mode_options">Λειτουργίες</string>

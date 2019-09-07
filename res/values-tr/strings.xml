@@ -104,7 +104,7 @@
     <string name="camera_disabled">Kamera devre dışı bırakıldı</string>
     <string name="camera_error_title">Kamera hatası</string>
     <string name="camera_facedetection_sub_option_hint">Deneysel seçenek artık kullanılabilir</string>
-    <string name="camera_label">Kamera</string>
+    <string name="camera_label">ANXKamera</string>
     <string name="camera_liveshot_off_tip">Dinamik çekim kapatıldı</string>
     <string name="camera_liveshot_on_tip">Dinamik çekim</string>
     <string name="camera_mode_options">Modlar</string>

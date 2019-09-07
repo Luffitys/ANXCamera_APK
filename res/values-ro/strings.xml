@@ -91,7 +91,7 @@
     <string name="camera_disabled">Camera a fost dezactivată din motive de securitate.</string>
     <string name="camera_error_title">Eroare Cameră foto</string>
     <string name="camera_facedetection_sub_option_hint">Caracteristică experimentală</string>
-    <string name="camera_label">Cameră</string>
+    <string name="camera_label">ANXCameră</string>
     <string name="camera_liveshot_off_tip">S-a dezactivat modul Fotografiere dinamică</string>
     <string name="camera_liveshot_on_tip">Fotografiere dinamică</string>
     <string name="camera_mode_options">Moduri</string>

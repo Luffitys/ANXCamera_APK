@@ -97,7 +97,7 @@
     <string name="button_normal_video_title">บันทึกวิดีโอ</string>
     <string name="camera_disabled">ปิดการใช้งานกล้องแล้ว</string>
     <string name="camera_error_title">กล้องเกิดข้อผิดพลาด</string>
-    <string name="camera_label">กล้อง</string>
+    <string name="camera_label">ANXกล้อง</string>
     <string name="camera_liveshot_off_tip">ปิดการถ่ายภาพแบบไดนามิก</string>
     <string name="camera_liveshot_on_tip">ภาพไดนามิก</string>
     <string name="camera_mode_options">โหมด</string>

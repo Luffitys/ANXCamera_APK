@@ -82,7 +82,7 @@
     <string name="camera_disabled">Fotoaparát byl deaktivován z bezpečnostních důvodů.</string>
     <string name="camera_error_title">Chyba fotoaparátu</string>
     <string name="camera_facedetection_sub_option_hint">Experimentální funkce jsou dostupné</string>
-    <string name="camera_label">Fotoaparát</string>
+    <string name="camera_label">ANXFotoaparát</string>
     <string name="camera_liveshot_off_tip">Dynamický záběr je vypnutý</string>
     <string name="camera_liveshot_on_tip">Dynamický záběr</string>
     <string name="camera_mode_options">Režimy</string>

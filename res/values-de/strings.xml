@@ -102,7 +102,7 @@
     <string name="camera_disabled">Kamera wurde deaktiviert</string>
     <string name="camera_error_title">Kamerafehler</string>
     <string name="camera_facedetection_sub_option_hint">Experimentelle Option jetzt verfügbar</string>
-    <string name="camera_label">Kamera</string>
+    <string name="camera_label">ANXKamera</string>
     <string name="camera_liveshot_off_tip">Dynamische Aufnahmen ausgeschaltet</string>
     <string name="camera_liveshot_on_tip">Dynamische Aufnahmen</string>
     <string name="camera_mode_options">Modus</string>

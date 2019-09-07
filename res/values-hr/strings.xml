@@ -103,7 +103,7 @@ i optimizira vaše fotografije na temelju ove informacije"</string>
     <string name="camera_disabled">Kamera je onemogućena</string>
     <string name="camera_error_title">Pogreška kamere</string>
     <string name="camera_facedetection_sub_option_hint">Eksperimentalna značajka</string>
-    <string name="camera_label">Kamera</string>
+    <string name="camera_label">ANXKamera</string>
     <string name="camera_liveshot_off_tip">Dinamičke snimke su isklj.</string>
     <string name="camera_liveshot_on_tip">Dinamičke snimke</string>
     <string name="camera_mode_options">Načini</string>

@@ -102,7 +102,7 @@
     <string name="camera_disabled">La cámara ha sido deshabilitada</string>
     <string name="camera_error_title">Error de cámara</string>
     <string name="camera_facedetection_sub_option_hint">Característica experimental</string>
-    <string name="camera_label">Cámara</string>
+    <string name="camera_label">ANXCámara</string>
     <string name="camera_liveshot_off_tip">Apagado disparos dinámicos</string>
     <string name="camera_liveshot_on_tip">Disparos dinámicos</string>
     <string name="camera_mode_options">Modos</string>

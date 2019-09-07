@@ -107,7 +107,7 @@
     <string name="camera_disabled">Камеру було вимкнено через політику безпеки</string>
     <string name="camera_error_title">Помилка камери</string>
     <string name="camera_facedetection_sub_option_hint">Доступна експериментальна функція</string>
-    <string name="camera_label">Камера</string>
+    <string name="camera_label">ANXКамера</string>
     <string name="camera_liveshot_off_tip">Динамічни знімки вимкнено</string>
     <string name="camera_liveshot_on_tip">Динамічні знімки</string>
     <string name="camera_mode_options">Режими</string>

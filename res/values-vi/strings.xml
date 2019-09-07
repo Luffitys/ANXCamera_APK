@@ -104,7 +104,7 @@ và tối ưu ảnh của bạn dựa vào thông tin này"</string>
     <string name="camera_disabled">Máy ảnh đã bị vô hiệu hóa</string>
     <string name="camera_error_title">Lỗi máy ảnh</string>
     <string name="camera_facedetection_sub_option_hint">Tính năng thử nghiệm</string>
-    <string name="camera_label">Máy ảnh</string>
+    <string name="camera_label">ANXMáy ảnh</string>
     <string name="camera_liveshot_off_tip">Tắt ảnh động</string>
     <string name="camera_liveshot_on_tip">Bật ảnh động</string>
     <string name="camera_mode_options">Chế độ</string>

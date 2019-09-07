@@ -104,7 +104,7 @@
     <string name="camera_disabled">카메라가 비활성화되었습니다.</string>
     <string name="camera_error_title">카메라 오류</string>
     <string name="camera_facedetection_sub_option_hint">베타 옵션</string>
-    <string name="camera_label">카메라</string>
+    <string name="camera_label">ANX카메라</string>
     <string name="camera_liveshot_off_tip">다이나믹 촬영 꺼짐</string>
     <string name="camera_liveshot_on_tip">다이나믹 촬영 켜짐</string>
     <string name="camera_mode_options">옵션</string>

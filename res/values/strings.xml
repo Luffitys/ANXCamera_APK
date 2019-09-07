@@ -123,7 +123,7 @@ and optimizes your photos based on this info"</string>
     <string name="camera_disabled">Camera has been disabled</string>
     <string name="camera_error_title">Camera error</string>
     <string name="camera_facedetection_sub_option_hint">Experimental feature</string>
-    <string name="camera_label">Camera</string>
+    <string name="camera_label">ANXCamera</string>
     <string name="camera_liveshot_off_tip">Turned off dynamic shots</string>
     <string name="camera_liveshot_on_tip">Dynamic shots</string>
     <string name="camera_mode_options">Modes</string>
