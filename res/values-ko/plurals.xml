@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_focus_face_detect">
+        <item quantity="other">%d명 감지됨</item>
+    </plurals>
+    <plurals name="toast_burst_snap_finished_summary">
+        <item quantity="other">버스트 샷 촬영완료, %1$s장의 사진 촬영됨</item>
+    </plurals>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_focus_face_detect">
+        <item quantity="other">Focalizat. %d chipuri detectate</item>
+        <item quantity="one">Focalizat. %d chip detectat</item>
+    </plurals>
+    <plurals name="toast_burst_snap_finished_summary">
+        <item quantity="other">Fotografie în rafală efectuată, s-au făcut %1$s fotografii</item>
+        <item quantity="one">Fotografie în rafală efectuată, s-a făcut %1$s fotografie</item>
+    </plurals>
+</resources>

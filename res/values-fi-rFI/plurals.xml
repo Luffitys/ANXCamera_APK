@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_focus_face_detect">
+        <item quantity="other">Tarkennettu. %d kasvoa havaittu</item>
+        <item quantity="one">Tarkennettu. %d kasvo havaittu</item>
+    </plurals>
+    <plurals name="toast_burst_snap_finished_summary">
+        <item quantity="other">Sarjakuvaus valmis, otettiin %1$s kuvaa</item>
+        <item quantity="one">Sarjakuvaus valmis, otettiin %1$s kuva</item>
+    </plurals>
+</resources>

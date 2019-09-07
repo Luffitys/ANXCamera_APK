@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="config_extra_margin">0.0dip</dimen>
+    <dimen name="top_config_extra_margin">40.0dip</dimen>
+</resources>

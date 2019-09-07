@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_focus_face_detect">
+        <item quantity="other">Zaostřeno. Nalezeno %d tváří.</item>
+        <item quantity="one">Zaostřeno. Nalezena %d tvář.</item>
+    </plurals>
+    <plurals name="toast_burst_snap_finished_summary">
+        <item quantity="other">Dávkové snímání dokončeno, zhotoveno %1$s snímků</item>
+        <item quantity="one">Dávkové snímání dokončeno, zhotoveno %1$s snímků</item>
+    </plurals>
+</resources>

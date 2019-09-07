@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:persistent="false" android:title="@string/pref_pic_flaw_tip_title" android:key="pref_pic_flaw_tip" android:summary="@string/pref_pic_flaw_tip_summary" android:defaultValue="@bool/pref_pic_flaw_tip_default" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/pref_lens_dirty_detect_title" android:key="pref_lens_dirty_tip" android:summary="@string/pref_lens_dirty_detect_summary" android:defaultValue="@bool/pref_lens_dirty_tip_default" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/pref_camera_lying_title" android:key="pref_camera_lying_tip_switch_key" android:summary="@string/pref_camera_lying_summary" android:defaultValue="true" />
+</PreferenceScreen>
