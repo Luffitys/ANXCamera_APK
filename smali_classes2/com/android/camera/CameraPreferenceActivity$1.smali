@@ -94,7 +94,7 @@
     :goto_0
     iget-object p1, p0, Lcom/android/camera/CameraPreferenceActivity$1;->this$0:Lcom/android/camera/CameraPreferenceActivity;
 
-    invoke-virtual {p1}, Lmiui/preference/PreferenceActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p1}, Landroid/preference/PreferenceActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object p1
 

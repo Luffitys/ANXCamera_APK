@@ -39,7 +39,7 @@
 
     iget-object p1, p0, Lcom/android/camera/WatermarkActivity$2;->this$0:Lcom/android/camera/WatermarkActivity;
 
-    invoke-virtual {p1}, Lmiui/preference/PreferenceActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p1}, Landroid/preference/PreferenceActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object p1
 

@@ -1,5 +1,5 @@
 .class public abstract Lcom/android/camera/BasePreferenceActivity;
-.super Lmiui/preference/PreferenceActivity;
+.super Landroid/preference/PreferenceActivity;
 .source "BasePreferenceActivity.java"
 
 # interfaces
@@ -25,7 +25,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lmiui/preference/PreferenceActivity;-><init>()V
+    invoke-direct {p0}, Landroid/preference/PreferenceActivity;-><init>()V
 
     return-void
 .end method
@@ -77,14 +77,14 @@
 
     const/4 v0, 0x7
 
-    invoke-virtual {p0, v0}, Lmiui/preference/PreferenceActivity;->setRequestedOrientation(I)V
+    invoke-virtual {p0, v0}, Landroid/preference/PreferenceActivity;->setRequestedOrientation(I)V
 
     goto :goto_0
 
     :cond_1
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lmiui/preference/PreferenceActivity;->setRequestedOrientation(I)V
+    invoke-virtual {p0, v0}, Landroid/preference/PreferenceActivity;->setRequestedOrientation(I)V
 
     :goto_0
     return-void
@@ -156,7 +156,7 @@
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 0
 
-    invoke-super {p0, p1}, Lmiui/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
     invoke-static {p0}, Lcom/android/camera/Util;->updateDeviceConfig(Landroid/content/Context;)V
 

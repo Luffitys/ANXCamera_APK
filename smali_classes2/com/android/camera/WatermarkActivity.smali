@@ -325,7 +325,7 @@
 
     aput-object p1, v2, v1
 
-    invoke-virtual {p0, v0, v2}, Lmiui/preference/PreferenceActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v0, v2}, Landroid/preference/PreferenceActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -443,7 +443,7 @@
 .method private initializeActivity()V
     .locals 2
 
-    invoke-virtual {p0}, Lmiui/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -460,9 +460,9 @@
 
     move-result v0
 
-    invoke-virtual {p0, v0}, Lmiui/preference/PreferenceActivity;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Landroid/preference/PreferenceActivity;->addPreferencesFromResource(I)V
 
-    invoke-virtual {p0}, Lmiui/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -478,7 +478,7 @@
 
     invoke-static {v0, v1}, Lcom/android/camera/log/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Lmiui/preference/PreferenceActivity;->finish()V
+    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->finish()V
 
     :cond_1
     invoke-direct {p0}, Lcom/android/camera/WatermarkActivity;->filterPreference()V
@@ -639,7 +639,7 @@
 
     const v2, 0x7f0f0329
 
-    invoke-virtual {p0, v2}, Lmiui/preference/PreferenceActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Landroid/preference/PreferenceActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -651,7 +651,7 @@
 
     const v1, 0x7f0f03aa
 
-    invoke-virtual {p0, v1}, Lmiui/preference/PreferenceActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Landroid/preference/PreferenceActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -659,7 +659,7 @@
 
     const v1, 0x7f0f03ab
 
-    invoke-virtual {p0, v1}, Lmiui/preference/PreferenceActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Landroid/preference/PreferenceActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -732,7 +732,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lmiui/preference/PreferenceActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -750,7 +750,7 @@
 
     invoke-virtual {v0, v3}, Landroid/preference/CheckBoxPreference;->setDefaultValue(Ljava/lang/Object;)V
 
-    invoke-virtual {p0}, Lmiui/preference/PreferenceActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -1056,7 +1056,7 @@
 
     invoke-super {p0, p1}, Lcom/android/camera/BasePreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Lmiui/preference/PreferenceActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object p1
 
@@ -1070,7 +1070,7 @@
 
     if-eqz p1, :cond_0
 
-    invoke-virtual {p0}, Lmiui/preference/PreferenceActivity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getWindow()Landroid/view/Window;
 
     move-result-object p1
 
@@ -1079,7 +1079,7 @@
     invoke-virtual {p1, v0}, Landroid/view/Window;->addFlags(I)V
 
     :cond_0
-    invoke-virtual {p0}, Lmiui/preference/PreferenceActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object p1
 
@@ -1091,7 +1091,7 @@
 
     if-eqz p1, :cond_1
 
-    invoke-virtual {p0}, Lmiui/preference/PreferenceActivity;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object p1
 
@@ -1123,7 +1123,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setTransformationMethod(Landroid/text/method/TransformationMethod;)V
 
     :cond_0
-    invoke-super {p0}, Lmiui/preference/PreferenceActivity;->onDestroy()V
+    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onDestroy()V
 
     invoke-direct {p0}, Lcom/android/camera/WatermarkActivity;->release()V
 

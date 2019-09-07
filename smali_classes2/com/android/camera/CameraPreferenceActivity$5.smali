@@ -67,7 +67,7 @@
 
     invoke-direct {v0, p0, p1}, Lcom/android/camera/CameraPreferenceActivity$5$1;-><init>(Lcom/android/camera/CameraPreferenceActivity$5;Landroid/preference/CheckBoxPreference;)V
 
-    invoke-virtual {p2, v0}, Lmiui/preference/PreferenceActivity;->runOnUiThread(Ljava/lang/Runnable;)V
+    invoke-virtual {p2, v0}, Landroid/preference/PreferenceActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
     :cond_0
     return-void

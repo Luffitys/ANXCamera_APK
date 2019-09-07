@@ -86,7 +86,7 @@
 .method private initializeActivity()V
     .locals 2
 
-    invoke-virtual {p0}, Lmiui/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -103,9 +103,9 @@
 
     move-result v0
 
-    invoke-virtual {p0, v0}, Lmiui/preference/PreferenceActivity;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Landroid/preference/PreferenceActivity;->addPreferencesFromResource(I)V
 
-    invoke-virtual {p0}, Lmiui/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -121,7 +121,7 @@
 
     invoke-static {v0, v1}, Lcom/android/camera/log/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Lmiui/preference/PreferenceActivity;->finish()V
+    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->finish()V
 
     :cond_1
     invoke-direct {p0}, Lcom/android/camera/PhotoAssistanceTipsActivity;->filterByFeature()V
@@ -154,7 +154,7 @@
 
     invoke-super {p0, p1}, Lcom/android/camera/BasePreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Lmiui/preference/PreferenceActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object p1
 
@@ -168,7 +168,7 @@
 
     if-eqz p1, :cond_0
 
-    invoke-virtual {p0}, Lmiui/preference/PreferenceActivity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getWindow()Landroid/view/Window;
 
     move-result-object p1
 
@@ -177,7 +177,7 @@
     invoke-virtual {p1, v0}, Landroid/view/Window;->addFlags(I)V
 
     :cond_0
-    invoke-virtual {p0}, Lmiui/preference/PreferenceActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object p1
 
@@ -189,7 +189,7 @@
 
     if-eqz p1, :cond_1
 
-    invoke-virtual {p0}, Lmiui/preference/PreferenceActivity;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object p1
 

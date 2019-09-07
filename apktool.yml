@@ -1,5 +1,5 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: MiuiCamera.apk
+apkFileName: ANXCamera.apk
 compressionType: false
 doNotCompress:
 - arsc
@@ -71,10 +71,10 @@ packageInfo:
 sdkInfo: null
 sharedLibrary: false
 sparseResources: true
-unknownFiles:
-  MODULE_LICENSE_BSD: '0'
-  NOTICE: '8'
-  okhttp3/internal/publicsuffix/publicsuffixes.gz: '8'
+#unknownFiles:
+# MODULE_LICENSE_BSD: '0'
+#  NOTICE: '8'
+#  okhttp3/internal/publicsuffix/publicsuffixes.gz: '8'
 usesFramework:
   ids:
   - 1
@@ -82,5 +82,5 @@ usesFramework:
   tag: null
 version: 2.4.0
 versionInfo:
-  versionCode: '3'
-  versionName: '3.0'
+  versionCode: '142'
+  versionName: '142.UDoneThat'
