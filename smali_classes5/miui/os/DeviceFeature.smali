@@ -110,6 +110,10 @@
     #const v3, 0x11040021
 
     #invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getBoolean(I)Z
+	
+	const-string/jumbo v3, "SUPPORT_NIGHT_LIGHT"
+
+    invoke-static {v3, v2}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v1
 
@@ -377,7 +381,10 @@
 
     :cond_2d
     :goto_2d
-    const/4 v0, 0x1
+    #const/4 v0, 0x1
+	
+	const/4 v0, 0x0
+	#POPUP CAMERA SUPPORT
 
     :goto_2e
     return v0

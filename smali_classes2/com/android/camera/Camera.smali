@@ -2839,80 +2839,87 @@
 .end method
 
 .method public isNewBieAlive(I)Z
-    .locals 2
+    #.locals 2
 
-    const/4 v0, 0x1
+    #const/4 v0, 0x1
 
-    if-eq p1, v0, :cond_4
+    #if-eq p1, v0, :cond_4
 
-    const/4 v1, 0x2
+    #const/4 v1, 0x2
 
-    if-eq p1, v1, :cond_3
+    #if-eq p1, v1, :cond_3
 
-    const/4 v1, 0x3
+    #const/4 v1, 0x3
 
-    if-eq p1, v1, :cond_2
+    #if-eq p1, v1, :cond_2
 
-    const/4 v1, 0x4
+    #const/4 v1, 0x4
 
-    if-eq p1, v1, :cond_1
+    #if-eq p1, v1, :cond_1
 
-    const/4 v1, 0x5
+    #const/4 v1, 0x5
 
-    if-eq p1, v1, :cond_0
+    #if-eq p1, v1, :cond_0
 
-    const/4 p1, 0x0
+    #const/4 p1, 0x0
 
-    goto :goto_0
+    #goto :goto_0
 
-    :cond_0
-    const-string p1, "MacroModeHint"
+    #:cond_0
+    #const-string p1, "MacroModeHint"
 
-    goto :goto_0
+    #goto :goto_0
 
-    :cond_1
-    const-string p1, "UltraWideHint"
+    #:cond_1
+    #const-string p1, "UltraWideHint"
 
-    goto :goto_0
+    #goto :goto_0
 
-    :cond_2
-    const-string p1, "AiSceneHint"
+    #:cond_2
+    #const-string p1, "AiSceneHint"
 
-    goto :goto_0
+    #goto :goto_0
 
-    :cond_3
-    const-string p1, "RotateHint"
+    #:cond_3
+    #const-string p1, "RotateHint"
 
-    goto :goto_0
+    #goto :goto_0
 
-    :cond_4
-    const-string p1, "PortraitHint"
+    #:cond_4
+    #const-string p1, "PortraitHint"
 
-    :goto_0
-    const/4 v1, 0x0
+    #:goto_0
+    #const/4 v1, 0x0
 
-    if-nez p1, :cond_5
+    #if-nez p1, :cond_5
 
-    return v1
+    #return v1
 
-    :cond_5
-    invoke-virtual {p0}, Landroid/support/v4/app/FragmentActivity;->getSupportFragmentManager()Landroid/support/v4/app/FragmentManager;
+    #:cond_5
+    #invoke-virtual {p0}, Landroid/support/v4/app/FragmentActivity;->getSupportFragmentManager()Landroid/support/v4/app/FragmentManager;
 
-    move-result-object p0
+    #move-result-object p0
 
-    invoke-virtual {p0, p1}, Landroid/support/v4/app/FragmentManager;->findFragmentByTag(Ljava/lang/String;)Landroid/support/v4/app/Fragment;
+    #invoke-virtual {p0, p1}, Landroid/support/v4/app/FragmentManager;->findFragmentByTag(Ljava/lang/String;)Landroid/support/v4/app/Fragment;
 
-    move-result-object p0
+    #move-result-object p0
 
-    if-eqz p0, :cond_6
+    #if-eqz p0, :cond_6
 
-    goto :goto_1
+    #goto :goto_1
 
-    :cond_6
-    move v0, v1
+    #:cond_6
+    #move v0, v1
 
-    :goto_1
-    return v0
+    #:goto_1
+    #return v0
+	
+	.locals 1
+	
+	const/4 v0, 0x1
+	
+	return v0
+	#SHOW MODE HINTS
 .end method
 
 .method public isRecording()Z

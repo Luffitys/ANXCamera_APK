@@ -668,7 +668,7 @@ Keep the subject sharp while blurring the background."</string>
     <string name="pref_camera_recordlocation_entry_on">On</string>
     <string name="pref_camera_recordlocation_title">Save location info</string>
     <string name="pref_camera_referenceline_title">Show gridlines</string>
-    <string name="pref_camera_saturation_default">3</string>
+    <string name="pref_camera_saturation_default">4</string>
     <string name="pref_camera_saturation_title">Saturation</string>
     <string name="pref_camera_scenemode_entry_auto">Auto</string>
     <string name="pref_camera_scenemode_entry_backlight">Backlight</string>
@@ -687,7 +687,7 @@ Keep the subject sharp while blurring the background."</string>
     <string name="pref_camera_settings">Device</string>
     <string name="pref_camera_settings_category">Camera settings</string>
     <string name="pref_camera_settings_title">Settings</string>
-    <string name="pref_camera_sharpness_default">1</string>
+    <string name="pref_camera_sharpness_default">2</string>
     <string name="pref_camera_sharpness_title">Sharpness</string>
     <string name="pref_camera_show_gender_age_config_title">Age &amp; gender</string>
     <string name="pref_camera_show_gender_age_entry_alias">Show age when Beautify is on</string>

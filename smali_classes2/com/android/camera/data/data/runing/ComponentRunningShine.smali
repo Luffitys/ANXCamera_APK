@@ -1262,7 +1262,8 @@
 
     move-result-object p2
 
-    invoke-interface {p1, p2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+	#BEAUTY MODE
+    #invoke-interface {p1, p2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     invoke-static {}, Lcom/android/camera/data/DataRepository;->dataItemFeature()Lcom/mi/config/a;
 

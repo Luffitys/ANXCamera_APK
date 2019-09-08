@@ -5716,7 +5716,9 @@
 
     move-result v0
 
-    const/4 v1, 0x1
+    #const/4 v1, 0x1
+	
+	const/4 v1, 0x0
 
     if-eqz v0, :cond_1
 
@@ -5729,17 +5731,23 @@
     invoke-virtual {v0, v2, v1}, Lcom/android/camera/data/data/DataItemBase;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
+	
+	xor-int/lit8 v0, v0, 0x1
 
     if-eqz v0, :cond_0
 
     goto :goto_0
 
     :cond_0
-    const/4 v1, 0x0
+    #const/4 v1, 0x0
+	
+	const/4 v1, 0x1
 
     :cond_1
     :goto_0
     return v1
+	
+	#SHUTTER SOUND DEFAULT
 .end method
 
 .method public static isCameraSpecific(Ljava/lang/String;)Z

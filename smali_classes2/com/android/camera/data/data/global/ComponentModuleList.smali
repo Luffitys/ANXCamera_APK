@@ -145,7 +145,8 @@
 
     invoke-direct {v3, v1, v1, v7, v8}, Lcom/android/camera/data/data/ComponentDataItem;-><init>(IIILjava/lang/String;)V
 
-    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+	#SLOW MOTION MODE
+    #invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_1
     invoke-virtual {v2}, Lcom/mi/config/a;->Rb()Z
@@ -170,7 +171,8 @@
 
     invoke-direct {v3, v1, v1, v7, v8}, Lcom/android/camera/data/data/ComponentDataItem;-><init>(IIILjava/lang/String;)V
 
-    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+	#SHORT VIDEO MODE
+    #invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_2
     invoke-virtual {v2}, Lcom/mi/config/a;->Rb()Z
@@ -193,7 +195,8 @@
 
     invoke-direct {v3, v1, v1, v7, v8}, Lcom/android/camera/data/data/ComponentDataItem;-><init>(IIILjava/lang/String;)V
 
-    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+	#SHORT VIDEO MODE
+    #invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_3
     iget v3, p0, Lcom/android/camera/data/data/global/ComponentModuleList;->mIntentType:I
@@ -365,7 +368,8 @@
 
     invoke-direct {v3, v1, v1, v5, v7}, Lcom/android/camera/data/data/ComponentDataItem;-><init>(IIILjava/lang/String;)V
 
-    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+	#MIMOJI MODE?
+    #invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_b
     invoke-virtual {v2}, Lcom/mi/config/a;->uc()Z
@@ -444,7 +448,8 @@
 
     invoke-direct {v3, v1, v1, v5, v4}, Lcom/android/camera/data/data/ComponentDataItem;-><init>(IIILjava/lang/String;)V
 
-    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+	#MIMOJI MODE?
+    #invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_e
     invoke-virtual {v2}, Lcom/mi/config/a;->tc()Z

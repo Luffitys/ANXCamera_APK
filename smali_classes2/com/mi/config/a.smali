@@ -2881,17 +2881,23 @@
 .end method
 
 .method public va()Z
-    .locals 2
+    #.locals 2
 
-    const-string v0, "c_r_i_m_m"
+    #const-string v0, "c_r_i_m_m"
 
-    const/4 v1, 0x1
+    #const/4 v1, 0x1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/camera/data/data/DataItemBase;->getBoolean(Ljava/lang/String;Z)Z
+    #invoke-virtual {p0, v0, v1}, Lcom/android/camera/data/data/DataItemBase;->getBoolean(Ljava/lang/String;Z)Z
 
-    move-result p0
+    #move-result p0
 
-    return p0
+    #return p0
+	
+	.locals 1
+	
+	const/4 v0, 0x1
+	
+	return v0
 	#RAW SUPPORT
 .end method
 
