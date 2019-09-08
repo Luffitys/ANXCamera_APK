@@ -316,7 +316,7 @@
 .method public getDefaultValue(I)Ljava/lang/String;
     .locals 0
 
-    const-string p0, "5"
+    const-string p0, "6"
 
     return-object p0
 .end method

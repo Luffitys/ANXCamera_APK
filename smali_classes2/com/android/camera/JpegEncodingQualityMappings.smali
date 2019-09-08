@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final DEFAULT_QUALITY:I = 0x61
+.field public static final DEFAULT_QUALITY:I = 0x64
 
 .field public static final HIGH:Ljava/lang/String; = "high"
 
