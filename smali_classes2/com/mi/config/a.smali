@@ -427,17 +427,24 @@
 .end method
 
 .method public Db()Z
-    .locals 2
+    #.locals 2
 
-    const-string v0, "s_c_w_m"
+    #const-string v0, "s_c_w_m"
 
-    const/4 v1, 0x0
+    #const/4 v1, 0x0
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/camera/data/data/DataItemBase;->getBoolean(Ljava/lang/String;Z)Z
+    #invoke-virtual {p0, v0, v1}, Lcom/android/camera/data/data/DataItemBase;->getBoolean(Ljava/lang/String;Z)Z
 
-    move-result p0
+    #move-result p0
 
-    return p0
+    #return p0
+	
+	.locals 1
+	
+	const/4 v0, 0x1
+	
+	return v0
+	#SUPPORT CUSTOM WATERMARK
 .end method
 
 .method public Dc()I
