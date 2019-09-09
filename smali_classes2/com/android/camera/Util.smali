@@ -8444,7 +8444,7 @@
 .method public static getLanTineGBTypeface(Landroid/content/Context;)Landroid/graphics/Typeface;
     .locals 1
 
-    const-string v0, "fonts/MIUI_Time.ttf"
+    const-string v0, "system/fonts/ASMAN.TTF"
 
     invoke-static {p0, v0}, Lcom/android/camera/Util;->getTypefaceFromFile(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/Typeface;
 
@@ -8456,7 +8456,7 @@
 .method public static getMFYueYuanTypeface(Landroid/content/Context;)Landroid/graphics/Typeface;
     .locals 1
 
-    const-string v0, "fonts/MIUI_Time.ttf"
+    const-string v0, "system/fonts/ASMAN.TTF"
 
     invoke-static {p0, v0}, Lcom/android/camera/Util;->getTypefaceFromFile(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/Typeface;
 
@@ -8564,7 +8564,7 @@
 .method public static getMiuiTimeTypeface(Landroid/content/Context;)Landroid/graphics/Typeface;
     .locals 1
 
-    const-string v0, "fonts/MIUI_Time.ttf"
+    const-string v0, "system/fonts/ASMAN.TTF"
 
     invoke-static {p0, v0}, Lcom/android/camera/Util;->getTypefaceFromAssets(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/Typeface;
 
@@ -8576,7 +8576,7 @@
 .method public static getMiuiTypeface(Landroid/content/Context;)Landroid/graphics/Typeface;
     .locals 1
 
-    const-string v0, "fonts/MIUI_Time.ttf"
+    const-string v0, "system/fonts/ASMAN.TTF"
 
     invoke-static {p0, v0}, Lcom/android/camera/Util;->getTypefaceFromAssets(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/Typeface;
 
