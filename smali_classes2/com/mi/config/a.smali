@@ -980,6 +980,7 @@
 	const/4 v0, 0x0
 	
 	return v0
+	#SUPPORT MIMOJI
 .end method
 
 .method public Nc()Z

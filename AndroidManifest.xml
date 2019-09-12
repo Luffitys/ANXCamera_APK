@@ -193,8 +193,8 @@
         </provider>
         <service android:enabled="true" android:exported="true" 
 			android:name="com.android.camera.LocalParallelService"/>
-        <uses-library android:name="org.apache.http.legacy" 
-			android:required="true"/>
+        <!-- <uses-library android:name="org.apache.http.legacy" 
+			android:required="true"/> -->
         <meta-data android:name="com.xiaomi.camera.parallel.enable" 
 			android:value="1"/>
         <provider android:authorities="@string/provider_authority" 

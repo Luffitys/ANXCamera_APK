@@ -54,7 +54,7 @@
 
     move-result-object v3
 
-    const-string v4, "vendor/camera/mimoji/model.zip"
+    const-string v4, "system/etc/ANXCamera/mimoji/model.zip"
 
     sget-object v5, Lcom/android/camera/fragment/mimoji/MimojiHelper;->MIMOJI_DIR:Ljava/lang/String;
 
