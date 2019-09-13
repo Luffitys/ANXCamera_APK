@@ -6357,7 +6357,7 @@
 
     const-string v1, "pref_fingerprint_capture_key"
 
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
     invoke-virtual {v0, v1, v2}, Lcom/android/camera/data/data/DataItemBase;->getBoolean(Ljava/lang/String;Z)Z
 
