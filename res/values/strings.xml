@@ -79,8 +79,7 @@
     <string name="accessibility_video_pause_button">Paused recording video</string>
     <string name="accessibility_video_resume_button">Resumed recording video</string>
     <string name="accessibility_zoom_button">Zoom mode</string>
-    <string name="ai_scene_mode_use_hint_text">"AI camera detects scenes automatically
-and optimizes your photos based on this info"</string>
+    <string name="ai_scene_mode_use_hint_text">"AI camera detects scenes automatically and optimizes your photos based on this info"</string>
     <string name="ai_scene_top_moon_off">Low light mode</string>
     <string name="ai_scene_top_tip">Moon mode</string>
     <string name="app_name">EffectManager</string>
@@ -195,8 +194,7 @@ and optimizes your photos based on this info"</string>
     <string name="dialog_google_lens_option_0">Google Lens (Recommended)</string>
     <string name="dialog_ok">OK</string>
     <string name="dialog_ok_time">OK (%ds)</string>
-    <string name="dirty_tip_toast">Looks like your camera's lens is dirty.
-Clean the lens for better effect.</string>
+    <string name="dirty_tip_toast">Looks like your camera\'s lens is dirty. Clean the lens for better effect.</string>
     <string name="do_not_remind_me">"Don't show again"</string>
     <string name="dual_camera_lens_covered_toast">The lens is covered.</string>
     <string name="dual_camera_lowlight_toast">"Looks like it's too dark."</string>
@@ -255,37 +253,32 @@ Clean the lens for better effect.</string>
     <string name="face_beauty_smart">Smart</string>
     <string name="face_score_info">Score: %.1f</string>
     <string name="fps960_toast">Slow-motion capture will start at the last quarter of the recording</string>
-    <string name="front_camera_hint_text_place">"Taking selfies will be easier
-if you rotate your phone"</string>
+    <string name="front_camera_hint_text_place">"Taking selfies will be easier if you rotate your phone"</string>
     <string name="front_camera_hint_text_rotate">Rotate your phone</string>
     <string name="hand_gesture_open_tip">Show your palm to the camera to start timer</string>
     <string name="hand_gesture_tip">Palm shutter</string>
     <string name="hibernate_hint">Tap the screen to wake Camera</string>
-    <string name="hine_hht">"In low light, camera will take multiple photos
-and then create a shot with a minimal amount of noise."</string>
+    <string name="hine_hht">"In low light, camera will take multiple photos and then create a shot with a minimal amount of noise."</string>
     <string name="hint_ae_af_lock">Auto focus and auto exposure have been locked.</string>
     <string name="hint_ae_af_lock_extra">Auto focus and auto exposure have been locked. Switch to Google Lens in the Camera settings</string>
     <string name="hint_ae_lock">Automatic exposure is locked</string>
     <string name="hint_device_water_mark">Photo watermark will be added automatically.</string>
     <string name="hint_eye_light">Eye sparkle effects work best when flash is on</string>
     <string name="hint_fast_motion">The video you shoot will be played faster.</string>
-    <string name="hint_groupshot">"Camera will take multiple photos
-and then create a shot where everyone looks best."</string>
+    <string name="hint_groupshot">"Camera will take multiple photos and then create a shot where everyone looks best."</string>
     <string name="hint_groupshot_beauty">"Can't use Beautify in group shots"</string>
     <string name="hint_slow_motion">The video you shoot will be played slower.</string>
     <string name="hunt_dual_water_mark">Dual camera watermark will be added automatically.</string>
     <string name="image_file_name_format">"'IMG'_yyyyMMdd_HHmmss"</string>
     <string name="install_confirmed">Install</string>
-    <string name="lens_dirty_detected_content">"Looks like your camera's lens is dirty.
-Clean the lens for better effect."</string>
+    <string name="lens_dirty_detected_content">"Looks like your camera's lens is dirty. Clean the lens for better effect."</string>
     <string name="lens_dirty_detected_title_back">Rear camera lens is dirty</string>
     <string name="lens_dirty_detected_title_front">Front camera lens is dirty</string>
     <string name="lighting_hint_needed">Place your subject in the spotlight</string>
     <string name="lighting_hint_title">Studio lighting</string>
     <string name="lighting_hint_too_close">Move the camera further away</string>
     <string name="lighting_hint_too_far">Bring the camera closer</string>
-    <string name="lighting_hint_usage">"You can use studio lighting effects
-in Portrait mode"</string>
+    <string name="lighting_hint_usage">"You can use studio lighting effects in Portrait mode"</string>
     <string name="lighting_pattern_dot">Dots</string>
     <string name="lighting_pattern_holi">Holi</string>
     <string name="lighting_pattern_leaf">Leaves</string>
@@ -334,8 +327,7 @@ in Portrait mode"</string>
     <string name="lying_direct_hint">Current orientation</string>
     <string name="macro_mode">Macro</string>
     <string name="macro_mode_tip">"Distance between the lens and the object shouldn't exceed 10cm"</string>
-    <string name="macro_mode_use_hint_text_body">"Use Macro mode to make small objects
-look larger on photos"</string>
+    <string name="macro_mode_use_hint_text_body">"Use Macro mode to make small objects look larger on photos"</string>
     <string name="macro_mode_use_hint_text_title">Macro</string>
     <string name="makeup_reset_toast">Cleared makeup effects successfully</string>
     <string name="message_snap_double_confirm">Long pressing the volume button triggers NFC now. Replace this feature?</string>
@@ -451,18 +443,15 @@ look larger on photos"</string>
     <string name="portait_effect_entry_sepia">Sepia</string>
     <string name="portait_effect_entry_story">Story</string>
     <string name="portait_effect_entry_tea">Tea</string>
-    <string name="portrait_bokeh_first_tips">"Use Portrait mode to blur
-the background on your photos"</string>
+    <string name="portrait_bokeh_first_tips">"Use Portrait mode to blur the background on your photos"</string>
     <string name="portrait_bokeh_text">Portrait mode</string>
     <string name="portrait_bokeh_tips">Place subject within 1.5 meters</string>
     <string name="portrait_mode_depth_effect_success_hint">Depth effect</string>
     <string name="portrait_mode_lowlight_hint">"It's too dark now"</string>
     <string name="portrait_mode_too_close_hint">Move farther from the subject</string>
     <string name="portrait_mode_too_far_hint">Place subject within 2 meters</string>
-    <string name="portrait_mode_use_hint">"Portrait mode blurs the background
-and brings out the people in the front."</string>
-    <string name="portrait_mode_use_hint_for_bokeh">"Try Portrait mode.
-Keep the subject sharp while blurring the background."</string>
+    <string name="portrait_mode_use_hint">"Portrait mode blurs the background and brings out the people in the front."</string>
+    <string name="portrait_mode_use_hint_for_bokeh">"Try Portrait mode. Keep the subject sharp while blurring the background."</string>
     <string name="pref_6mw_title">TEST60</string>
     <string name="pref_advance_settings">Additional settings</string>
     <string name="pref_ai_detect">AI detection</string>
@@ -913,7 +902,7 @@ Keep the subject sharp while blurring the background."</string>
     <string name="sticker_tab2">Funny</string>
     <string name="super_eis">Super Stabilization</string>
     <string name="super_eis_disabled_hint">Super Stabilization disabled</string>
-    <string name="super_night_hint">Processing, please don't hold in position</string>
+    <string name="super_night_hint">Processing, please don\'t hold in position</string>
     <string name="super_night_toast">Keep your phone steady while taking a photo</string>
     <string name="tap_to_exposure">Tap to adjust exposure manually</string>
     <string name="tap_to_focus">Tap to focus</string>
@@ -942,10 +931,8 @@ Keep the subject sharp while blurring the background."</string>
     <string name="ultra_wide_bokeh_open_tip">Full body mode</string>
     <string name="ultra_wide_close_tip">Ultra wide angle mode is off</string>
     <string name="ultra_wide_mode">Ultra wide angle</string>
-    <string name="ultra_wide_mode_use_hint_text">"Use this mode to include more of the scene in your photo.
-Ultra wide angle mode comes to help when you can't move farther from the scene."</string>
-    <string name="ultra_wide_mode_use_hint_text_sat">"Try 0.6X Ultra wide angle mode to include more of the scene in your photo.
-Ultra wide angle mode comes to help when you can't move farther from the scene."</string>
+    <string name="ultra_wide_mode_use_hint_text">"Use this mode to include more of the scene in your photo. Ultra wide angle mode comes to help when you can't move farther from the scene."</string>
+    <string name="ultra_wide_mode_use_hint_text_sat">"Try 0.6X Ultra wide angle mode to include more of the scene in your photo. Ultra wide angle mode comes to help when you can't move farther from the scene."</string>
     <string name="ultra_wide_open_tip">Ultra wide angle mode</string>
     <string name="ultra_wide_open_tip_sat">0.6X ultra wide angle</string>
     <string name="ultra_wide_recommend_tip_hint">Try Ultra wide angle mode</string>
