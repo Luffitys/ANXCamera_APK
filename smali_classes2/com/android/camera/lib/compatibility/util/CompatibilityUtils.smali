@@ -94,7 +94,7 @@
 .end method
 
 .method public static createStreamConfigMap(Ljava/util/List;Landroid/hardware/camera2/CameraCharacteristics;)Landroid/hardware/camera2/params/StreamConfigurationMap;
-    .locals 0
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -107,9 +107,24 @@
         }
     .end annotation
 
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1d
+    
+    if-lt v0, v1, :cond_1
+
     invoke-static {p0, p1}, Lcom/android/camera/lib/compatibility/related/v29/V29Utils;->createStreamConfigMap(Ljava/util/List;Landroid/hardware/camera2/CameraCharacteristics;)Landroid/hardware/camera2/params/StreamConfigurationMap;
 
     move-result-object p0
+
+    goto :goto_1
+
+    :cond_1
+    invoke-static {p0, p1}, Lcom/android/camera/lib/compatibility/related/v28/V28Utils;->createStreamConfigMap(Ljava/util/List;Landroid/hardware/camera2/CameraCharacteristics;)Landroid/hardware/camera2/params/StreamConfigurationMap;
+
+    move-result-object p0
+
+    :goto_1
 
     return-object p0
 .end method

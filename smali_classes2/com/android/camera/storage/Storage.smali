@@ -3800,49 +3800,55 @@
 .end method
 
 .method public static isUseDocumentMode()Z
-    .locals 3
+    #.locals 3
 
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    #sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    const/4 v1, 0x0
+    #const/4 v1, 0x0
 
-    const/16 v2, 0x1c
+    #const/16 v2, 0x1c
 
-    if-ge v0, v2, :cond_0
+    #if-ge v0, v2, :cond_0
 
-    return v1
+    #return v1
 
-    :cond_0
-    invoke-static {}, Lcom/android/camera/storage/Storage;->isUsePhoneStorage()Z
+    #:cond_0
+    #invoke-static {}, Lcom/android/camera/storage/Storage;->isUsePhoneStorage()Z
 
-    move-result v0
+    #move-result v0
 
-    if-eqz v0, :cond_1
+    #if-eqz v0, :cond_1
 
-    return v1
+    #return v1
 
-    :cond_1
-    invoke-static {}, Lcom/android/camera/data/DataRepository;->dataItemFeature()Lcom/mi/config/a;
+    #:cond_1
+    #invoke-static {}, Lcom/android/camera/data/DataRepository;->dataItemFeature()Lcom/mi/config/a;
 
-    move-result-object v0
+    #move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->zb()Z
+    #invoke-virtual {v0}, Lcom/mi/config/a;->zb()Z
 
-    move-result v0
+    #move-result v0
 
-    if-eqz v0, :cond_2
+    #if-eqz v0, :cond_2
 
-    sget-object v0, Lcom/android/camera/storage/Storage;->sCurrentStoragePath:Ljava/lang/String;
+    #sget-object v0, Lcom/android/camera/storage/Storage;->sCurrentStoragePath:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/android/camera/storage/Storage;->isDirectoryExistsAndCanWrite(Ljava/lang/String;)Z
+    #invoke-static {v0}, Lcom/android/camera/storage/Storage;->isDirectoryExistsAndCanWrite(Ljava/lang/String;)Z
 
-    move-result v0
+    #move-result v0
 
-    if-eqz v0, :cond_2
+    #if-eqz v0, :cond_2
 
-    return v1
+    #return v1
 
-    :cond_2
+    #:cond_2
+    #const/4 v0, 0x1
+
+    #return v0
+	
+	.locals 1
+	
     const/4 v0, 0x1
 
     return v0
