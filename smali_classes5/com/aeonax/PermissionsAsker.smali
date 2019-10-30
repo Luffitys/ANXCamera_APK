@@ -142,10 +142,25 @@
 
     move-result v1
 
-    if-eqz v1, :cond_9
+    if-eqz v1, :cond_8
 
     .line 38
     const-string v1, "android.permission.INTERACT_ACROSS_USERS"
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 40
+    :cond_8
+    const-string v1, "android.permission.WRITE_MEDIA_STORAGE"
+
+    invoke-virtual {p0, v1}, Landroid/app/Activity;->checkSelfPermission(Ljava/lang/String;)I
+
+    move-result v1
+
+    if-eqz v1, :cond_9
+
+    .line 41
+    const-string v1, "android.permission.WRITE_MEDIA_STORAGE"
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -172,12 +187,45 @@
 
     move-result v1
 
-    if-eqz v1, :cond_b
+    if-eqz v1, :cond_ba
 
     .line 47
     const-string v1, "android.permission.PACKAGE_USAGE_STATS"
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+
+    .line 40
+    :cond_ba
+    const-string v1, "android.permission.READ_EXTERNAL_STORAGE"
+
+    invoke-virtual {p0, v1}, Landroid/app/Activity;->checkSelfPermission(Ljava/lang/String;)I
+
+    move-result v1
+
+    if-eqz v1, :cond_bb
+
+    .line 41
+    const-string v1, "android.permission.READ_EXTERNAL_STORAGE"
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+
+    .line 40
+    :cond_bb
+    const-string v1, "android.permission.ACCESS_MEDIA_LOCATION"
+
+    invoke-virtual {p0, v1}, Landroid/app/Activity;->checkSelfPermission(Ljava/lang/String;)I
+
+    move-result v1
+
+    if-eqz v1, :cond_b
+
+    .line 41
+    const-string v1, "android.permission.ACCESS_MEDIA_LOCATION"
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
 
     .line 49
     :cond_b
