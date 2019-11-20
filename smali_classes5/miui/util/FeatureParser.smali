@@ -467,7 +467,7 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v6, "ro.product.system.device"
+    const-string v6, "ro.product.vendor.device"
 
     invoke-static {v6}, Lmiui/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
