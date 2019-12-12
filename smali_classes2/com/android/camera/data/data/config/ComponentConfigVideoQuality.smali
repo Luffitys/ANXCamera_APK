@@ -556,7 +556,7 @@
     if-eqz v9, :cond_2
 
     :cond_1
-    iput-object v10, v0, Lcom/android/camera/data/data/config/ComponentConfigVideoQuality;->mForceValue:Ljava/lang/String;
+    #iput-object v10, v0, Lcom/android/camera/data/data/config/ComponentConfigVideoQuality;->mForceValue:Ljava/lang/String;
 
     :cond_2
     invoke-static {v1, v6}, Lcom/android/camera/CameraSettings;->isFaceBeautyOn(ILcom/android/camera/fragment/beauty/BeautyValues;)Z

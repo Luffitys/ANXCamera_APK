@@ -2063,7 +2063,7 @@
     return v0
 
     :cond_0
-    const/16 v0, 0x15
+    const/16 v0, 0x0
 
     monitor-exit p0
 
