@@ -2082,26 +2082,17 @@
 .end method
 
 .method public hc()Z
-    #.locals 2
+    .locals 2
 
-    #const-string v0, "c_22367_0x0007"
+    const-string v0, "c_22367_0x0007"
 
-    #const/4 v1, 0x0
+    const/4 v1, 0x0
 
-    #invoke-virtual {p0, v0, v1}, Lcom/android/camera/data/data/DataItemBase;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-virtual {p0, v0, v1}, Lcom/android/camera/data/data/DataItemBase;->getBoolean(Ljava/lang/String;Z)Z
 
-    #move-result p0
+    move-result p0
 
-    #return p0
-	
-	# IS SUPPORT SUPER_EIS
-	#
-	.locals 1
-	
-	const/4 v0, 0x1
-	
-	return v0
-	#
+    return p0
 .end method
 
 .method public hd()Z
