@@ -146,7 +146,7 @@
     invoke-direct {v3, v1, v1, v7, v8}, Lcom/android/camera/data/data/ComponentDataItem;-><init>(IIILjava/lang/String;)V
 
 	#SLOW MOTION MODE
-    #invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_1
     invoke-virtual {v2}, Lcom/mi/config/a;->Rb()Z

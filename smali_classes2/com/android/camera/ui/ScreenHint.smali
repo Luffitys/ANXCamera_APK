@@ -231,7 +231,7 @@
     if-eqz v2, :cond_2
 
 	#SHOW LOCATION HINT
-    #goto :goto_0
+    goto :goto_0
 
     :cond_2
     const/4 v1, 0x0

@@ -180,7 +180,12 @@
 
     sget-object v0, Lcom/android/camera/module/VideoModule;->HEVC_VIDEO_ENCODER_BITRATE:Ljava/util/HashMap;
 
-    const v1, 0x24b76a0
+    #const v1, 0x24b76a0
+	
+	# INCREASE HEVC BITRATE BY 1.2 (2160p)
+	#
+	const v1, 0x2C0F4C0
+	#
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -192,7 +197,12 @@
 
     sget-object v0, Lcom/android/camera/module/VideoModule;->HEVC_VIDEO_ENCODER_BITRATE:Ljava/util/HashMap;
 
-    const v1, 0xeafc40
+    #const v1, 0xeafc40
+	
+	# INCREASE HEVC BITRATE BY 1.2 (1080p)
+	#
+	const v1, 0x119FB80
+	#
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -204,7 +214,12 @@
 
     sget-object v0, Lcom/android/camera/module/VideoModule;->HEVC_VIDEO_ENCODER_BITRATE:Ljava/util/HashMap;
 
-    const v1, 0xa47d60
+    #const v1, 0xa47d60
+	
+	# INCREASE HEVC BITRATE BY 1.2 (720p)
+	#
+	const v1, 0xC56340
+	#
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -217,6 +232,11 @@
     sget-object v0, Lcom/android/camera/module/VideoModule;->HEVC_VIDEO_ENCODER_BITRATE:Ljava/util/HashMap;
 
     const v1, 0x150e00
+	
+	# INCREASE HEVC BITRATE BY 1.2 (480)
+	#
+	const v1, 0x194400
+	#
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

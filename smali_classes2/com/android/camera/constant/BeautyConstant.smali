@@ -251,47 +251,40 @@
 .end method
 
 .method private static defaultOffRegion()Z
-    #.locals 6
+    .locals 6
 
-    #sget-object v0, Lcom/android/camera/constant/BeautyConstant;->DEFAULT_OFF_REGION:[Ljava/lang/String;
+    sget-object v0, Lcom/android/camera/constant/BeautyConstant;->DEFAULT_OFF_REGION:[Ljava/lang/String;
 
-    #array-length v1, v0
+    array-length v1, v0
 
-    #const/4 v2, 0x0
+    const/4 v2, 0x0
 
-    #move v3, v2
+    move v3, v2
 
-    #:goto_0
-    #if-ge v3, v1, :cond_1
+    :goto_0
+    if-ge v3, v1, :cond_1
 
-    #aget-object v4, v0, v3
+    aget-object v4, v0, v3
 
-    #sget-object v5, Lcom/android/camera/Util;->sRegion:Ljava/lang/String;
+    sget-object v5, Lcom/android/camera/Util;->sRegion:Ljava/lang/String;
 
-    #invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    #move-result v4
+    move-result v4
 
-    #if-eqz v4, :cond_0
+    if-eqz v4, :cond_0
 
-    #const/4 v0, 0x1
+    const/4 v0, 0x1
 
-    #return v0
+    return v0
 
-    #:cond_0
-    #add-int/lit8 v3, v3, 0x1
+    :cond_0
+    add-int/lit8 v3, v3, 0x1
 
-    #goto :goto_0
+    goto :goto_0
 
-    #:cond_1
-    #return v2
-	
-	.locals 1
-	
-	const/4 v0, 0x1
-	
-	return v0
-	#BEAUTY DEFAULT [1 = OFF]
+    :cond_1
+    return v2
 .end method
 
 .method public static getDefaultValueByKey(Ljava/lang/String;)I

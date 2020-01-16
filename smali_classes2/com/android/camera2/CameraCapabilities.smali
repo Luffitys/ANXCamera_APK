@@ -3106,25 +3106,19 @@
 .end method
 
 .method public isSupportBeauty()Z
-    #.locals 1
+    .locals 1
 
-    #sget-object v0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->BEAUTY_LEVEL:Lcom/android/camera2/vendortag/VendorTag;
+    sget-object v0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->BEAUTY_LEVEL:Lcom/android/camera2/vendortag/VendorTag;
 
-    #invoke-virtual {v0}, Lcom/android/camera2/vendortag/VendorTag;->getName()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/android/camera2/vendortag/VendorTag;->getName()Ljava/lang/String;
 
-    #move-result-object v0
+    move-result-object v0
 
-    #invoke-virtual {p0, v0}, Lcom/android/camera2/CameraCapabilities;->isTagDefined(Ljava/lang/String;)Z
+    invoke-virtual {p0, v0}, Lcom/android/camera2/CameraCapabilities;->isTagDefined(Ljava/lang/String;)Z
 
-    #move-result p0
+    move-result p0
 
-    #return p0
-	
-	.locals 1
-	
-	const/4 v0, 0x0
-	
-	return v0
+    return p0
 .end method
 
 .method public isSupportBeautyMakeup()Z

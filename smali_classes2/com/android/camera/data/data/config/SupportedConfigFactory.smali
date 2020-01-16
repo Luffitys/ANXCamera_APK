@@ -480,7 +480,7 @@
     if-eqz v0, :cond_4
 
 	#GENDER_AGE MODE
-    #invoke-virtual {v2, v12}, Lcom/android/camera/data/data/config/SupportedConfigs;->add(I)Lcom/android/camera/data/data/config/SupportedConfigs;
+    invoke-virtual {v2, v12}, Lcom/android/camera/data/data/config/SupportedConfigs;->add(I)Lcom/android/camera/data/data/config/SupportedConfigs;
 
     :cond_4
     invoke-static {}, Lcom/mi/config/b;->kj()Z
@@ -490,7 +490,7 @@
     if-eqz v0, :cond_5
 
 	#MAGIC MIRROR MODE
-    #invoke-virtual {v2, v13}, Lcom/android/camera/data/data/config/SupportedConfigs;->add(I)Lcom/android/camera/data/data/config/SupportedConfigs;
+    invoke-virtual {v2, v13}, Lcom/android/camera/data/data/config/SupportedConfigs;->add(I)Lcom/android/camera/data/data/config/SupportedConfigs;
 
     :cond_5
     if-eqz p4, :cond_6
@@ -524,7 +524,7 @@
     const/16 v1, 0xe4
 
 	#TILT MODE
-    #invoke-virtual {v2, v1}, Lcom/android/camera/data/data/config/SupportedConfigs;->add(I)Lcom/android/camera/data/data/config/SupportedConfigs;
+    invoke-virtual {v2, v1}, Lcom/android/camera/data/data/config/SupportedConfigs;->add(I)Lcom/android/camera/data/data/config/SupportedConfigs;
 
     :cond_8
     invoke-static {}, Lcom/mi/config/b;->Mi()Z
@@ -536,7 +536,7 @@
     const/16 v1, 0xe5
 
 	#STRAIGHTEN MODE [CALLED GRADIENTER]
-    #invoke-virtual {v2, v1}, Lcom/android/camera/data/data/config/SupportedConfigs;->add(I)Lcom/android/camera/data/data/config/SupportedConfigs;
+    invoke-virtual {v2, v1}, Lcom/android/camera/data/data/config/SupportedConfigs;->add(I)Lcom/android/camera/data/data/config/SupportedConfigs;
 
     :cond_9
     invoke-static {}, Lcom/mi/config/b;->Ri()Z
@@ -674,7 +674,7 @@
     if-eqz v0, :cond_f
 
 	#GENDER_AGE MODE
-    #invoke-virtual {v2, v12}, Lcom/android/camera/data/data/config/SupportedConfigs;->add(I)Lcom/android/camera/data/data/config/SupportedConfigs;
+    invoke-virtual {v2, v12}, Lcom/android/camera/data/data/config/SupportedConfigs;->add(I)Lcom/android/camera/data/data/config/SupportedConfigs;
 
     :cond_f
     invoke-static {}, Lcom/mi/config/b;->kj()Z
@@ -684,7 +684,7 @@
     if-eqz v0, :cond_10
 
 	#MAGIC MIRROR MODE
-    #invoke-virtual {v2, v13}, Lcom/android/camera/data/data/config/SupportedConfigs;->add(I)Lcom/android/camera/data/data/config/SupportedConfigs;
+    invoke-virtual {v2, v13}, Lcom/android/camera/data/data/config/SupportedConfigs;->add(I)Lcom/android/camera/data/data/config/SupportedConfigs;
 
     :cond_10
     invoke-virtual {v4}, Lcom/android/camera/data/data/runing/DataItemRunning;->supportHandGesture()Z
