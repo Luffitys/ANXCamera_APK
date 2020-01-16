@@ -30,7 +30,7 @@
   "o_0x01_r_p_s_f": 12,
   "c_0x01_p_g_a_v": 290,
   "c_0x02_p_c_r_v": 0.90678084,
-  "c_0x03": true,
+  "c_0x03": false,
   "c_0x05": true,
   "c_0x06": true,
   "c_0x07": true,
@@ -43,7 +43,7 @@
   "c_0x17": true,
   "c_0x18": true,
   "c_0x1a": true,
-  "c_0x1b": true,
+  "c_0x1b": false,
   "c_0x1c": true,
   "c_d_e_f_w": true,
   "c_0x22": true,
@@ -67,5 +67,6 @@
   "c_0x54": true,
   "c_0x37": true,
   "c_9006_0x0000": true,
+  "c_r_i_m_m":true,
   "c_9006_0x0001": 8
 }
