@@ -354,28 +354,6 @@
     return-void
 .end method
 
-.method protected onCreateView(Landroid/view/ViewGroup;)Landroid/view/View;
-    .locals 2
-
-    invoke-virtual {p0}, Landroid/preference/ListPreference;->getContext()Landroid/content/Context;
-
-    move-result-object p0
-
-    invoke-static {p0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
-
-    move-result-object p0
-
-    const v0, 0x7f0b0079
-
-    const/4 v1, 0x0
-
-    invoke-virtual {p0, v0, p1, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method protected onGetDefaultValue(Landroid/content/res/TypedArray;I)Ljava/lang/Object;
     .locals 2
 
