@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme" parent="@android:style/Theme.Light" />
+    <style name="AppTheme" parent="@android:style/Theme.Material" />
     <style name="Base.CardView" parent="@android:style/Widget">
         <item name="cardCornerRadius">@dimen/cardview_default_radius</item>
         <item name="cardElevation">@dimen/cardview_default_elevation</item>
@@ -54,7 +54,7 @@
         <item name="android:backgroundDimEnabled">true</item>
         <item name="android:windowTranslucentNavigation">true</item>
     </style>
-    <style name="EditAlertDialog" parent="@miui:style/Theme.DayNight.Dialog.Alert">
+    <style name="EditAlertDialog" parent="@android:style/Theme.Material.Dialog.Alert">
         <item name="android:windowSoftInputMode">stateAlwaysVisible</item>
     </style>
     <style name="EffectItemText">
@@ -82,7 +82,6 @@
     <style name="LensDirtyDetectDialogFragment" parent="@style/DialogFragmentFullScreen">
         <item name="android:windowIsFloating">false</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="miui:windowActionBar">false</item>
     </style>
     <style name="LyingDirectHintStyle">
         <item name="android:textSize">@dimen/lying_direct_hint_size</item>
@@ -97,7 +96,6 @@
     </style>
     <style name="ManuallyDescriptionFragment" parent="@style/DialogFragmentFullScreen">
         <item name="android:windowIsFloating">false</item>
-        <item name="miui:windowActionBar">false</item>
     </style>
     <style name="OnScreenHintTextAppearance">
         <item name="android:textSize">16.0sp</item>
@@ -222,7 +220,6 @@
     <style name="TTMusicDialogFragment" parent="@style/DialogFragmentFullScreen">
         <item name="android:windowIsFloating">false</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="miui:windowActionBar">false</item>
     </style>
     <style name="TextAppearance.Compat.Notification" parent="@android:style/TextAppearance.Material.Notification" />
     <style name="TextAppearance.Compat.Notification.Info" parent="@android:style/TextAppearance.Material.Notification.Info" />
@@ -234,7 +231,7 @@
     <style name="TextAppearance.Compat.Notification.Time.Media" parent="@style/TextAppearance.Compat.Notification.Time" />
     <style name="TextAppearance.Compat.Notification.Title" parent="@android:style/TextAppearance.Material.Notification.Title" />
     <style name="TextAppearance.Compat.Notification.Title.Media" parent="@style/TextAppearance.Compat.Notification.Title" />
-    <style name="ThemeCamera" parent="@miui:style/Theme.DayNight">
+    <style name="ThemeCamera" parent="@android:style/Theme.Material">
         <item name="android:colorBackground">@android:color/black</item>
         <item name="android:windowBackground">@android:color/black</item>
         <item name="android:windowNoTitle">true</item>
@@ -242,9 +239,14 @@
         <item name="android:listChoiceIndicatorMultiple">@drawable/btn_checkbox_light</item>
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="miui:windowActionBar">false</item>
     </style>
-    <style name="ThemeCameraSettings" parent="@miui:style/Theme.DayNight.Settings" />
+    <style name="ThemeCameraSettings" parent="@android:style/Theme.Material">
+        <item name="android:colorBackground">@android:color/black</item>
+		<item name="android:colorPrimary">@android:color/black</item>
+		<item name="android:showDividers">none</item>
+		<item name="android:listDivider">@null</item>
+		<item name="android:statusBarColor">@android:color/black</item>
+	</style>
     <style name="Widget.Compat.NotificationActionContainer" parent="">
         <item name="android:background">@drawable/notification_action_background</item>
     </style>
