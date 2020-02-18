@@ -1,4 +1,4 @@
-.class public final Lmiui/R$fraction;
+.class public final Lmiui/R$interpolator;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -10,7 +10,7 @@
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x19
-    name = "fraction"
+    name = "interpolator"
 .end annotation
 
 

@@ -1,28 +1,29 @@
-.class public final Landroid/miui/R;
+.class public final Lmiui/R;
 .super Ljava/lang/Object;
-.source "R.java"
+.source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Landroid/miui/R$xml;,
-        Landroid/miui/R$styleable;,
-        Landroid/miui/R$style;,
-        Landroid/miui/R$string;,
-        Landroid/miui/R$raw;,
-        Landroid/miui/R$plurals;,
-        Landroid/miui/R$layout;,
-        Landroid/miui/R$integer;,
-        Landroid/miui/R$id;,
-        Landroid/miui/R$fraction;,
-        Landroid/miui/R$drawable;,
-        Landroid/miui/R$dimen;,
-        Landroid/miui/R$color;,
-        Landroid/miui/R$bool;,
-        Landroid/miui/R$attr;,
-        Landroid/miui/R$array;,
-        Landroid/miui/R$anim;
+        Lmiui/R$styleable;,
+        Lmiui/R$xml;,
+        Lmiui/R$style;,
+        Lmiui/R$string;,
+        Lmiui/R$raw;,
+        Lmiui/R$plurals;,
+        Lmiui/R$layout;,
+        Lmiui/R$interpolator;,
+        Lmiui/R$integer;,
+        Lmiui/R$id;,
+        Lmiui/R$fraction;,
+        Lmiui/R$drawable;,
+        Lmiui/R$dimen;,
+        Lmiui/R$color;,
+        Lmiui/R$bool;,
+        Lmiui/R$attr;,
+        Lmiui/R$array;,
+        Lmiui/R$anim;
     }
 .end annotation
 
@@ -31,7 +32,7 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 10
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

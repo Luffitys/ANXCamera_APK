@@ -1,11 +1,11 @@
-.class public final Landroid/miui/R$layout;
+.class public final Lmiui/R$layout;
 .super Ljava/lang/Object;
-.source "R.java"
+.source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Landroid/miui/R;
+    value = Lmiui/R;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,140 +15,40 @@
 
 
 # static fields
-.field public static final action_bar_title_item:I = 0x110b0000
+.field public static edit_mode_title:I = 0x10030008
 
-.field public static final activity_package_delete_confirm:I = 0x110b0001
+.field public static hybrid_view:I = 0x10030004
 
-.field public static final android_always_use_checkbox:I = 0x110b0002
+.field public static immersion_popup_menu_item:I = 0x10030003
 
-.field public static final android_app_permission_item_old:I = 0x110b0003
+.field public static preference:I = 0x10030005
 
-.field public static final android_notification_template_base:I = 0x110b0004
+.field public static preference_category:I = 0x10030006
 
-.field public static final android_notification_template_big_base:I = 0x110b0005
+.field public static preference_value:I = 0x10030009
 
-.field public static final android_notification_template_big_picture:I = 0x110b0006
+.field public static search_stub:I = 0x10030000
 
-.field public static final android_notification_template_big_text:I = 0x110b0007
+.field public static select_dialog_singlechoice:I = 0x10030007
 
-.field public static final android_notification_template_inbox:I = 0x110b0008
+.field public static simple_arrow_popup_item:I = 0x10030002
 
-.field public static final android_preference_list_fragment:I = 0x110b0009
+.field public static simple_spinner_dropdown_item:I = 0x10030001
 
-.field public static final android_select_dialog_singlechoice_holo:I = 0x110b000a
-
-.field public static final android_simple_list_item_2_single_choice:I = 0x110b000b
-
-.field public static final android_usb_storage_activity:I = 0x110b000c
-
-.field public static final app_list_item:I = 0x110b000d
-
-.field public static final app_picker:I = 0x110b000e
-
-.field public static final auto_disable_screenbuttons_float:I = 0x110b000f
-
-.field public static final autofill_save_miui:I = 0x110b0010
-
-.field public static final boot_msg:I = 0x110b0011
-
-.field public static final clipboard_item_layout:I = 0x110b0012
-
-.field public static final clipboard_pop_view:I = 0x110b0013
-
-.field public static final component_list:I = 0x110b0014
-
-.field public static final float_notification:I = 0x110b0015
-
-.field public static final global_actions:I = 0x110b0016
-
-.field public static final global_actions_item:I = 0x110b0017
-
-.field public static final handy_mode_title:I = 0x110b0018
-
-.field public static final input_bottom:I = 0x110b0019
-
-.field public static final input_bottom_low:I = 0x110b001a
-
-.field public static final input_method_cloud_clipboard_view:I = 0x110b001b
-
-.field public static final input_method_switch_item:I = 0x110b001c
-
-.field public static final input_method_switch_item_view:I = 0x110b001d
-
-.field public static final input_method_switch_view:I = 0x110b001e
-
-.field public static final key_preview_text:I = 0x110b001f
-
-.field public static final kid_user_switching_dialog:I = 0x110b0020
-
-.field public static final layout_file_type_detail:I = 0x110b0021
-
-.field public static final letter_board:I = 0x110b0022
-
-.field public static final miui_simple_list_item_2_single_choice:I = 0x110b0023
-
-.field public static final phrase_item_layout:I = 0x110b0024
-
-.field public static final phrase_list:I = 0x110b0025
-
-.field public static final phrase_list_item:I = 0x110b0026
-
-.field public static final reboot_view:I = 0x110b0027
-
-.field public static final resolve_list_item:I = 0x110b0028
-
-.field public static final resolver_grid_view:I = 0x110b0029
-
-.field public static final resolver_offical_item:I = 0x110b002a
-
-.field public static final resolver_screen:I = 0x110b002b
-
-.field public static final resolver_screen_xspace:I = 0x110b002c
-
-.field public static final resolver_title:I = 0x110b002d
-
-.field public static final ringer_mode:I = 0x110b002e
-
-.field public static final screen_on_proximity_sensor_guide:I = 0x110b002f
-
-.field public static final screen_on_proximity_sensor_guide_has_navigation_bar:I = 0x110b0030
-
-.field public static final security_permission_view:I = 0x110b0031
-
-.field public static final silent_description:I = 0x110b0032
-
-.field public static final starting_window_simple:I = 0x110b0033
-
-.field public static final symbol_board:I = 0x110b0034
-
-.field public static final text_edit_action_classfier:I = 0x110b0035
-
-.field public static final text_edit_action_popup_text:I = 0x110b0036
-
-.field public static final translation_panel:I = 0x110b0037
-
-.field public static final user_switching_dialog:I = 0x110b0038
-
-.field public static final view_file_type_icon:I = 0x110b0039
-
-.field public static final view_midrop_device_view:I = 0x110b003a
-
-.field public static final view_midrop_transmission:I = 0x110b003b
-
-.field public static final voice_input_button:I = 0x110b003c
-
-.field public static final voice_to_text_dialog:I = 0x110b003d
-
-.field public static final volume_dialog:I = 0x110b003e
-
-.field public static final volume_dialog_row:I = 0x110b003f
+.field public static webview_reload:I = 0x1003000a
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .registers 0
+
+    return-void
+.end method
+
 .method public constructor <init>()V
     .registers 1
 
-    .line 1595
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
