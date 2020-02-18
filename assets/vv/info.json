@@ -1,0 +1,157 @@
+{
+  "version": "20190926-9",
+  "data": [
+    {
+      "id": "vv.life",
+      "uri": "assets://vv/life.zip",
+      "fragments": [
+        2070,
+        1933,
+        2100,
+        3900
+      ],
+      "i18n": [
+        {
+          "lang": "default",
+          "name": "Activities"
+        },
+        {
+          "lang": "cn",
+          "name": "穿梭"
+        }
+      ]
+    },
+    {
+      "id": "vv.citytravel",
+      "uri": "assets://vv/citytravel.zip",
+      "fragments": [
+        2600,
+        2400,
+        2666,
+        2333
+      ],
+      "i18n": [
+        {
+          "lang": "default",
+          "name": "Dreams"
+        },
+        {
+          "lang": "cn",
+          "name": "梦境"
+        }
+      ]
+    },
+    {
+      "id": "vv.cool",
+      "uri": "assets://vv/cool.zip",
+      "fragments": [
+        1067,
+        1667,
+        1733,
+        1766,
+        1566,
+        2033
+      ],
+      "i18n": [
+        {
+          "lang": "default",
+          "name": "Rhythm"
+        },
+        {
+          "lang": "cn",
+          "name": "律动"
+        }
+      ]
+    },
+    {
+      "id": "vv.accuratetime",
+      "uri": "assets://vv/accuratetime.zip",
+      "fragments": [
+        699,
+        1332,
+        1332,
+        1365,
+        1365,
+        1365,
+        1365,
+        1617
+      ],
+      "i18n": [
+        {
+          "lang": "default",
+          "name": "Stop motion"
+        },
+        {
+          "lang": "cn",
+          "name": "卡点"
+        }
+      ]
+    },
+    {
+      "id": "vv.vivacious",
+      "uri": "assets://vv/vivacious.zip",
+      "fragments": [
+        2566,
+        2400,
+        2400,
+        2533
+      ],
+      "i18n": [
+        {
+          "lang": "default",
+          "name": "Holidays"
+        },
+        {
+          "lang": "cn",
+          "name": "假日"
+        }
+      ]
+    },
+    {
+      "id": "vv.warmlife",
+      "uri": "assets://vv/warmlife.zip",
+      "fragments": [
+        2733,
+        2667,
+        2433,
+        2200
+      ],
+      "i18n": [
+        {
+          "lang": "default",
+          "name": "Travel"
+        },
+        {
+          "lang": "cn",
+          "name": "旅行"
+        }
+      ]
+    },
+    {
+      "id": "vv.cheerful",
+      "uri": "assets://vv/cheerful.zip",
+      "fragments": [
+        2667,
+        2267,
+        2900,
+        3733
+      ],
+      "overlapping": [
+        500,
+        433,
+        500,
+        400
+      ],
+      "i18n": [
+        {
+          "lang": "default",
+          "name": "Memories"
+        },
+        {
+          "lang": "cn",
+          "name": "回忆"
+        }
+      ]
+    }
+  ]
+}

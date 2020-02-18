@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/vv_preview_list_corner">
+        <ImageView android:id="@id/vv_preview_item_image" android:layout_width="fill_parent" android:layout_height="@dimen/vv_preview_image_height" android:scaleType="centerCrop" />
+        <com.android.camera.ui.TextureVideoView android:id="@id/vv_preview_texture_video" android:layout_width="fill_parent" android:layout_height="@dimen/vv_preview_image_height" />
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/vv_preview_item_collapsing" android:padding="@dimen/vv_preview_collapsing_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_collapsing" />
+        <ImageView android:layout_gravity="center" android:id="@id/vv_preview_item_preview" android:visibility="gone" android:layout_width="@dimen/bottom_picker_width" android:layout_height="@dimen/bottom_picker_width" android:src="@drawable/ic_live_record_play" android:scaleType="centerInside" />
+    </android.support.v7.widget.CardView>
+    <TextView android:textSize="@dimen/vv_list_item_text_size" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/vv_preview_item_hint" android:paddingBottom="@dimen/effect_item_padding_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vv_list_item_text_margin_top" />
+</LinearLayout>

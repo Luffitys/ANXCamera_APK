@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape>
+            <solid android:color="@color/vv_dialog_button_bg" />
+            <corners android:radius="@dimen/vv_share_cancel_radius" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/vv_dialog_button_bg_pressed" />
+            <corners android:radius="@dimen/vv_share_cancel_radius" />
+        </shape>
+    </item>
+</selector>

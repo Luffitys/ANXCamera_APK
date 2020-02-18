@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/vv_share" android:background="@drawable/bg_vv_share" android:visibility="gone" android:layout_width="@dimen/vv_share_layout_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/vv_share_recyclerview" android:layout_width="@dimen/vv_share_items_layout_width" android:layout_height="@dimen/vv_share_items_layout_height" android:layout_marginTop="@dimen/vv_share_margin_top" android:layout_marginBottom="@dimen/vv_share_margin_bottom" android:layout_marginHorizontal="@dimen/vv_share_margin_hor" />
+    <com.android.camera.fragment.vv.page.PageIndicatorView android:id="@id/vv_share_recyclerview_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/vv_share_page_indicator_margin_bottom" />
+    <TextView android:textSize="@dimen/live_share_cancel_text" android:textStyle="bold" android:textColor="@color/vv_dialog_text_color" android:gravity="center" android:id="@id/vv_share_message" android:background="@drawable/bg_vv_dialog_button_share" android:layout_width="@dimen/vv_share_cancel_width" android:layout_height="@dimen/vv_share_cancel_height" android:layout_marginBottom="@dimen/vv_share_cancel_margin_bottom" android:text="@string/live_music_close_cancel_message" />
+</LinearLayout>

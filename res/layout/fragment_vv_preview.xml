@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/vv_preview_layout" android:paddingTop="@dimen/vv_preview_list_margin_top" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v4.view.ViewPager android:layout_gravity="center_horizontal" android:id="@id/vv_viewpager" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="@dimen/vv_preview_list_height" android:layout_marginBottom="@dimen/vv_list_margin_bottom" />
+    </FrameLayout>
+</LinearLayout>

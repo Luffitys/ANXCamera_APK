@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/id_card_mode_use_hint_layout" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/id_card_drawable_layout" android:background="@drawable/bg_id_card_drawable_layout" android:layout_width="@dimen/id_card_drawable_layout_width" android:layout_height="@dimen/id_card_drawable_layout_height">
+            <ImageView android:layout_width="@dimen/id_card_drawable_width" android:layout_height="@dimen/id_card_drawable_height" android:src="@drawable/id_card_front" />
+            <ImageView android:layout_width="@dimen/id_card_drawable_width" android:layout_height="@dimen/id_card_drawable_height" android:layout_marginTop="@dimen/id_card_drawable_margin" android:src="@drawable/id_card_back" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/id_card_title_text_size" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/id_card_title_margin_top" android:text="@string/id_card_mode_use_hint_text_title" />
+        <TextView android:textSize="@dimen/id_card_body_text_size" android:textColor="@color/id_card_body_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/id_card_body_margin_top" android:text="@string/id_card_mode_use_hint_text_body" android:lineSpacingExtra="@dimen/id_card_body_line_spacing" />
+    </LinearLayout>
+</FrameLayout>

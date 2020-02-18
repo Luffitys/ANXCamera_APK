@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/vv_dialog" android:background="@drawable/bg_vv_dialog" android:visibility="gone" android:layout_width="@dimen/vv_dialog_exit_width" android:layout_height="@dimen/vv_dialog_exit_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/vv_dialog_text_size" android:textColor="@color/vv_dialog_text_color" android:gravity="center" android:id="@id/vv_dialog_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vv_dialog_title_margin_top" />
+    <FrameLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/vv_dialog_button_height" android:layout_marginBottom="@dimen/vv_dialog_button_margin_bottom">
+        <TextView android:textSize="@dimen/vv_dialog_text_size" android:textStyle="bold" android:textColor="@color/vv_dialog_text_color" android:gravity="center" android:layout_gravity="left" android:id="@id/vv_dialog_negative" android:background="@drawable/bg_vv_dialog_button_exit" android:layout_width="@dimen/vv_dialog_button_width" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/vv_dialog_button_margin_horizontal" />
+        <TextView android:textSize="@dimen/vv_dialog_text_size" android:textStyle="bold" android:textColor="@color/vv_dialog_positive_color" android:gravity="center" android:layout_gravity="right" android:id="@id/vv_dialog_positive" android:background="@drawable/bg_vv_dialog_button_exit" android:layout_width="@dimen/vv_dialog_button_width" android:layout_height="fill_parent" android:layout_marginRight="@dimen/vv_dialog_button_margin_horizontal" />
+    </FrameLayout>
+</FrameLayout>

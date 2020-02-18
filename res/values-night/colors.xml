@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="vv_dialog_bg">#ff222224</color>
+    <color name="vv_dialog_button_bg">#33ffffff</color>
+    <color name="vv_dialog_button_bg_pressed">#1affffff</color>
+    <color name="vv_dialog_positive_color">#ff0097ff</color>
+    <color name="vv_dialog_share_text_color">#80ffffff</color>
+    <color name="vv_dialog_text_color">#ccffffff</color>
+    <color name="vv_indicator_selected_color">#ffffffff</color>
+    <color name="vv_indicator_unselected_color">#4dffffff</color>
+</resources>

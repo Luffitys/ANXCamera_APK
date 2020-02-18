@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="backgroundColor" format="reference|color" />
+    <attr name="backgroundStrokeColor" format="reference|color" />
+    <attr name="backgroundStrokeWidth" format="reference|dimension" />
+    <attr name="barrierAllowsGoneWidgets" format="boolean" />
+    <attr name="barrierDirection">
+        <enum name="bottom" value="3" />
+        <enum name="end" value="6" />
+        <enum name="left" value="0" />
+        <enum name="right" value="1" />
+        <enum name="start" value="5" />
+        <enum name="top" value="2" />
+    </attr>
+    <attr name="bgColor" format="reference|color" />
+    <attr name="bgRadius" format="reference|integer|dimension" />
+    <attr name="cameraTitle" format="string" />
+    <attr name="cardBackgroundColor" format="color" />
+    <attr name="cardCornerRadius" format="dimension" />
+    <attr name="cardElevation" format="dimension" />
+    <attr name="cardMaxElevation" format="dimension" />
+    <attr name="cardPreventCornerOverlap" format="boolean" />
+    <attr name="cardUseCompatPadding" format="boolean" />
+    <attr name="cardViewStyle" format="reference" />
+    <attr name="chainUseRtl" format="boolean" />
+    <attr name="checked" format="reference|boolean" />
+    <attr name="constraintSet" format="reference" />
+    <attr name="constraint_referenced_ids" format="string" />
+    <attr name="content" format="reference" />
+    <attr name="contentPadding" format="dimension" />
+    <attr name="contentPaddingBottom" format="dimension" />
+    <attr name="contentPaddingLeft" format="dimension" />
+    <attr name="contentPaddingRight" format="dimension" />
+    <attr name="contentPaddingTop" format="dimension" />
+    <attr name="coordinatorLayoutStyle" format="reference" />
+    <attr name="defaultValue" format="reference|string" />
+    <attr name="degree" format="integer" />
+    <attr name="duration" format="reference|integer|dimension" />
+    <attr name="emptyVisibility">
+        <enum name="gone" value="0" />
+        <enum name="invisible" value="1" />
+    </attr>
+    <attr name="entries" format="reference" />
+    <attr name="entryValues" format="reference" />
+    <attr name="fastScrollEnabled" format="boolean" />
+    <attr name="fastScrollHorizontalThumbDrawable" format="reference" />
+    <attr name="fastScrollHorizontalTrackDrawable" format="reference" />
+    <attr name="fastScrollVerticalThumbDrawable" format="reference" />
+    <attr name="fastScrollVerticalTrackDrawable" format="reference" />
+    <attr name="font" format="reference" />
+    <attr name="fontProviderAuthority" format="string" />
+    <attr name="fontProviderCerts" format="reference" />
+    <attr name="fontProviderFetchStrategy">
+        <enum name="async" value="1" />
+        <enum name="blocking" value="0" />
+    </attr>
+    <attr name="fontProviderFetchTimeout" format="integer">
+        <enum name="forever" value="-1" />
+    </attr>
+    <attr name="fontProviderPackage" format="string" />
+    <attr name="fontProviderQuery" format="string" />
+    <attr name="fontStyle">
+        <enum name="italic" value="1" />
+        <enum name="normal" value="0" />
+    </attr>
+    <attr name="fontVariationSettings" format="string" />
+    <attr name="fontWeight" format="integer" />
+    <attr name="hasPopup" format="string" />
+    <attr name="icons" format="reference" />
+    <attr name="images" format="reference" />
+    <attr name="itemLeftRightMargin" format="reference|integer|dimension" />
+    <attr name="itemLeftRightPaddingOther" format="reference|integer|dimension" />
+    <attr name="itemLeftRightPaddingZH" format="reference|integer|dimension" />
+    <attr name="itemTopBottomMargin" format="reference|integer|dimension" />
+    <attr name="itemTopBottomPaddingOther" format="reference|integer|dimension" />
+    <attr name="itemTopBottomPaddingZH" format="reference|integer|dimension" />
+    <attr name="key" format="string" />
+    <attr name="keylines" format="reference" />
+    <attr name="label" format="reference" />
+    <attr name="labelList" format="reference" />
+    <attr name="largeIcons" format="reference" />
+    <attr name="layoutManager" format="string" />
+    <attr name="layout_anchor" format="reference" />
+    <attr name="layout_anchorGravity">
+        <flag name="bottom" value="0x00000050" />
+        <flag name="center" value="0x00000011" />
+        <flag name="center_horizontal" value="0x00000001" />
+        <flag name="center_vertical" value="0x00000010" />
+        <flag name="clip_horizontal" value="0x00000008" />
+        <flag name="clip_vertical" value="0x00000080" />
+        <flag name="end" value="0x00800005" />
+        <flag name="fill" value="0x00000077" />
+        <flag name="fill_horizontal" value="0x00000007" />
+        <flag name="fill_vertical" value="0x00000070" />
+        <flag name="left" value="0x00000003" />
+        <flag name="right" value="0x00000005" />
+        <flag name="start" value="0x00800003" />
+        <flag name="top" value="0x00000030" />
+    </attr>
+    <attr name="layout_behavior" format="string" />
+    <attr name="layout_constrainedHeight" format="boolean" />
+    <attr name="layout_constrainedWidth" format="boolean" />
+    <attr name="layout_constraintBaseline_creator" format="integer" />
+    <attr name="layout_constraintBaseline_toBaselineOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintBottom_creator" format="integer" />
+    <attr name="layout_constraintBottom_toBottomOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintBottom_toTopOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintCircle" format="reference" />
+    <attr name="layout_constraintCircleAngle" format="integer" />
+    <attr name="layout_constraintCircleRadius" format="dimension" />
+    <attr name="layout_constraintDimensionRatio" format="string" />
+    <attr name="layout_constraintEnd_toEndOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintEnd_toStartOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintGuide_begin" format="dimension" />
+    <attr name="layout_constraintGuide_end" format="dimension" />
+    <attr name="layout_constraintGuide_percent" format="float" />
+    <attr name="layout_constraintHeight_default">
+        <enum name="percent" value="2" />
+        <enum name="spread" value="0" />
+        <enum name="wrap" value="1" />
+    </attr>
+    <attr name="layout_constraintHeight_max" format="dimension">
+        <enum name="wrap" value="-2" />
+    </attr>
+    <attr name="layout_constraintHeight_min" format="dimension">
+        <enum name="wrap" value="-2" />
+    </attr>
+    <attr name="layout_constraintHeight_percent" format="float" />
+    <attr name="layout_constraintHorizontal_bias" format="float" />
+    <attr name="layout_constraintHorizontal_chainStyle">
+        <enum name="packed" value="2" />
+        <enum name="spread" value="0" />
+        <enum name="spread_inside" value="1" />
+    </attr>
+    <attr name="layout_constraintHorizontal_weight" format="float" />
+    <attr name="layout_constraintLeft_creator" format="integer" />
+    <attr name="layout_constraintLeft_toLeftOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintLeft_toRightOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintRight_creator" format="integer" />
+    <attr name="layout_constraintRight_toLeftOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintRight_toRightOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintStart_toEndOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintStart_toStartOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintTop_creator" format="integer" />
+    <attr name="layout_constraintTop_toBottomOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintTop_toTopOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintVertical_bias" format="float" />
+    <attr name="layout_constraintVertical_chainStyle">
+        <enum name="packed" value="2" />
+        <enum name="spread" value="0" />
+        <enum name="spread_inside" value="1" />
+    </attr>
+    <attr name="layout_constraintVertical_weight" format="float" />
+    <attr name="layout_constraintWidth_default">
+        <enum name="percent" value="2" />
+        <enum name="spread" value="0" />
+        <enum name="wrap" value="1" />
+    </attr>
+    <attr name="layout_constraintWidth_max" format="dimension">
+        <enum name="wrap" value="-2" />
+    </attr>
+    <attr name="layout_constraintWidth_min" format="dimension">
+        <enum name="wrap" value="-2" />
+    </attr>
+    <attr name="layout_constraintWidth_percent" format="float" />
+    <attr name="layout_dodgeInsetEdges">
+        <flag name="all" value="0x00000077" />
+        <flag name="bottom" value="0x00000050" />
+        <flag name="end" value="0x00800005" />
+        <flag name="left" value="0x00000003" />
+        <flag name="none" value="0x00000000" />
+        <flag name="right" value="0x00000005" />
+        <flag name="start" value="0x00800003" />
+        <flag name="top" value="0x00000030" />
+    </attr>
+    <attr name="layout_editor_absoluteX" format="dimension" />
+    <attr name="layout_editor_absoluteY" format="dimension" />
+    <attr name="layout_goneMarginBottom" format="dimension" />
+    <attr name="layout_goneMarginEnd" format="dimension" />
+    <attr name="layout_goneMarginLeft" format="dimension" />
+    <attr name="layout_goneMarginRight" format="dimension" />
+    <attr name="layout_goneMarginStart" format="dimension" />
+    <attr name="layout_goneMarginTop" format="dimension" />
+    <attr name="layout_insetEdge">
+        <enum name="bottom" value="80" />
+        <enum name="end" value="8388613" />
+        <enum name="left" value="3" />
+        <enum name="none" value="0" />
+        <enum name="right" value="5" />
+        <enum name="start" value="8388611" />
+        <enum name="top" value="48" />
+    </attr>
+    <attr name="layout_keyline" format="integer" />
+    <attr name="layout_optimizationLevel">
+        <flag name="barrier" value="0x00000002" />
+        <flag name="chains" value="0x00000004" />
+        <flag name="dimensions" value="0x00000008" />
+        <flag name="direct" value="0x00000001" />
+        <flag name="groups" value="0x00000020" />
+        <flag name="none" value="0x00000000" />
+        <flag name="standard" value="0x00000007" />
+    </attr>
+    <attr name="maxEms" format="integer" />
+    <attr name="maxFontScale" format="float" />
+    <attr name="modes" format="reference" />
+    <attr name="reverseLayout" format="boolean" />
+    <attr name="showArrow" format="boolean" />
+    <attr name="singleIcon" format="reference" />
+    <attr name="spanCount" format="integer" />
+    <attr name="stackFromEnd" format="boolean" />
+    <attr name="statusBarBackground" format="reference|color" />
+    <attr name="textColor" format="reference|color" />
+    <attr name="textOff" format="reference|string" />
+    <attr name="textOffColor" format="reference|color" />
+    <attr name="textOffShadowColor" format="reference|color" />
+    <attr name="textOffShadowRadius" format="reference|dimension" />
+    <attr name="textOn" format="reference|string" />
+    <attr name="textOnColor" format="reference|color" />
+    <attr name="textSize" format="reference|dimension" />
+    <attr name="thumbColor" format="reference|color" />
+    <attr name="thumbPadding" format="reference|dimension" />
+    <attr name="thumbShadowColor" format="reference|color" />
+    <attr name="thumbShadowRadius" format="reference|dimension" />
+    <attr name="ttcIndex" format="integer" />
+</resources>
