@@ -599,7 +599,11 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v5, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    const-string v5, "ro.product.vendor.device"
+
+    invoke-static {v5}, Lmiui/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
