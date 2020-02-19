@@ -3700,8 +3700,6 @@
 
     if-eqz p1, :cond_4
 
-    invoke-direct {p0}, Lcom/android/camera/Camera;->showFirstUseHintIfNeeded()V
-
     goto :goto_0
 
     :cond_4
@@ -5553,8 +5551,6 @@
     move-result v0
 
     if-eqz v0, :cond_0
-
-    invoke-direct {p0}, Lcom/android/camera/Camera;->showFirstUseHintIfNeeded()V
 
     :cond_0
     iget-object p0, p0, Lcom/android/camera/Camera;->TAG:Ljava/lang/String;
