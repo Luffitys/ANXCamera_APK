@@ -790,7 +790,7 @@ Keep the subject sharp while blurring the background."</string>
     <string name="pref_camera_manual_mode_title">Manual</string>
     <string name="pref_camera_manually_exposure_value_abbr">EV</string>
     <string name="pref_camera_mfnr_sat_enable_title">Turn on MFNR</string>
-    <string name="pref_camera_movie_solid_default">true</string>
+    <string name="pref_camera_movie_solid_default">false</string>
     <string name="pref_camera_movie_solid_title">Image stabilization</string>
     <string name="pref_camera_multilevel_entry_high">High</string>
     <string name="pref_camera_multilevel_entry_higher">Higher</string>

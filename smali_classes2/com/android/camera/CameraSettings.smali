@@ -8457,15 +8457,17 @@
     invoke-virtual {v0, v2, v1}, Lcom/android/camera/data/data/DataItemBase;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
+	
+	xor-int/lit8 v0, v0, 0x1
 
     if-eqz v0, :cond_0
 
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     :goto_0
     return v0
