@@ -1861,26 +1861,11 @@
 .end method
 
 .method public Tc()Z
-    .locals 2
-
-    const/4 v0, 0x0
-
-    const-string v1, "c_0x37"
-
-    invoke-virtual {p0, v1, v0}, Lcom/android/camera/data/data/DataItemBase;->getBoolean(Ljava/lang/String;Z)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
-
-    sget-boolean p0, Lmiui/os/Build;->IS_INTERNATIONAL_BUILD:Z
-
-    if-nez p0, :cond_0
-
-    const/4 v0, 0x1
-
-    :cond_0
-    return v0
+	.locals 1
+	
+	const/4 v0, 0x0
+	
+	return v0
 .end method
 
 .method public Td()Z
