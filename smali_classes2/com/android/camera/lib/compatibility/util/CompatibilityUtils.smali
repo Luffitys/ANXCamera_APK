@@ -98,7 +98,7 @@
 .end method
 
 .method public static createStreamConfigMap(Ljava/util/List;Landroid/hardware/camera2/CameraCharacteristics;)Landroid/hardware/camera2/params/StreamConfigurationMap;
-    .locals 0
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -110,10 +110,25 @@
             "Landroid/hardware/camera2/params/StreamConfigurationMap;"
         }
     .end annotation
+	
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1d
+
+    if-lt v0, v1, :cond_1
 
     invoke-static {p0, p1}, Lcom/android/camera/lib/compatibility/related/v29/V29Utils;->createStreamConfigMap(Ljava/util/List;Landroid/hardware/camera2/CameraCharacteristics;)Landroid/hardware/camera2/params/StreamConfigurationMap;
 
     move-result-object p0
+	
+    goto :goto_1
+
+    :cond_1
+    invoke-static {p0, p1}, Lcom/android/camera/lib/compatibility/related/v28/V28Utils;->createStreamConfigMap(Ljava/util/List;Landroid/hardware/camera2/CameraCharacteristics;)Landroid/hardware/camera2/params/StreamConfigurationMap;
+
+    move-result-object p0
+
+    :goto_1
 
     return-object p0
 .end method
@@ -189,11 +204,23 @@
 .end method
 
 .method public static getScaledMinimumScalingSpan(Landroid/content/Context;)I
-    .locals 0
+    .locals 2
+
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1d
+
+    if-lt v0, v1, :cond_1
 
     invoke-static {p0}, Lcom/android/camera/lib/compatibility/related/v29/V29Utils;->getScaledMinimumScalingSpan(Landroid/content/Context;)I
 
     move-result p0
+    goto :goto_1
+
+    :cond_1
+    const/16 p0, 0x0
+
+    :goto_1
 
     return p0
 .end method
