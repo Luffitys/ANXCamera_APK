@@ -3132,14 +3132,6 @@
     return p0
 .end method
 
-.method public is4K60FpsEISSupported()Z
-    .locals 1
-	
-	const/4 v0, 0x1
-	
-	return v0
-.end method
-
 .method public isCinematicPhotoSupported()Z
     .locals 2
 

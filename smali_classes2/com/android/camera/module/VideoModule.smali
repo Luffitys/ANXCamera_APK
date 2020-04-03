@@ -1599,17 +1599,11 @@
 .end method
 
 .method private is4K60FpsEISSupported()Z
-    .locals 1
+    .locals 0
 
-    invoke-static {}, Lcom/android/camera/data/DataRepository;->dataItemFeature()Lcom/mi/config/a;
+    const/4 p0, 0x0
 
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/mi/config/a;->is4K60FpsEISSupported()Z
-
-    move-result v0
-
-    return v0
+    return p0
 .end method
 
 .method private is8KCamcorder()Z
