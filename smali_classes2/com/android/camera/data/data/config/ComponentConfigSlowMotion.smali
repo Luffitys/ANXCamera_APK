@@ -286,7 +286,9 @@
 
     if-eqz p1, :cond_0
 
-    filled-new-array {v2, v1}, [Ljava/lang/String;
+    const-string p1, "slow_motion_960"
+
+    filled-new-array {p1, v1, v2}, [Ljava/lang/String;
 
     move-result-object p1
 
