@@ -99,7 +99,7 @@
     "c_28041_0x0000": "0.6:1.0:2.0",
     "c_28041_0x0001": true,
     "c_22756_0x0001": "1.0:2.0",
-    "c_19039_0x0005": "1",
+    "c_19039_0x0005": 1,
     "c_9006_0x0002": true,
     "c_0x43": false,
     "c_0x44": false,
@@ -123,5 +123,6 @@
     "o_0x06_is_support_peaking_mf": true,
     "o_0x12_magic_mirror": false,
     "o_0x13_age_detection": false,
-    "o_0x18_support_camera_quick_snap": true
+    "o_0x18_support_camera_quick_snap": true,
+  "c_19039_0x0004": "2:9248x6944"
 }
