@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="com.android.camera" platformBuildVersionCode="30" platformBuildVersionName="11">
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="6" android:versionName="4.3" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="com.android.camera" platformBuildVersionCode="30" platformBuildVersionName="11"><uses-sdk android:minSdkVersion="30" android:targetSdkVersion="@integer/target_sdk_version"/>
     <original-package android:name="com.android.camera"/>
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-feature android:name="android.hardware.camera"/>
@@ -52,8 +52,8 @@
         <meta-data android:name="required_permissions" android:value="@string/required_permissions"/>
         <meta-data android:name="android.max_aspect" android:value="2.3"/>
         <uses-library android:name="zxing.jar" android:required="false"/>
-        <uses-library android:name="cloud-common.jar"/>
-        <uses-library android:name="volley.jar"/>
+        <uses-library android:name="cloud-common.jar" android:required="false"/>
+        <uses-library android:name="volley.jar" android:required="false"/>
         <service android:exported="false" android:name="com.android.camera.snap.SnapService"/>
         <service android:name="com.android.camera.statistic.SettingUploadJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
         <receiver android:name="com.android.camera.snap.SnapKeyReceiver" android:permission="com.xiaomi.camera.AUX_CONTROL">
