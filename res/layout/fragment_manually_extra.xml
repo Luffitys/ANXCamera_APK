@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/manual_extra_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/manually_extra_horizontal_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/manual_extra_horizontal_layout_margin_bottom">
+        <com.android.camera.ui.HorizontalZoomView android:id="@id/manually_extra_horizontal_view" android:paddingLeft="@dimen/manual_extra_horizontal_view_padding_left" android:paddingRight="@dimen/manual_extra_horizontal_view_padding_left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" app:center_y_marginbottom="@dimen/manual_extra_horizontal_view_margin_bottom" />
+        <com.android.camera.ui.ColorImageView android:id="@id/manually_extra_auto_button" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/manual_extra_imageview_margin_left" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="bottom|center" android:id="@id/manually_extra_list" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/manual_extra_recyclerview_height" android:layout_marginBottom="@dimen/manual_extra_recyclerview_margin_bottom" android:nestedScrollingEnabled="false" />
+</FrameLayout>

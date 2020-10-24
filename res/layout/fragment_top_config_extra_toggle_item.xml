@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/top_config_extra_toggle_paddingtop" android:focusable="false" android:layout_width="fill_parent" android:layout_height="@dimen/top_config_extra_toggle_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/extra_tootle_item_layout" android:layout_width="@dimen/top_config_extra_toggle_imagesize" android:layout_height="@dimen/top_config_extra_toggle_imagesize">
+        <com.android.camera.ui.ColorCircleBackgroundView android:id="@id/extra_tootle_item_image_bg" android:layout_width="@dimen/top_config_extra_toggle_imagesize" android:layout_height="@dimen/top_config_extra_toggle_imagesize" android:scaleType="center" />
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/extra_tootle_item_image" android:layout_width="@dimen/top_config_extra_toggle_imagesize" android:layout_height="@dimen/top_config_extra_toggle_imagesize" android:scaleType="center" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/rl_item_top_config_description" android:layout_width="90.0dip" android:layout_height="@dimen/top_config_extra_toggle_text_height">
+        <TextView android:textSize="@dimen/config_extra_item_text_size" android:textColor="#bfffffff" android:ellipsize="marquee" android:id="@id/extra_tootle_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/top_config_extra_toggle_text_margintop" android:singleLine="true" android:layout_centerInParent="true" android:marqueeRepeatLimit="marquee_forever" />
+        <ImageView android:id="@id/iv_tag_config" android:background="@drawable/vector_drawable_right_angle_timer_burst" android:layout_width="9.0dip" android:layout_height="9.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="@dimen/top_config_extra_toggle_tag_margintop" android:layout_toRightOf="@id/extra_tootle_item_text" />
+    </RelativeLayout>
+</LinearLayout>

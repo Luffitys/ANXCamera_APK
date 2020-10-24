@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/manua_desc_icon_size" android:width="@dimen/manua_desc_icon_size" android:viewportWidth="74.0" android:viewportHeight="74.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#ffd8d8d8" android:pathData="M10,10h54v54h-54z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillAlpha="0.0" android:fillType="evenOdd" />
+    <path android:fillColor="#ffffffff" android:pathData="M22,19C22,18.4477 22.4477,18 23,18L41.7273,18C47.953,18 53,23.2607 53,29.75C53,34.4517 50.3507,38.5084 46.5232,40.3866L53.1778,54.6568L53.167,54.6633C53.2634,54.8012 53.32,54.969 53.32,55.15C53.32,55.6194 52.9394,56 52.47,56L47.6938,55.9998C47.2723,55.9493 46.9302,55.6443 46.8299,55.2436L40.422,41.5L28,41.5L28,55.1C28,55.5971 27.5971,56 27.1,56L22.9,56C22.4029,56 22,55.5971 22,55.1L22,19ZM41.2173,24.0001L27.9999,24L27.9999,35.4999L41.2173,35.5C44.4109,35.5 46.9999,32.9257 46.9999,29.7501C46.9999,26.6406 44.5177,24.1076 41.4161,24.0034L41.2173,24.0001Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+</vector>

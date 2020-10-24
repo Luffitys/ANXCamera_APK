@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_focus_face_detect">
+        <item quantity="other">"Enfocat. S'ha detectat %d cares"</item>
+        <item quantity="one">"Enfocat. S'ha detectat %d cara"</item>
+    </plurals>
+    <plurals name="accessibility_timer_burst_count">
+        <item quantity="other">%d fotos en un tret de explosió</item>
+        <item quantity="one">%d foto en un tret de ràfega</item>
+    </plurals>
+    <plurals name="accessibility_timer_burst_interval">
+        <item quantity="other">Interval: %d segons</item>
+        <item quantity="one">Interval: %d segons</item>
+    </plurals>
+    <plurals name="accessibility_vv_duartion">
+        <item quantity="other">Durada: %d segons</item>
+        <item quantity="one">Durada: %d segon</item>
+    </plurals>
+    <plurals name="clone_guide_tip2">
+        <item quantity="other">Podeu crear fins a %d clons alhora.</item>
+        <item quantity="one">Podeu crear fins a %d clon alhora.</item>
+    </plurals>
+    <plurals name="pref_camera_fastmotion_duration_unit">
+        <item quantity="other">%1$s min</item>
+        <item quantity="one">%1$s min</item>
+    </plurals>
+    <plurals name="timer_burst_setting_total_count">
+        <item quantity="other">%1$s fotos</item>
+        <item quantity="one">%1$s foto</item>
+    </plurals>
+    <plurals name="toast_burst_snap_finished_summary">
+        <item quantity="other">"Ràfega finalitzada, s'han fet %1$s fotos"</item>
+        <item quantity="one">"Ràfega finalitzada, s'ha fet %1$s foto"</item>
+    </plurals>
+</resources>

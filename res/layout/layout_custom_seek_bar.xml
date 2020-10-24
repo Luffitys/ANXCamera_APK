@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_seek_scale" android:layout_width="fill_parent" android:layout_height="@dimen/seek_bar_timer_rl_seek_scale" android:paddingStart="5.0dip" android:paddingEnd="@dimen/seek_bar_timer_tv_end_margin">
+        <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/color_BFFFFFFF" android:gravity="center" android:id="@id/tv_start" android:layout_width="@dimen/seek_bar_timer_circle_current_tv" android:layout_height="wrap_content" android:text="5s" />
+        <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/color_FFFFCE16" android:gravity="center" android:id="@id/tv_current" android:layout_width="@dimen/seek_bar_timer_circle_current_tv" android:layout_height="wrap_content" android:text="20s" />
+        <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/color_BFFFFFFF" android:gravity="center" android:id="@id/tv_end" android:layout_width="@dimen/seek_bar_timer_circle_current_tv" android:layout_height="wrap_content" android:text="60s" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_seek_container" android:background="@drawable/shape_outter_radius" android:layout_width="fill_parent" android:layout_height="@dimen/seek_bar_timer_rl_seek_container_height" android:layout_marginLeft="@dimen/seek_bar_timer_rl_seek_container_margin_horizontal" android:layout_marginRight="@dimen/seek_bar_timer_rl_seek_container_margin_horizontal" android:layout_below="@id/rl_seek_scale">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_seek_inner_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_seek_inner" android:layout_width="wrap_content" android:layout_height="@dimen/seek_bar_timer_inner_low_height" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <com.android.camera.timerburst.CircleFullImageView android:id="@id/iv_circle" android:layout_width="@dimen/seek_bar_timer_inner_high_height" android:layout_height="@dimen/seek_bar_timer_inner_high_height" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

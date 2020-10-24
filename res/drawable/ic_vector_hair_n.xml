@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/beautycamera_makeup_icon_height" android:width="@dimen/beautycamera_makeup_icon_height" android:viewportWidth="70.0" android:viewportHeight="70.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#00000000" android:pathData="M35,35m-22,0a22,22 0,1 1,44 0a22,22 0,1 1,-44 0" android:strokeColor="#ffffffff" android:strokeWidth="5.0" android:fillType="evenOdd" />
+    <group>
+        <clip-path android:pathData="M35,35m-24.5,0a24.5,24.5 0,1 1,49 0a24.5,24.5 0,1 1,-49 0" />
+        <path android:fillColor="#00000000" android:pathData="M48.9192,-0.5C44.3649,-0.5 40.0852,1.2132 36.8135,4.2474L35.1135,5.824L33.4136,4.2474C30.1418,1.2132 25.8621,-0.5 21.3079,-0.5C11.4729,-0.5 3.5,7.4729 3.5,17.3079C3.5,27.1429 11.4729,35.1157 21.3079,35.1157C25.8621,35.1157 30.1418,33.4025 33.4135,30.3683L35.1135,28.7917L36.8135,30.3683C40.0852,33.4025 44.3649,35.1157 48.9192,35.1157C58.7542,35.1157 66.7271,27.1429 66.7271,17.3079C66.7271,7.4729 58.7542,-0.5 48.9192,-0.5Z" android:strokeColor="#ffffffff" android:strokeWidth="5.0" android:fillType="evenOdd" />
+    </group>
+</vector>

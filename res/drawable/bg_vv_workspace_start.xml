@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@color/vv_dialog_button_positive_bg" android:endColor="@color/vv_dialog_button_positive_bg" android:angle="0.0" />
+    <corners android:topLeftRadius="@dimen/vv_workspace_shot_radius" android:topRightRadius="@dimen/vv_workspace_shot_radius" android:bottomLeftRadius="@dimen/vv_workspace_shot_radius" android:bottomRightRadius="@dimen/vv_workspace_shot_radius" />
+</shape>

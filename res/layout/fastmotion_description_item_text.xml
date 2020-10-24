@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/fastmotion_description_item_text" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fastmotion_description_item_text_margin_top" android:layout_marginBottom="@dimen/fastmotion_description_text_margin_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/fastmotion_description_text_title_size" android:textColor="@color/white" android:id="@id/fastmotion_description_item_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="mipro-regular" />
+    <TextView android:textSize="@dimen/fastmotion_description_text_description_size" android:textColor="@color/white_alpha_60" android:id="@id/fastmotion_description_item_text_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fastmotion_description_item_text_desc_margin_top" android:lineSpacingExtra="@dimen/fastmotion_description_text_description_line_gap" android:fontFamily="sans-serif-light" android:letterSpacing="0.03" />
+</LinearLayout>

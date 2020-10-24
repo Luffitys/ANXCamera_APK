@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_focus_face_detect">
+        <item quantity="other">对焦完成，检测到%d张人脸</item>
+        <item quantity="one">对焦完成，检测到%d张人脸</item>
+    </plurals>
+    <plurals name="accessibility_timer_burst_count">
+        <item quantity="other">拍摄张数%d张</item>
+    </plurals>
+    <plurals name="accessibility_timer_burst_interval">
+        <item quantity="other">时间间隔%d秒</item>
+    </plurals>
+    <plurals name="accessibility_vv_duartion">
+        <item quantity="other">录制时间%d秒</item>
+    </plurals>
+    <plurals name="clone_guide_tip2">
+        <item quantity="other">最多支持%d个分身</item>
+        <item quantity="one">最多支持%d个分身</item>
+    </plurals>
+    <plurals name="fastmotion_pro_min_unit">
+        <item quantity="other">%1$d分</item>
+    </plurals>
+    <plurals name="fastmotion_pro_sec_unit">
+        <item quantity="other">%1$d秒</item>
+    </plurals>
+    <plurals name="live_workspace_delete_dialog_title">
+        <item quantity="other">是否删除%1$d项草稿？</item>
+    </plurals>
+    <plurals name="pref_camera_fastmotion_duration_unit">
+        <item quantity="other">%1$s分钟</item>
+    </plurals>
+    <plurals name="timer_burst_setting_total_count">
+        <item quantity="other">%1$s张</item>
+        <item quantity="one">%1$s张</item>
+    </plurals>
+    <plurals name="toast_burst_snap_finished_summary">
+        <item quantity="other">连拍结束, 共计拍摄 %1$s 张图片.</item>
+        <item quantity="one">连拍结束, 共计拍摄 %1$s 张图片.</item>
+    </plurals>
+</resources>

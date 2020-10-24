@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/lpl_dialog_icon_margin_top">
+        <LinearLayout android:orientation="vertical" android:id="@id/lpl_item_burst" android:layout_width="@dimen/lpl_dialog_item_width" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="center" android:id="@id/lpl_icon_burst" android:background="@drawable/bg_lpl_dialog_icon" android:padding="@dimen/lpl_dialog_icon_padding" android:layout_width="@dimen/lpl_dialog_icon_size" android:layout_height="@dimen/lpl_dialog_icon_size" android:src="@drawable/ic_lp_burst" android:contentDescription="@string/lpl_dialog_item_name_burst" />
+            <com.android.camera.ui.AdaptiveTextView android:textSize="@dimen/lpl_dialog_icon_name" android:textColor="@color/lpl_dialog_title_color" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/lpl_icon_name_burst" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/lpl_dialog_icon_margin_bottom" android:text="@string/lpl_dialog_item_name_burst" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+        <View android:visibility="invisible" android:layout_width="@dimen/lpl_dialog_gap_center" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/lpl_item_record" android:layout_width="@dimen/lpl_dialog_item_width" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="center" android:id="@id/lpl_icon_record" android:background="@drawable/bg_lpl_dialog_icon" android:padding="@dimen/lpl_dialog_icon_padding" android:layout_width="@dimen/lpl_dialog_icon_size" android:layout_height="@dimen/lpl_dialog_icon_size" android:src="@drawable/ic_lp_record" android:contentDescription="@string/lpl_dialog_item_name_record" />
+            <com.android.camera.ui.AdaptiveTextView android:textSize="@dimen/lpl_dialog_icon_name" android:textColor="@color/lpl_dialog_title_color" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center" android:id="@id/lpl_icon_name_record" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/lpl_dialog_icon_margin_bottom" android:text="@string/lpl_dialog_item_name_record" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

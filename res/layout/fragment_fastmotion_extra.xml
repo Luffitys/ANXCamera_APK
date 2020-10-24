@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/manual_extra_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/manually_extra_horizontal_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/manual_extra_horizontal_layout_margin_bottom">
+        <com.android.camera.ui.HorizontalZoomView android:id="@id/manually_extra_horizontal_view" android:paddingLeft="@dimen/manual_extra_horizontal_view_padding_left" android:paddingRight="@dimen/manual_extra_horizontal_view_padding_left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" app:center_y_marginbottom="@dimen/manual_extra_horizontal_view_margin_bottom" />
+    </RelativeLayout>
+</FrameLayout>

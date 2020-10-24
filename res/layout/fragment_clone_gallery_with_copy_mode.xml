@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/clone_list_item_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/clone_list_item_paddingHorizontal_3_column"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/clone_list_item_image_width_3_column" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:id="@id/clone_photo_layout" android:layout_width="fill_parent" android:layout_height="@dimen/clone_list_item_image_height_3_column" android:paddingEnd="0.0dip" app:cardBackgroundColor="@color/fullscreen_background" app:cardElevation="0.0dip">
+            <ImageView android:id="@id/clone_photo_mode" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/clone_photo_mode_bg" android:scaleType="fitXY" android:contentDescription="@null" />
+            <ImageView android:id="@id/clone_photo_mode_indicator" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/clone_mode_item_selected_bg" android:scaleType="fitXY" android:contentDescription="@null" />
+            <TextView android:textSize="13.099976sp" android:textColor="@color/white" android:layout_gravity="start|bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/clone_list_item_text_margin_bottom" android:text="@string/clone_photo_mode" android:shadowColor="#66000000" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_marginStart="@dimen/clone_list_item_text_margin_start" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <View android:layout_width="@dimen/clone_list_item_spacer_item_width_3_column" android:layout_height="0.0px" />
+    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/clone_list_item_image_width_3_column" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:id="@id/clone_video_layout" android:layout_width="fill_parent" android:layout_height="@dimen/clone_list_item_image_height_3_column" android:paddingStart="0.0dip" app:cardBackgroundColor="@color/fullscreen_background" app:cardElevation="0.0dip">
+            <com.android.camera.ui.TextureVideoView android:id="@id/clone_video_video_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+            <ImageView android:id="@id/clone_video_mode" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/clone_video_mode_bg" android:scaleType="fitXY" android:contentDescription="@null" />
+            <ImageView android:id="@id/clone_video_mode_indicator" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/clone_mode_item_selected_bg" android:scaleType="fitXY" android:contentDescription="@null" />
+            <TextView android:textSize="13.099976sp" android:textColor="@color/white" android:layout_gravity="start|bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/clone_list_item_text_margin_bottom" android:text="@string/clone_video_mode" android:shadowColor="#66000000" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_marginStart="@dimen/clone_list_item_text_margin_start" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <View android:layout_width="@dimen/clone_list_item_spacer_item_width_3_column" android:layout_height="0.0px" />
+    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/clone_list_item_image_width_3_column" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:id="@id/clone_copy_layout" android:layout_width="fill_parent" android:layout_height="@dimen/clone_list_item_image_height_3_column" android:paddingStart="0.0dip" app:cardBackgroundColor="@color/fullscreen_background" app:cardElevation="0.0dip">
+            <com.android.camera.ui.TextureVideoView android:id="@id/clone_copy_video_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+            <ImageView android:id="@id/clone_copy_mode" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/clone_copy_mode_bg" android:scaleType="fitXY" android:contentDescription="@null" />
+            <ImageView android:id="@id/clone_copy_mode_indicator" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/clone_mode_item_selected_bg" android:scaleType="fitXY" android:contentDescription="@null" />
+            <TextView android:textSize="13.099976sp" android:textColor="@color/white" android:layout_gravity="start|bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/clone_list_item_text_margin_bottom" android:text="@string/clone_copy_mode" android:shadowColor="#66000000" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_marginStart="@dimen/clone_list_item_text_margin_start" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

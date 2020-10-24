@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/parameter_description_adapter_layout_margin_top">
+        <ImageView android:id="@id/parameter_description_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/parameter_description_icon_margin_left" />
+        <TextView android:textSize="@dimen/parameter_description_item_title_text_size" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/parameter_description_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/parameter_description_item_title_margin_left" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/parameter_description_item_content_text_size" android:textColor="@color/white_alpha_60" android:id="@id/parameter_description_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/parameter_description_item_content_margin_top" android:layout_marginBottom="@dimen/parameter_description_item_content_margin_bottom" android:lineSpacingExtra="@dimen/parameter_description_item_content_line_space" android:layout_marginStart="@dimen/parameter_description_item_content_margin_left" android:layout_marginEnd="@dimen/parameter_description_item_content_margin_end" />
+</LinearLayout>

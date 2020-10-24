@@ -1,0 +1,53 @@
+.class public Lcom/android/camera/fragment/beauty/EyeLightSingleCheckAdapter$EyeLightItem;
+.super Ljava/lang/Object;
+.source ""
+
+
+# instance fields
+.field private mImageResource:I
+
+.field private mTextResource:I
+
+.field private mType:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;II)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput p2, p0, Lcom/android/camera/fragment/beauty/EyeLightSingleCheckAdapter$EyeLightItem;->mImageResource:I
+
+    iput p3, p0, Lcom/android/camera/fragment/beauty/EyeLightSingleCheckAdapter$EyeLightItem;->mTextResource:I
+
+    iput-object p1, p0, Lcom/android/camera/fragment/beauty/EyeLightSingleCheckAdapter$EyeLightItem;->mType:Ljava/lang/String;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getImageResource()I
+    .locals 0
+
+    iget p0, p0, Lcom/android/camera/fragment/beauty/EyeLightSingleCheckAdapter$EyeLightItem;->mImageResource:I
+
+    return p0
+.end method
+
+.method public getTextResource()I
+    .locals 0
+
+    iget p0, p0, Lcom/android/camera/fragment/beauty/EyeLightSingleCheckAdapter$EyeLightItem;->mTextResource:I
+
+    return p0
+.end method
+
+.method public getType()Ljava/lang/String;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/camera/fragment/beauty/EyeLightSingleCheckAdapter$EyeLightItem;->mType:Ljava/lang/String;
+
+    return-object p0
+.end method

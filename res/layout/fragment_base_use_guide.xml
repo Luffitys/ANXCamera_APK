@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#f2000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="end" android:id="@id/clone_guide_back" android:focusable="false" android:layout_width="@dimen/clone_guide_back_width" android:layout_height="fill_parent" android:src="@drawable/ic_back" android:contentDescription="@string/mimoji_back" android:layout_marginEnd="@dimen/clone_guide_back_margin_end" style="@style/PanelRotateImageViewStyle" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/clone_guide_recyclerView" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,104 @@
+.class final Lio/reactivex/internal/operators/maybe/MaybeFlatMapBiSelector$FlatMapBiMainObserver$InnerObserver;
+.super Ljava/util/concurrent/atomic/AtomicReference;
+.source ""
+
+# interfaces
+.implements Lio/reactivex/MaybeObserver;
+
+
+# static fields
+.field private static final serialVersionUID:J = -0x2837b1063a0ed65fL
+
+
+# instance fields
+.field final actual:Lio/reactivex/MaybeObserver;
+
+.field final resultSelector:Lio/reactivex/functions/BiFunction;
+
+.field value:Ljava/lang/Object;
+
+
+# direct methods
+.method constructor <init>(Lio/reactivex/MaybeObserver;Lio/reactivex/functions/BiFunction;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+
+    iput-object p1, p0, Lio/reactivex/internal/operators/maybe/MaybeFlatMapBiSelector$FlatMapBiMainObserver$InnerObserver;->actual:Lio/reactivex/MaybeObserver;
+
+    iput-object p2, p0, Lio/reactivex/internal/operators/maybe/MaybeFlatMapBiSelector$FlatMapBiMainObserver$InnerObserver;->resultSelector:Lio/reactivex/functions/BiFunction;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onComplete()V
+    .locals 0
+
+    iget-object p0, p0, Lio/reactivex/internal/operators/maybe/MaybeFlatMapBiSelector$FlatMapBiMainObserver$InnerObserver;->actual:Lio/reactivex/MaybeObserver;
+
+    invoke-interface {p0}, Lio/reactivex/MaybeObserver;->onComplete()V
+
+    return-void
+.end method
+
+.method public onError(Ljava/lang/Throwable;)V
+    .locals 0
+
+    iget-object p0, p0, Lio/reactivex/internal/operators/maybe/MaybeFlatMapBiSelector$FlatMapBiMainObserver$InnerObserver;->actual:Lio/reactivex/MaybeObserver;
+
+    invoke-interface {p0, p1}, Lio/reactivex/MaybeObserver;->onError(Ljava/lang/Throwable;)V
+
+    return-void
+.end method
+
+.method public onSubscribe(Lio/reactivex/disposables/Disposable;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Lio/reactivex/internal/disposables/DisposableHelper;->setOnce(Ljava/util/concurrent/atomic/AtomicReference;Lio/reactivex/disposables/Disposable;)Z
+
+    return-void
+.end method
+
+.method public onSuccess(Ljava/lang/Object;)V
+    .locals 2
+
+    iget-object v0, p0, Lio/reactivex/internal/operators/maybe/MaybeFlatMapBiSelector$FlatMapBiMainObserver$InnerObserver;->value:Ljava/lang/Object;
+
+    const/4 v1, 0x0
+
+    iput-object v1, p0, Lio/reactivex/internal/operators/maybe/MaybeFlatMapBiSelector$FlatMapBiMainObserver$InnerObserver;->value:Ljava/lang/Object;
+
+    :try_start_0
+    iget-object v1, p0, Lio/reactivex/internal/operators/maybe/MaybeFlatMapBiSelector$FlatMapBiMainObserver$InnerObserver;->resultSelector:Lio/reactivex/functions/BiFunction;
+
+    invoke-interface {v1, v0, p1}, Lio/reactivex/functions/BiFunction;->apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    const-string v0, "The resultSelector returned a null value"
+
+    invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    iget-object p0, p0, Lio/reactivex/internal/operators/maybe/MaybeFlatMapBiSelector$FlatMapBiMainObserver$InnerObserver;->actual:Lio/reactivex/MaybeObserver;
+
+    invoke-interface {p0, p1}, Lio/reactivex/MaybeObserver;->onSuccess(Ljava/lang/Object;)V
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    invoke-static {p1}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
+
+    iget-object p0, p0, Lio/reactivex/internal/operators/maybe/MaybeFlatMapBiSelector$FlatMapBiMainObserver$InnerObserver;->actual:Lio/reactivex/MaybeObserver;
+
+    invoke-interface {p0, p1}, Lio/reactivex/MaybeObserver;->onError(Ljava/lang/Throwable;)V
+
+    return-void
+.end method

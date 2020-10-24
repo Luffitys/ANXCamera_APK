@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_gif_full_screen_consume_click" android:background="@color/black" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="right" android:id="@id/rv_top_navigation_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_gif_top_navigation_height" android:layout_marginTop="@dimen/dimen_gif_top_navigation_layout_layout_marginTop" android:layout_marginRight="@dimen/dimen_gif_top_navigation_layout_margin_horizontal" android:layout_alignParentStart="true">
+        <LinearLayout android:gravity="center|right" android:id="@id/ll_gif_share" android:layout_width="@dimen/dimen_gif_iv_gif_share_ll_layout_width" android:layout_height="@dimen/dimen_gif_iv_gif_share_ll_layout_height" android:layout_marginTop="12.72998dip">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_new_config_gif_share" android:scaleType="centerInside" android:layout_alignParentRight="true" android:contentDescription="@string/live_edit_share_title" />
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/ll_operate_gif_words" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextureView android:id="@id/gif_texture_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/accessibility_preview_button" />
+            <ImageView android:id="@id/image_mimoji_cover" android:background="@color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/concat_mimoji_progress" android:background="@drawable/bg_thumbnail_background_full" android:padding="15.0dip" android:layout_width="@dimen/bottom_snap_progress_width" android:layout_height="@dimen/bottom_snap_progress_width" android:indeterminateDrawable="@drawable/live_share_progress" android:indeterminateDuration="700" android:contentDescription="@string/accessibility_live_music_loading_button" style="?android:progressBarStyleLarge" />
+        </FrameLayout>
+        <com.android.camera.features.gif.GifEditLayout android:layout_gravity="bottom|center" android:id="@id/fl_edit_gif" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="18.199982dip" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/rl_operate_gif_bottom_panel" android:paddingTop="58.899994dip" android:paddingBottom="@dimen/dimen_gif_rl_operate_gif_bottom_panel_marginBottom" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_gif_rl_operate_gif_bottom_panel_height" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_fuc_opera" android:paddingLeft="@dimen/dimen_gif_ll_fuc_opera_padding_horizontal" android:paddingRight="@dimen/dimen_gif_ll_fuc_opera_padding_horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <LinearLayout android:gravity="center" android:id="@id/ll_clear_bg_out" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll_clear_bg" android:background="@drawable/bg_btn_mimoji_edit_black" android:layout_width="@dimen/dimen_gif_ll_clear_bg_width" android:layout_height="@dimen/dimen_gif_ll_clear_bg_height">
+                    <ImageView android:id="@id/iv_clear_bg" android:background="@drawable/ic_vector_gif_clear_bg" android:padding="@dimen/dimen_gif_iv_clear_bg_padding" android:layout_width="@dimen/dimen_gif_iv_clear_bg_width" android:layout_height="@dimen/dimen_gif_iv_clear_bg_height" android:scaleType="center" />
+                    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/tv_clear_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_gif_tv_clear_bg_marginTop" android:text="@string/mimoji_gif_clear_bg" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_accelerate" android:background="@drawable/bg_btn_mimoji_edit_black" android:layout_width="@dimen/dimen_gif_ll_clear_bg_width" android:layout_height="@dimen/dimen_gif_ll_clear_bg_height">
+                    <ImageView android:id="@id/iv_accelerate" android:background="@drawable/ic_vector_gif_accelerate" android:padding="@dimen/dimen_gif_iv_clear_bg_padding" android:layout_width="@dimen/dimen_gif_iv_clear_bg_width" android:layout_height="@dimen/dimen_gif_iv_clear_bg_height" android:scaleType="center" />
+                    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/tv_accelerate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_gif_tv_clear_bg_marginTop" android:text="@string/mimoji_gif_accelerate" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_reverse" android:background="@drawable/bg_btn_mimoji_edit_black" android:layout_width="@dimen/dimen_gif_ll_clear_bg_width" android:layout_height="@dimen/dimen_gif_ll_clear_bg_height">
+                    <ImageView android:id="@id/iv_reverse" android:background="@drawable/ic_vector_gif_reverse" android:padding="@dimen/dimen_gif_iv_clear_bg_padding" android:layout_width="@dimen/dimen_gif_iv_clear_bg_width" android:layout_height="@dimen/dimen_gif_iv_clear_bg_height" android:scaleType="center" />
+                    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/tv_reverse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_gif_tv_clear_bg_marginTop" android:text="@string/mimoji_gif_reverse" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_fuc_opera2" android:paddingLeft="@dimen/dimen_gif_ll_fuc_opera_padding_horizontal" android:paddingRight="@dimen/dimen_gif_ll_fuc_opera_padding_horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_accelerate2" android:background="@drawable/bg_btn_mimoji_edit_black" android:layout_width="@dimen/dimen_gif_ll_clear_bg_width" android:layout_height="@dimen/dimen_gif_ll_clear_bg_height">
+                    <ImageView android:id="@id/iv_accelerate2" android:background="@drawable/ic_vector_gif_accelerate" android:padding="@dimen/dimen_gif_iv_clear_bg_padding" android:layout_width="@dimen/dimen_gif_iv_clear_bg_width" android:layout_height="@dimen/dimen_gif_iv_clear_bg_height" android:scaleType="center" />
+                    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/tv_accelerate2" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_gif_tv_clear_bg_height" android:layout_marginTop="@dimen/dimen_gif_tv_clear_bg_marginTop" android:text="@string/mimoji_gif_accelerate" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_reverse2" android:background="@drawable/bg_btn_mimoji_edit_black" android:layout_width="@dimen/dimen_gif_ll_clear_bg_width" android:layout_height="@dimen/dimen_gif_ll_clear_bg_height">
+                    <ImageView android:id="@id/iv_reverse2" android:background="@drawable/ic_vector_gif_reverse" android:padding="@dimen/dimen_gif_iv_clear_bg_padding" android:layout_width="@dimen/dimen_gif_iv_clear_bg_width" android:layout_height="@dimen/dimen_gif_iv_clear_bg_height" android:scaleType="center" />
+                    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/tv_reverse2" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_gif_tv_clear_bg_height" android:layout_marginTop="@dimen/dimen_gif_tv_clear_bg_marginTop" android:text="@string/mimoji_gif_reverse" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/rv_bottom_navigation_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_gif_rv_bottom_navigation_layout_height" android:layout_marginLeft="@dimen/dimen_gif_rv_bottom_navigation_layout_margin_horizontal" android:layout_marginRight="@dimen/dimen_gif_rv_bottom_navigation_layout_margin_horizontal" android:layout_alignParentBottom="true">
+            <ImageView android:gravity="center" android:id="@id/iv_gif_back" android:layout_width="@dimen/dimen_gif_rv_bottom_navigation_layout_height" android:layout_height="@dimen/dimen_gif_rv_bottom_navigation_layout_height" android:src="@drawable/bg_git_cancel" android:contentDescription="@string/accessibility_live_edit_exit_button" />
+            <TextView android:textSize="18.179993sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mimoji_gif_edit_title" android:layout_centerInParent="true" />
+            <ImageView android:gravity="center" android:id="@id/iv_gif_confirm" android:layout_width="@dimen/dimen_gif_rv_bottom_navigation_layout_height" android:layout_height="@dimen/dimen_gif_rv_bottom_navigation_layout_height" android:src="@drawable/bg_git_save" android:contentDescription="@string/accessibility_shutter_complete_button" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

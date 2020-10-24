@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/fastmotion_description_item_video" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/fastmotion_description_video_margin_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.camera.ui.FastmotionTextureVideoView android:id="@id/fastmotion_description_item_video_vv" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/fastmotion_description_item_video_vv_height" />
+    <View android:id="@id/fastmotion_description_item_video_cover" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/fastmotion_description_item_video_vv_height" />
+    <View android:background="@color/beautycamera_fragment_background" android:layout_width="fill_parent" android:layout_height="@dimen/fastmotion_description_item_video_black_view_height" android:layout_marginTop="@dimen/fastmotion_description_item_video_black_view_margintop" />
+    <com.android.camera.ui.MaskCircleCornerView android:id="@id/fastmotion_description_item_video_vv_corner" android:layout_width="fill_parent" android:layout_height="@dimen/fastmotion_description_item_video_mask_corner_height" android:layout_marginTop="@dimen/fastmotion_description_item_video_mask_corner_margintop" />
+    <View android:background="@color/beautycamera_fragment_background" android:layout_width="fill_parent" android:layout_height="@dimen/fastmotion_description_item_video_black_view_height_compensation" android:layout_below="@id/fastmotion_description_item_video_vv_corner" />
+    <TextView android:textSize="@dimen/fastmotion_description_text_description_size" android:textColor="@color/white" android:id="@id/fastmotion_description_item_video_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fastmotion_description_item_video_desc_margin_top" android:layout_below="@id/fastmotion_description_item_video_vv" android:fontFamily="sans-serif-light" />
+</RelativeLayout>

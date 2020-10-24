@@ -1,0 +1,71 @@
+.class public final Lio/reactivex/internal/operators/observable/ObservablePublishSelector;
+.super Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;
+.source ""
+
+
+# instance fields
+.field final selector:Lio/reactivex/functions/Function;
+
+
+# direct methods
+.method public constructor <init>(Lio/reactivex/ObservableSource;Lio/reactivex/functions/Function;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;-><init>(Lio/reactivex/ObservableSource;)V
+
+    iput-object p2, p0, Lio/reactivex/internal/operators/observable/ObservablePublishSelector;->selector:Lio/reactivex/functions/Function;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected subscribeActual(Lio/reactivex/Observer;)V
+    .locals 3
+
+    invoke-static {}, Lio/reactivex/subjects/PublishSubject;->create()Lio/reactivex/subjects/PublishSubject;
+
+    move-result-object v0
+
+    :try_start_0
+    iget-object v1, p0, Lio/reactivex/internal/operators/observable/ObservablePublishSelector;->selector:Lio/reactivex/functions/Function;
+
+    invoke-interface {v1, v0}, Lio/reactivex/functions/Function;->apply(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    const-string v2, "The selector returned a null ObservableSource"
+
+    invoke-static {v1, v2}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lio/reactivex/ObservableSource;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    new-instance v2, Lio/reactivex/internal/operators/observable/ObservablePublishSelector$TargetObserver;
+
+    invoke-direct {v2, p1}, Lio/reactivex/internal/operators/observable/ObservablePublishSelector$TargetObserver;-><init>(Lio/reactivex/Observer;)V
+
+    invoke-interface {v1, v2}, Lio/reactivex/ObservableSource;->subscribe(Lio/reactivex/Observer;)V
+
+    iget-object p0, p0, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;->source:Lio/reactivex/ObservableSource;
+
+    new-instance p1, Lio/reactivex/internal/operators/observable/ObservablePublishSelector$SourceObserver;
+
+    invoke-direct {p1, v0, v2}, Lio/reactivex/internal/operators/observable/ObservablePublishSelector$SourceObserver;-><init>(Lio/reactivex/subjects/PublishSubject;Ljava/util/concurrent/atomic/AtomicReference;)V
+
+    invoke-interface {p0, p1}, Lio/reactivex/ObservableSource;->subscribe(Lio/reactivex/Observer;)V
+
+    return-void
+
+    :catchall_0
+    move-exception p0
+
+    invoke-static {p0}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
+
+    invoke-static {p0, p1}, Lio/reactivex/internal/disposables/EmptyDisposable;->error(Ljava/lang/Throwable;Lio/reactivex/Observer;)V
+
+    return-void
+.end method

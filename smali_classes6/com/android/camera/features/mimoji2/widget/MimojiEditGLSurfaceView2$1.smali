@@ -1,0 +1,3 @@
+.class synthetic Lcom/android/camera/features/mimoji2/widget/MimojiEditGLSurfaceView2$1;
+.super Ljava/lang/Object;
+.source ""

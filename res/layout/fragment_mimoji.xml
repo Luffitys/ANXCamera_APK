@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_bubble_pop_parent" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/ll_bubble_pop_occupation" android:layout_width="fill_parent" android:layout_height="70.0dip" />
+    <FrameLayout android:layout_gravity="center_vertical" android:background="@color/fullscreen_background" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/beautycamera_makeup_item_margin" android:layout_below="@id/ll_bubble_pop_occupation">
+        <miuix.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@id/mimoji_list" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_updating" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/beautycamera_makeup_item_width">
+            <ProgressBar android:layout_width="20.0dip" android:layout_height="20.0dip" android:indeterminateDrawable="@drawable/post_process_progress_white" android:indeterminateDuration="@integer/post_process_duration" style="?android:progressBarStyleLarge" />
+            <TextView android:textSize="@dimen/live_speed_item_textSize" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_sticker_updating" android:layout_marginStart="20.0dip" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

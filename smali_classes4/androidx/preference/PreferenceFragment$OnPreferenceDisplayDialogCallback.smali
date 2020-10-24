@@ -1,0 +1,12 @@
+.class public interface abstract Landroidx/preference/PreferenceFragment$OnPreferenceDisplayDialogCallback;
+.super Ljava/lang/Object;
+.source ""
+
+
+# virtual methods
+.method public abstract onPreferenceDisplayDialog(Landroidx/preference/PreferenceFragment;Landroidx/preference/Preference;)Z
+    .param p1    # Landroidx/preference/PreferenceFragment;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+.end method

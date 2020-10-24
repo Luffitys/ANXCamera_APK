@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/mode_icon_bg_corners" />
+    <size android:height="@dimen/mode_icon_size" android:width="@dimen/mode_icon_size" />
+    <stroke android:width="@dimen/mode_edit_icon_bg_stroke_size" android:color="@color/mode_icon_bg" />
+</shape>

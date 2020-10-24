@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/ambilight_description_img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    <TextView android:textSize="@dimen/ambilight_description_item_content_text_size" android:textColor="@color/white" android:id="@id/ambilight_description_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ambilight_description_item_content_margin_top" android:layout_marginBottom="@dimen/ambilight_description_item_content_margin_bottom" android:lineSpacingExtra="@dimen/ambilight_description_item_content_line_space" android:alpha="0.5" android:fontFamily="sans-serif-light" />
+</LinearLayout>

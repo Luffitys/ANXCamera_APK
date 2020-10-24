@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/fastmotion_top_tip_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/fastmotion_top_tip_layout_title_text_size" android:textStyle="normal" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/fastmotion_top_tip_layout_title" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fastmotion_top_tip_layout_title_margin_top" android:shadowColor="#bb000000" android:shadowRadius="0.2" style="@style/SettingStatusBarText" />
+    <TextView android:textSize="@dimen/fastmotion_top_tip_layout_desc_text_size" android:textStyle="normal" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/fastmotion_top_tip_layout_desc" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fastmotion_top_tip_layout_desc_margin_top" android:shadowColor="#bb000000" android:shadowRadius="0.2" style="@style/SettingStatusBarText" />
+</LinearLayout>

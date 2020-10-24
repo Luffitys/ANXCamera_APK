@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_focus_face_detect">
+        <item quantity="other">མདོ་གཏོགས་ལེགས་གྲུབ། མིའི་གདོང་%dདཔྱད་འཇལ་ཐུབ་སོང་།</item>
+    </plurals>
+    <plurals name="accessibility_timer_burst_count">
+        <item quantity="other">པར་ལེན་ཁ་གྲངས་%d</item>
+    </plurals>
+    <plurals name="accessibility_timer_burst_interval">
+        <item quantity="other">དུས་ཡུན་བར་ཐག་སྐར་ཆ་%d</item>
+    </plurals>
+    <plurals name="accessibility_vv_duartion">
+        <item quantity="other">ཕབ་བསྐྲུན་དུས་ཚོད་སྐར་ཆ་%d</item>
+    </plurals>
+    <plurals name="clone_guide_tip2">
+        <item quantity="other">མང་མཐར་ཡང་གཟུགས་དབྱེ་%dརྒྱབ་སྐྱོར་བྱེད།</item>
+    </plurals>
+    <plurals name="fastmotion_pro_min_unit">
+        <item quantity="other">སྐར་མ%1$d</item>
+    </plurals>
+    <plurals name="fastmotion_pro_sec_unit">
+        <item quantity="other">སྐར་ཆ%1$d</item>
+    </plurals>
+    <plurals name="pref_camera_fastmotion_duration_unit">
+        <item quantity="other">སྐར་མ%1$s</item>
+    </plurals>
+    <plurals name="timer_burst_setting_total_count">
+        <item quantity="other">ཤོག་ལྷེ་%1$s</item>
+    </plurals>
+    <plurals name="toast_burst_snap_finished_summary">
+        <item quantity="other">བསྟུད་ལེན་མཇུག་སྒྲིལ། བསྡོམས་པར་རིས་%1$sཔར་བླངས།</item>
+    </plurals>
+</resources>

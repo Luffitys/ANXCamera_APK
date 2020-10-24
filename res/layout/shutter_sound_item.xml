@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/custom_sound_cover_width" android:layout_height="@dimen/custom_sound_cover_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/custom_sound_extra_padding" android:src="@drawable/sound_cover_default" android:scaleType="fitXY" />
+    <com.android.camera.ui.ScrollTextview android:textSize="16.72998sp" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="bottom|center" android:layout_gravity="bottom|center" android:id="@id/item_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="22.779999dip" android:text="@string/custom_sound_default" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+    <ImageView android:id="@id/indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/sound_cover_indicator" android:scaleType="fitXY" />
+</FrameLayout>

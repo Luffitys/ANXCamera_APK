@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_focus_face_detect">
+        <item quantity="other">Fokussiert, %d Gesichter erkannt</item>
+        <item quantity="one">Fokussiert, %d Gesicht erkannt</item>
+    </plurals>
+    <plurals name="accessibility_timer_burst_count">
+        <item quantity="other">%d Fotos in einer Serienaufnahme</item>
+        <item quantity="one">%d Foto in einer Sereienaufnahme</item>
+    </plurals>
+    <plurals name="accessibility_timer_burst_interval">
+        <item quantity="other">Interval: %d Sekunden</item>
+        <item quantity="one">Interval: %d Sekunde</item>
+    </plurals>
+    <plurals name="accessibility_vv_duartion">
+        <item quantity="other">Dauer: %d Sekunden</item>
+        <item quantity="one">Dauer: %d Sekunde</item>
+    </plurals>
+    <plurals name="clone_guide_tip2">
+        <item quantity="other">Sie können bis zu %d Klone auf einmal erstellen.</item>
+        <item quantity="one">Sie können bis zu %d Klon auf einmal erstellen.</item>
+    </plurals>
+    <plurals name="fastmotion_pro_min_unit">
+        <item quantity="other">%1$d Min</item>
+        <item quantity="one">%1$d Min</item>
+    </plurals>
+    <plurals name="fastmotion_pro_sec_unit">
+        <item quantity="other">%1$d Sek</item>
+        <item quantity="one">%1$d Sek</item>
+    </plurals>
+    <plurals name="live_workspace_delete_dialog_title">
+        <item quantity="other">%1$d Entwürfe löschen?</item>
+        <item quantity="one">%1$d Entwurf löschen?</item>
+    </plurals>
+    <plurals name="pref_camera_fastmotion_duration_unit">
+        <item quantity="other">%1$s Min</item>
+        <item quantity="one">%1$s Min</item>
+    </plurals>
+    <plurals name="timer_burst_setting_total_count">
+        <item quantity="other">%1$s Fotos</item>
+        <item quantity="one">%1$s Foto</item>
+    </plurals>
+    <plurals name="toast_burst_snap_finished_summary">
+        <item quantity="other">Serienbilder fertig, %1$s Fotos aufgenommen</item>
+        <item quantity="one">Serienbilder fertig, %1$s Foto aufgenommen</item>
+    </plurals>
+</resources>

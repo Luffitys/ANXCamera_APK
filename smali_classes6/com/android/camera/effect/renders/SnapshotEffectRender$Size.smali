@@ -1,0 +1,37 @@
+.class Lcom/android/camera/effect/renders/SnapshotEffectRender$Size;
+.super Ljava/lang/Object;
+.source ""
+
+
+# instance fields
+.field public height:I
+
+.field final synthetic this$0:Lcom/android/camera/effect/renders/SnapshotEffectRender;
+
+.field public width:I
+
+
+# direct methods
+.method public constructor <init>(Lcom/android/camera/effect/renders/SnapshotEffectRender;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/android/camera/effect/renders/SnapshotEffectRender$Size;->this$0:Lcom/android/camera/effect/renders/SnapshotEffectRender;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method constructor <init>(Lcom/android/camera/effect/renders/SnapshotEffectRender;II)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/android/camera/effect/renders/SnapshotEffectRender$Size;->this$0:Lcom/android/camera/effect/renders/SnapshotEffectRender;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput p2, p0, Lcom/android/camera/effect/renders/SnapshotEffectRender$Size;->width:I
+
+    iput p3, p0, Lcom/android/camera/effect/renders/SnapshotEffectRender$Size;->height:I
+
+    return-void
+.end method

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/clone_guide_texture_view_container" android:layout_width="@dimen/clone_guide_video_width" android:layout_height="@dimen/clone_guide_video_height" android:layout_marginTop="@dimen/clone_guide_video_margin_top" android:alpha="0.0" android:layout_marginStart="@dimen/clone_guide_video_margin_left" app:cardBackgroundColor="@color/fullscreen_background" app:cardCornerRadius="10.0px" app:cardElevation="0.0dip">
+        <com.android.camera.videoplayer.ui.VideoPlayerView android:id="@id/clone_guide_texture_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/clone_guide_video_colver" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/clone_guide_photo_cover" />
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout android:id="@id/clone_guide_tips_container" android:layout_width="fill_parent" android:layout_height="@dimen/clone_guide_tips_container_height" android:layout_marginTop="@dimen/clone_guide_tips_top_margin" android:alpha="0.0">
+        <TextView android:textSize="29.0dip" android:textColor="@color/white" android:id="@id/clone_guide_tv1" android:layout_width="@dimen/clone_guide_tips_width" android:layout_height="@dimen/clone_guide_title1_height" android:layout_marginTop="@dimen/clone_guide_title1_margin_top" android:text="@string/clone_guide_title1" android:rotation="90.0" android:layout_marginStart="@dimen/clone_guide_title1_margin_left" />
+        <TextView android:textSize="@dimen/clone_guide_tv2_textsize" android:textColor="@color/white" android:id="@id/clone_guide_tv2" android:layout_width="@dimen/clone_guide_tips_width" android:layout_height="@dimen/clone_guide_title2_height" android:layout_marginTop="@dimen/clone_guide_title2_margin_top" android:text="@string/clone_guide_title2" android:rotation="90.0" android:layout_marginStart="@dimen/clone_guide_title2_margin_left" />
+        <ScrollView android:layout_width="@dimen/clone_guide_tips_width" android:layout_height="@dimen/clone_guide_tips_height" android:layout_marginTop="@dimen/clone_guide_tips_margin_top" android:rotation="90.0" android:layout_marginStart="@dimen/clone_guide_tips_margin_left">
+            <LinearLayout android:orientation="vertical" android:layout_width="@dimen/clone_guide_tips_width" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/clone_guide_tip_font_size" android:textColor="@color/clone_guide_tip_color" android:id="@id/clone_guide_tip_tv1" android:layout_width="fill_parent" android:layout_height="0.0px" android:text="@string/clone_guide_tip1" android:layout_weight="1.0" android:lineSpacingExtra="2.0dip" />
+                <TextView android:textSize="@dimen/clone_guide_tip_font_size" android:textColor="@color/clone_guide_tip_color" android:id="@id/clone_guide_tip_tv2" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/clone_guide_tip_font_size" android:textColor="@color/clone_guide_tip_color" android:id="@id/clone_guide_tip_tv3" android:layout_width="fill_parent" android:layout_height="0.0px" android:text="@string/clone_guide_tip3" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/clone_guide_tip_font_size" android:textColor="@color/clone_guide_tip_color" android:id="@id/clone_guide_tip_tv4" android:layout_width="fill_parent" android:layout_height="0.0px" android:text="@string/clone_guide_tip4" android:layout_weight="1.0" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <View android:id="@id/clone_guide_spacer_view" android:layout_width="wrap_content" android:layout_height="@dimen/clone_guide_item_spacing" />
+    <View android:id="@id/clone_guide_footer_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/clone_guide_item_footer" />
+</LinearLayout>

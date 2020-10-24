@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include android:id="@id/sound_default" android:layout_width="@dimen/custom_sound_cover_width" android:layout_height="@dimen/custom_sound_cover_height" layout="@layout/shutter_sound_item" />
+        <include android:id="@id/sound_art" android:layout_width="@dimen/custom_sound_cover_width" android:layout_height="@dimen/custom_sound_cover_height" android:layout_marginLeft="@dimen/custom_sound_rh_padding" layout="@layout/shutter_sound_item" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/custom_sound_rv_padding">
+        <include android:id="@id/sound_old" android:layout_width="@dimen/custom_sound_cover_width" android:layout_height="@dimen/custom_sound_cover_height" layout="@layout/shutter_sound_item" />
+        <include android:id="@id/sound_modern" android:layout_width="@dimen/custom_sound_cover_width" android:layout_height="@dimen/custom_sound_cover_height" android:layout_marginLeft="@dimen/custom_sound_rh_padding" layout="@layout/shutter_sound_item" />
+    </LinearLayout>
+</LinearLayout>

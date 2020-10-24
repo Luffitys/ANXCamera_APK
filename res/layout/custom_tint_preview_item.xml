@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom|center" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.camera.ui.RoundCornerFrameLayout android:id="@id/item_container" android:clickable="true" android:layout_width="@dimen/custom_tint_preview_width_full" android:layout_height="@dimen/custom_tint_preview_height_full" android:layout_marginBottom="@dimen/custom_tint_preview_bottom_margin" android:contentDescription="@string/accessibility_preview_effect_button" corner_radius="21.82">
+        <ImageView android:id="@id/custom_tint_item_image" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/custom_tint_preview_image_margin" android:src="@drawable/custom_tint_preview_yellow_ch" android:scaleType="fitXY" />
+        <ImageView android:id="@id/background" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/custom_tint_item_bg" />
+    </com.android.camera.ui.RoundCornerFrameLayout>
+</LinearLayout>

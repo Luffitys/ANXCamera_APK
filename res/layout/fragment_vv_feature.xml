@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/vv_feature_layout" android:background="@drawable/bg_vv_feature" android:layout_width="wrap_content" android:layout_height="@dimen/vv_feature_layout_height" android:layout_marginBottom="@dimen/vv_start_radius"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.099976sp" android:textColor="@color/white" android:ellipsize="marquee" android:gravity="center" android:id="@id/vv_feature_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="@dimen/vv_feature_text_min_width" android:singleLine="true" android:fontFamily="mipro-medium" android:layout_marginStart="20.359985dip" android:layout_marginEnd="13.449982dip" android:fontFeatureSettings="tnum" />
+    <FrameLayout android:layout_width="@dimen/vv_feature_load_image_height" android:layout_height="@dimen/vv_feature_load_image_height" android:layout_marginEnd="9.0dip">
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="2.0dip" android:src="@drawable/bg_vv_feature_load" />
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/vv_feature_loading" android:layout_width="@dimen/vv_feature_load_image_height" android:layout_height="@dimen/vv_feature_load_image_height" android:scaleType="center" />
+    </FrameLayout>
+</LinearLayout>

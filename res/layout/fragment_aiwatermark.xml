@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/beauty_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.android.camera.ui.NoScrollViewPager android:id="@id/water_viewPager" android:focusable="false" android:layout_width="wrap_content" android:layout_height="@dimen/aiwatermark_fragment_height" />
+            <FrameLayout android:id="@id/beauty_extra" android:layout_width="wrap_content" android:layout_height="@dimen/aiwatermark_fragment_height" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

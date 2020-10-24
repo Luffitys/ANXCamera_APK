@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_fragment_mimoji_edit_container" android:background="@color/mimoji_edit_bg" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rv_navigation_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mimoji_edit_back_top" android:layout_alignParentTop="true" android:importantForAccessibility="no" android:layout_marginStart="@dimen/mimoji_edit_back_left" android:layout_marginEnd="@dimen/mimoji_edit_back_left">
+        <TextView android:textSize="@dimen/mimoji_edit_back_text_size" android:textStyle="bold" android:gravity="center" android:id="@id/tv_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mimoji_back" />
+        <TextView android:textSize="@dimen/mimoji_edit_back_text_size" android:textStyle="bold" android:gravity="center" android:id="@id/btn_confirm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mimoji_confirm" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_main_layout" android:layout_width="fill_parent" android:layout_height="1000.0dip" android:layout_below="@id/rv_navigation_layout">
+        <com.android.camera.features.mimoji2.widget.MimojiEditGLTextureView2 android:id="@id/mimoji_edit_preview" android:layout_width="@dimen/mimoji_edit_surface_width" android:layout_height="@dimen/mimoji_edit_surface_width" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_bottom_editoperate_content" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/mimoji_edit_preview">
+            <RelativeLayout android:id="@id/rl_tablayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/mimoji_edit_tab_height">
+                <com.android.camera.features.mimoji2.widget.autoselectview.AutoSelectHorizontalView android:id="@id/mimoji_type_view" android:paddingTop="40.0dip" android:fadingEdge="horizontal" android:fadingEdgeLength="@dimen/mimoji_edit_tab_height" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginTop="-40.0dip" android:requiresFadingEdge="horizontal" />
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/color_level" android:background="@color/mimoji_edit_adjust_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/operate_select_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_marginStart="29.099976dip" android:layout_marginEnd="29.099976dip">
+        <TextView android:textSize="@dimen/vv_dialog_text_size" android:textStyle="bold" android:textColor="#b2ffffff" android:gravity="center" android:layout_gravity="left" android:id="@id/tv_create_emoticon" android:background="@drawable/bg_mimoji_btn_dark" android:layout_width="fill_parent" android:layout_height="50.899994dip" android:text="@string/mimoji_create_emoticon" />
+        <TextView android:textSize="@dimen/vv_dialog_text_size" android:textStyle="bold" android:textColor="#e5ffffff" android:gravity="center" android:layout_gravity="right" android:id="@id/tv_save_finish" android:background="@drawable/bg_mimoji_btn_blue" android:layout_width="fill_parent" android:layout_height="50.899994dip" android:layout_marginTop="14.5dip" android:text="@string/mimoji_save_finish" />
+    </LinearLayout>
+</RelativeLayout>

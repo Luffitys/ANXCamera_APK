@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center">
+        <shape android:shape="oval">
+            <solid android:color="#80000000" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:left="@dimen/zoom_ratio_dot_shadow" android:top="@dimen/zoom_ratio_dot_shadow" android:right="@dimen/zoom_ratio_dot_shadow" android:bottom="@dimen/zoom_ratio_dot_shadow">
+        <shape android:shape="oval">
+            <size android:height="@dimen/zoom_ratio_dot_background_width" android:width="@dimen/zoom_ratio_dot_background_width" />
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+</layer-list>

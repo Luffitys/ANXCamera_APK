@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="@dimen/beautycamera_makeup_item_width" android:layout_height="@dimen/beautycamera_makeup_item_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/effect_item_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+    <com.android.camera.ui.ScrollTextview android:textSize="@dimen/filter_item_text_size" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:id="@id/effect_item_text" android:paddingTop="@dimen/filter_item_text_padding_top" android:paddingBottom="@dimen/filter_item_text_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/filter_item_text_margin_bottom" android:singleLine="true" android:shadowColor="#80000000" android:shadowRadius="1.0" android:marqueeRepeatLimit="marquee_forever" />
+    <ImageView android:id="@id/effect_item_selected_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/effect_filter_item_selector" android:contentDescription="@null" />
+</FrameLayout>

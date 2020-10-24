@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/modes_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/modes_contain" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <miuix.springback.view.SpringBackLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" app:scrollableView="@id/modes_content">
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/modes_content" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </miuix.springback.view.SpringBackLayout>
+    </FrameLayout>
+</FrameLayout>

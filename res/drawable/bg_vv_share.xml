@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/vv_dialog_share_radius" />
+    <solid android:color="@color/vv_dialog_bg" />
+</shape>

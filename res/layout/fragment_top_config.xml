@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.camera.ui.ShapeBackGroundView android:id="@id/top_config_background" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/top_config" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/top_config_menu" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.android.camera.ui.ColorImageView android:id="@id/top_config_00" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" style="@style/PanelRotateImageViewStyle" />
+            <com.android.camera.ui.ColorImageView android:id="@id/top_config_01" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" style="@style/PanelRotateImageViewStyle" />
+            <com.android.camera.ui.ColorImageView android:id="@id/top_config_02" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" style="@style/PanelRotateImageViewStyle" />
+            <com.android.camera.ui.ColorImageView android:id="@id/top_config_03" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" style="@style/PanelRotateImageViewStyle" />
+            <com.android.camera.ui.ColorImageView android:id="@id/top_config_04" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" style="@style/PanelRotateImageViewStyle" />
+            <com.android.camera.ui.ColorImageView android:id="@id/top_config_05" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" style="@style/PanelRotateImageViewStyle" />
+            <com.android.camera.ui.ColorImageView android:id="@id/top_config_06" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" style="@style/PanelRotateImageViewStyle" />
+            <com.android.camera.ui.ColorImageView android:id="@id/top_config_07" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" style="@style/PanelRotateImageViewStyle" />
+            <com.android.camera.ui.ColorImageView android:id="@id/top_config_08" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" style="@style/PanelRotateImageViewStyle" />
+            <com.android.camera.ui.ColorImageView android:id="@id/top_config_09" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" style="@style/PanelRotateImageViewStyle" />
+            <com.android.camera.ui.ColorImageView android:id="@id/top_config_10" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" style="@style/PanelRotateImageViewStyle" />
+            <com.android.camera.fragment.top.TopExpendView android:gravity="center" android:id="@id/top_config_expand_view" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/top_config_extra_recyclerview" android:paddingLeft="@dimen/top_config_extra_recyclerview_marginleft" android:paddingTop="@dimen/top_config_extra_recyclerview_margintop" android:paddingRight="@dimen/top_config_extra_recyclerview_marginleft" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+        <include android:id="@id/layout_burst_menu" android:visibility="gone" layout="@layout/timer_burst_menu" />
+    </FrameLayout>
+    <TextView android:gravity="center" android:layout_gravity="center|top" android:id="@id/v6_multi_snap_number" android:focusable="false" android:visibility="gone" style="@style/PopupButtonIndicator" />
+    <TextView android:textSize="@dimen/capture_delay_number_text_size" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/v6_capture_delay_number" android:visibility="gone" android:clickable="false" android:shadowColor="#33000000" android:shadowRadius="3.0" style="@style/RotateImageViewStyle" />
+    <FrameLayout android:id="@id/top_alert" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

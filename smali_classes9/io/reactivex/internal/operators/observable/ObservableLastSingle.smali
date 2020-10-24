@@ -1,0 +1,41 @@
+.class public final Lio/reactivex/internal/operators/observable/ObservableLastSingle;
+.super Lio/reactivex/Single;
+.source ""
+
+
+# instance fields
+.field final defaultItem:Ljava/lang/Object;
+
+.field final source:Lio/reactivex/ObservableSource;
+
+
+# direct methods
+.method public constructor <init>(Lio/reactivex/ObservableSource;Ljava/lang/Object;)V
+    .locals 0
+
+    invoke-direct {p0}, Lio/reactivex/Single;-><init>()V
+
+    iput-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableLastSingle;->source:Lio/reactivex/ObservableSource;
+
+    iput-object p2, p0, Lio/reactivex/internal/operators/observable/ObservableLastSingle;->defaultItem:Ljava/lang/Object;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected subscribeActual(Lio/reactivex/SingleObserver;)V
+    .locals 2
+
+    iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableLastSingle;->source:Lio/reactivex/ObservableSource;
+
+    new-instance v1, Lio/reactivex/internal/operators/observable/ObservableLastSingle$LastObserver;
+
+    iget-object p0, p0, Lio/reactivex/internal/operators/observable/ObservableLastSingle;->defaultItem:Ljava/lang/Object;
+
+    invoke-direct {v1, p1, p0}, Lio/reactivex/internal/operators/observable/ObservableLastSingle$LastObserver;-><init>(Lio/reactivex/SingleObserver;Ljava/lang/Object;)V
+
+    invoke-interface {v0, v1}, Lio/reactivex/ObservableSource;->subscribe(Lio/reactivex/Observer;)V
+
+    return-void
+.end method

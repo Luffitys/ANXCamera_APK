@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="138.0dip" android:layout_height="138.0dip" android:layout_marginBottom="@dimen/mimoji_emoticon_offset"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_item_mimoji_emoticon" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/image_item_select" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_margin="10.0dip" android:src="@drawable/ic_mimoji_emoticon_item_unselected" android:scaleType="fitXY" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

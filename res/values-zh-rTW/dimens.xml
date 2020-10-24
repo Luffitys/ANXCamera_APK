@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="clone_capture_hint_width">220.0dip</dimen>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.camera.ui.ColorImageView android:id="@id/extra_item_image" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.android.camera.ui.ColorActivateTextView android:textSize="11.599976sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/extra_item_text" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:shadowColor="#80000000" android:shadowRadius="1.0" />
+</LinearLayout>

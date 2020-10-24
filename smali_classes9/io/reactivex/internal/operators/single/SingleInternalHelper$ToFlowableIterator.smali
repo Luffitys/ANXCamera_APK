@@ -1,0 +1,74 @@
+.class final Lio/reactivex/internal/operators/single/SingleInternalHelper$ToFlowableIterator;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Ljava/util/Iterator;
+
+
+# instance fields
+.field private final sit:Ljava/util/Iterator;
+
+
+# direct methods
+.method constructor <init>(Ljava/util/Iterator;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lio/reactivex/internal/operators/single/SingleInternalHelper$ToFlowableIterator;->sit:Ljava/util/Iterator;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public hasNext()Z
+    .locals 0
+
+    iget-object p0, p0, Lio/reactivex/internal/operators/single/SingleInternalHelper$ToFlowableIterator;->sit:Ljava/util/Iterator;
+
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public next()Lio/reactivex/Flowable;
+    .locals 1
+
+    new-instance v0, Lio/reactivex/internal/operators/single/SingleToFlowable;
+
+    iget-object p0, p0, Lio/reactivex/internal/operators/single/SingleInternalHelper$ToFlowableIterator;->sit:Ljava/util/Iterator;
+
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lio/reactivex/SingleSource;
+
+    invoke-direct {v0, p0}, Lio/reactivex/internal/operators/single/SingleToFlowable;-><init>(Lio/reactivex/SingleSource;)V
+
+    return-object v0
+.end method
+
+.method public bridge synthetic next()Ljava/lang/Object;
+    .locals 0
+
+    invoke-virtual {p0}, Lio/reactivex/internal/operators/single/SingleInternalHelper$ToFlowableIterator;->next()Lio/reactivex/Flowable;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public remove()V
+    .locals 0
+
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    throw p0
+.end method

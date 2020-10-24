@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cta_msg_text_color">#ccffffff</color>
+    <color name="cta_perm_dec_text_color">#99ffffff</color>
+    <color name="cta_perm_loc_text_color">#e6ffffff</color>
+    <color name="cta_title_text_color">#e7ffffff</color>
+    <color name="cta_user_tips_text_color">#99ffffff</color>
+    <color name="day_night_bg">#ff000000</color>
+    <color name="day_night_text_color">#ffffffff</color>
+    <color name="dialog_button_bg_pressed">#14ffffff</color>
+    <color name="lpl_dialog_bg_color">#ff222224</color>
+    <color name="lpl_dialog_btn_color">#26ffffff</color>
+    <color name="lpl_dialog_btn_text_color">#b3ffffff</color>
+    <color name="lpl_dialog_icon_bg_color_unselected">#14ffffff</color>
+    <color name="lpl_dialog_icon_color_unselected">#ffffffff</color>
+    <color name="lpl_dialog_title_color">#b3ffffff</color>
+    <color name="more_mode_style_setting_text_color">#ccffffff</color>
+    <color name="vv_dialog_bg">#ff242424</color>
+    <color name="vv_dialog_button_cancel_bg">#14ffffff</color>
+    <color name="vv_dialog_button_positive_bg">#ff0073dd</color>
+    <color name="vv_dialog_cancel_color">#b2ffffff</color>
+    <color name="vv_dialog_message_color">#ccffffff</color>
+    <color name="vv_dialog_positive_color">#e5ffffff</color>
+    <color name="vv_dialog_share_text_color">#80ffffff</color>
+    <color name="vv_indicator_selected_color">#ffffffff</color>
+    <color name="vv_indicator_unselected_color">#4dffffff</color>
+    <color name="watermark_location_selected_background">#331369e9</color>
+    <color name="watermark_location_unselected">#e6ffffff</color>
+</resources>

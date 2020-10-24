@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ambilight>
+	<algo_param_1>1</algo_param_1>
+	<algo_param_2>500</algo_param_2>
+	<algo_param_3>375</algo_param_3>
+	<algo_param_4>1000</algo_param_4>
+	<algo_param_5>750</algo_param_5>
+	<algo_param_6>0x0</algo_param_6>
+	<algo_param_7>3</algo_param_7>
+	<sceneParam>
+		<!-- sceneMode 0 : traffic light -->
+		<sceneMode sceneMode = 0>
+			<pp_param_0>0.1</pp_param_0>
+			<pp_param_1>2000</pp_param_1>
+			<pp_param_2>1500</pp_param_2>
+			<pp_param_3>32</pp_param_3>
+			<pp_param_4>0</pp_param_4>
+			<pp_param_5>1</pp_param_5>
+			<pp_param>
+				<pp_param_6>1.2f</pp_param_6>
+				<pp_param_7>1.1f</pp_param_7>
+				<pp_param_8>0.9f</pp_param_8>
+			</pp_param>
+		</sceneMode>
+
+		<!-- sceneMode 1 : silky water -->
+		<sceneMode sceneMode = 1>
+			<pp_param_0>0.1</pp_param_0>
+			<pp_param_1>2000</pp_param_1>
+			<pp_param_2>1500</pp_param_2>
+			<pp_param_3>32</pp_param_3>
+			<pp_param_4>1</pp_param_4>
+			<pp_param_5>1</pp_param_5>
+			<pp_param>
+				<pp_param_6>1.1f</pp_param_6>
+				<pp_param_7>1.1f</pp_param_7>
+				<pp_param_8>0.9f</pp_param_8>
+			</pp_param>
+		</sceneMode>
+
+		<!-- sceneMode 2 : light track -->
+		<sceneMode sceneMode = 2>
+			<pp_param_0>0.1</pp_param_0>
+			<pp_param_1>4000</pp_param_1>
+			<pp_param_2>3000</pp_param_2>
+			<pp_param_3>32</pp_param_3>
+			<pp_param_4>0</pp_param_4>
+			<pp_param_5>0</pp_param_5>
+			<pp_param>
+				<pp_param_6>1.2f</pp_param_6>
+				<pp_param_7>1.1f</pp_param_7>
+				<pp_param_8>0.9f</pp_param_8>
+			</pp_param>
+		</sceneMode>
+
+		<!-- sceneMode 3 : star track -->
+		<sceneMode sceneMode = 3>
+			<pp_param_0>0.1</pp_param_0>
+			<pp_param_1>4000</pp_param_1>
+			<pp_param_2>3000</pp_param_2>
+			<pp_param_3>32</pp_param_3>
+			<pp_param_4>0</pp_param_4>
+			<pp_param_5>0</pp_param_5>
+			<pp_param>
+				<pp_param_6>1.2f</pp_param_6>
+				<pp_param_7>1.1f</pp_param_7>
+				<pp_param_8>0.9f</pp_param_8>
+			</pp_param>
+		</sceneMode>
+
+		<!-- sceneMode 4 : crowd moving -->
+		<sceneMode sceneMode = 4>
+			<pp_param_1>2000</pp_param_1>
+			<pp_param_2>1500</pp_param_2>
+			<pp_param_3>64</pp_param_3>
+			<pp_param_4>0</pp_param_4>
+			<pp_param_5>0</pp_param_5>
+			<pp_param>
+				<pp_param_6>1.2f</pp_param_6>
+				<pp_param_7>1.1f</pp_param_7>
+				<pp_param_8>0.9f</pp_param_8>
+			</pp_param>
+		</sceneMode>
+	</sceneParam>
+</ambilight>

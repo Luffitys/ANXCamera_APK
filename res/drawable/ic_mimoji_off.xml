@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/mimoji_off_ic_size" android:width="@dimen/mimoji_off_ic_size" android:viewportWidth="58.0" android:viewportHeight="58.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#ffffffff" android:pathData="M29,0C45.0163,0 58,12.9837 58,29C58,45.0163 45.0163,58 29,58C12.9837,58 0,45.0163 0,29C0,12.9837 12.9837,0 29,0ZM5,29C5,42.2548 15.7452,53 29,53C34.7269,53 39.9853,50.9941 44.111,47.6466L10.3534,13.889C7.0059,18.0147 5,23.2731 5,29ZM29,5C23.2731,5 18.0147,7.0059 13.889,10.3534L47.6466,44.111C50.9941,39.9853 53,34.7269 53,29C53,15.7452 42.2548,5 29,5Z" android:fillAlpha="0.6" />
+</vector>

@@ -1,0 +1,56 @@
+.class final Lio/reactivex/internal/operators/single/SingleTimeout$TimeoutMainObserver$TimeoutFallbackObserver;
+.super Ljava/util/concurrent/atomic/AtomicReference;
+.source ""
+
+# interfaces
+.implements Lio/reactivex/SingleObserver;
+
+
+# static fields
+.field private static final serialVersionUID:J = 0x1cbf0c2cc84a0325L
+
+
+# instance fields
+.field final actual:Lio/reactivex/SingleObserver;
+
+
+# direct methods
+.method constructor <init>(Lio/reactivex/SingleObserver;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+
+    iput-object p1, p0, Lio/reactivex/internal/operators/single/SingleTimeout$TimeoutMainObserver$TimeoutFallbackObserver;->actual:Lio/reactivex/SingleObserver;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onError(Ljava/lang/Throwable;)V
+    .locals 0
+
+    iget-object p0, p0, Lio/reactivex/internal/operators/single/SingleTimeout$TimeoutMainObserver$TimeoutFallbackObserver;->actual:Lio/reactivex/SingleObserver;
+
+    invoke-interface {p0, p1}, Lio/reactivex/SingleObserver;->onError(Ljava/lang/Throwable;)V
+
+    return-void
+.end method
+
+.method public onSubscribe(Lio/reactivex/disposables/Disposable;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Lio/reactivex/internal/disposables/DisposableHelper;->setOnce(Ljava/util/concurrent/atomic/AtomicReference;Lio/reactivex/disposables/Disposable;)Z
+
+    return-void
+.end method
+
+.method public onSuccess(Ljava/lang/Object;)V
+    .locals 0
+
+    iget-object p0, p0, Lio/reactivex/internal/operators/single/SingleTimeout$TimeoutMainObserver$TimeoutFallbackObserver;->actual:Lio/reactivex/SingleObserver;
+
+    invoke-interface {p0, p1}, Lio/reactivex/SingleObserver;->onSuccess(Ljava/lang/Object;)V
+
+    return-void
+.end method

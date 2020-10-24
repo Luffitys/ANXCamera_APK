@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/dimen_gif_shape_gif_edit_words_width" android:color="@color/white_alpha_60" />
+    <padding android:left="@dimen/dimen_gif_shape_gif_edit_words_padding" android:right="@dimen/dimen_gif_shape_gif_edit_words_padding" />
+</shape>

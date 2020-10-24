@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/vv_list_item_cover_width" android:color="@color/white" />
+    <corners android:radius="@dimen/effect_item_selected_indicator_corner_radius" />
+</shape>

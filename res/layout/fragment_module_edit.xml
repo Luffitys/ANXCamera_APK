@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/mode_edit_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/mode_edit_head" android:layout_width="fill_parent" android:layout_height="@dimen/mode_edit_head_height">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/mode_edit_exit" android:layout_width="@dimen/mode_edit_head_icon_size" android:layout_height="@dimen/mode_edit_head_icon_size" android:src="@drawable/ic_mode_edit_cancel" android:contentDescription="@string/mode_edit_exit" android:layout_marginStart="@dimen/mode_edit_head_hor_padding" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/mode_edit_title_size" android:textColor="@color/mode_edit_title_color" android:layout_gravity="center_horizontal" android:id="@id/mode_edit_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mode_edit_title_bottom_margin" android:text="@string/module_name_edit_title" android:maxLines="1" />
+            <com.android.camera.ui.AdaptiveTextView android:textSize="@dimen/mode_edit_sub_title_size" android:textColor="@color/mode_edit_sub_title_color" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/mode_edit_sub_title" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/module_name_edit_sub_title" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/mode_edit_done" android:layout_width="@dimen/mode_edit_head_icon_size" android:layout_height="@dimen/mode_edit_head_icon_size" android:src="@drawable/ic_mode_edit_confirm" android:contentDescription="@string/dialog_ok" android:layout_marginEnd="@dimen/mode_edit_head_hor_padding" />
+    </LinearLayout>
+    <miuix.springback.view.SpringBackLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" app:scrollableView="@id/mode_edit_list">
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center|top" android:id="@id/mode_edit_list" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:overScrollMode="never" android:paddingHorizontal="@dimen/mode_list_hor_margin" />
+    </miuix.springback.view.SpringBackLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/SettingColumn"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.camera.ui.ScrollTextview android:ellipsize="marquee" android:id="@id/text" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" style="@style/GridExpandedTextSettingItem" />
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/vv_work_space_head" android:layout_width="fill_parent" android:layout_height="@dimen/vv_workspace_title_height">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/vv_workspace_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fastmotion_description_back" android:contentDescription="@string/mimoji_back" android:layout_marginStart="@dimen/fastmotion_description_back_margin_start" />
+        <TextView android:textSize="20.359985sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/vv_workspace_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_workspace_title" android:fontFamily="mipro-medium" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/vv_workspace_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_vector_delete" android:layout_marginEnd="@dimen/fastmotion_description_back_margin_start" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/vv_workspace_empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/vv_workspace_empty_margin_bottom">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_workspace_empty" />
+        <TextView android:textSize="15.269989sp" android:textColor="@color/white_alpha_40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vv_workspace_margin" android:text="@string/live_draft_empty" android:fontFamily="mipro-medium" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <miuix.recyclerview.widget.RecyclerView android:id="@id/vv_work_space_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/vv_delete_parent_layout" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/vv_delete_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/vv_workspace_delete_layout">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_vector_workspace_delete" />
+                <TextView android:textSize="11.639984sp" android:textColor="@color/white_alpha_cc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_reverse_confirm" android:fontFamily="mipro-normal" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

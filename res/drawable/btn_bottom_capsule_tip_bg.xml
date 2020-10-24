@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/bottom_capsule_tip_bg_color" />
+    <corners android:radius="@dimen/btn_bottom_capsule_tip_corners_radius" />
+    <padding android:left="@dimen/btn_bottom_capsule_tip_left_padding" android:top="@dimen/btn_bottom_capsule_tip_bottom_top_padding" android:right="@dimen/btn_bottom_capsule_tip_right_padding" android:bottom="@dimen/btn_bottom_capsule_tip_bottom_top_padding" />
+</shape>

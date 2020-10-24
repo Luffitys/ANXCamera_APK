@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.449982sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/dual_video_record_standalone" android:fontFamily="mipro-regular" />
+    <TextView android:textSize="14.549988sp" android:textColor="@color/white_alpha_60" android:id="@id/ambilight_description_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="18.179993dip" android:text="@string/dual_video_user_guide_standalone_content" android:lineSpacingExtra="@dimen/ambilight_description_item_content_line_space" android:fontFamily="sans-serif-light" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="54.539978dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="18.359985dip">
+            <ImageView android:id="@id/dual_video_user_guide_dual_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dual_video_user_guide_dual_1" />
+            <TextView android:textSize="13.089996sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.269989dip" android:text="1X" android:layout_alignBottom="@id/dual_video_user_guide_dual_1" android:layout_marginStart="10.179993dip" android:layout_alignStart="@id/dual_video_user_guide_dual_1" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/dual_video_user_guide_dual_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dual_video_user_guide_dual_2" />
+            <TextView android:textSize="13.089996sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.269989dip" android:text="5X" android:layout_alignBottom="@id/dual_video_user_guide_dual_2" android:layout_marginStart="10.179993dip" android:layout_alignStart="@id/dual_video_user_guide_dual_2" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

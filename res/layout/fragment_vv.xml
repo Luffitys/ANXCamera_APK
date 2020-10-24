@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/vv_lift" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/vv_start_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/vv_start_text_size" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/vv_start" android:background="@drawable/bg_vv_start" android:layout_width="@dimen/vv_start_width" android:layout_height="@dimen/vv_start_height" android:layout_marginTop="@dimen/vv_start_text_margin_top" android:text="@string/vv_start" />
+    </FrameLayout>
+</LinearLayout>

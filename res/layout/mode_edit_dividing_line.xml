@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mode_dividing_line" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/mode_edit_line_color" android:layout_width="fill_parent" android:layout_height="@dimen/mode_edit_dividing_line_height" android:layout_marginBottom="@dimen/mode_edit_dividing_line_bottom_margin" />
+    <TextView android:textSize="@dimen/mode_edit_sub_title_size" android:textColor="@color/mode_edit_sub_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mode_edit_dividing_more_feature_title_bottom_margin" android:text="@string/module_name_edit_unfavorite_title" />
+</LinearLayout>

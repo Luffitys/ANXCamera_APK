@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="1.7999878dip" />
+            <size android:height="@dimen/ambilight_scene_item_height" android:width="@dimen/ambilight_scene_item_width" />
+            <stroke android:width="2.399994dip" android:color="@color/black" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="1.8899841dip" />
+            <size android:height="@dimen/ambilight_scene_item_height" android:width="@dimen/ambilight_scene_item_width" />
+            <stroke android:width="1.0899963dip" android:color="@color/white" />
+        </shape>
+    </item>
+</layer-list>

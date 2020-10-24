@@ -1,0 +1,1134 @@
+.class public LOooO0Oo/OooO00o/OooO00o/OooO0OO;
+.super Ljava/lang/Object;
+.source ""
+
+
+# static fields
+.field private static final OooOO0O:Ljava/lang/String; = "BufferedAudioRecorder"
+
+.field protected static OooOO0o:I = -0x1
+
+.field protected static OooOOO:I
+
+.field protected static OooOOO0:[I
+
+.field protected static OooOOOO:[I
+
+
+# instance fields
+.field OooO:Z
+
+.field OooO00o:Landroid/media/AudioRecord;
+
+.field OooO0O0:I
+
+.field OooO0OO:I
+
+.field OooO0Oo:I
+
+.field OooO0o:Z
+
+.field OooO0o0:I
+
+.field OooO0oO:Lcom/ss/android/medialib/audio/AudioDataProcessThread;
+
+.field OooO0oo:LOooO0Oo/OooO00o/OooO00o/OooO00o;
+
+.field OooOO0:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    const/4 v0, 0x5
+
+    new-array v0, v0, [I
+
+    fill-array-data v0, :array_0
+
+    sput-object v0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOOO0:[I
+
+    const/4 v0, -0x1
+
+    sput v0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOOO:I
+
+    const/4 v0, 0x3
+
+    new-array v0, v0, [I
+
+    fill-array-data v0, :array_1
+
+    sput-object v0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOOOO:[I
+
+    return-void
+
+    :array_0
+    .array-data 4
+        0xac44
+        0x1f40
+        0x2b11
+        0x3e80
+        0x5622
+    .end array-data
+
+    :array_1
+    .array-data 4
+        0xc
+        0x10
+        0x1
+    .end array-data
+.end method
+
+.method public constructor <init>(LOooO0Oo/OooO00o/OooO00o/OooO00o;)V
+    .locals 2
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, -0x1
+
+    iput v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0O0:I
+
+    const/4 v1, 0x0
+
+    iput v1, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0OO:I
+
+    iput v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0Oo:I
+
+    const/4 v0, 0x2
+
+    iput v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0o0:I
+
+    iput-boolean v1, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0o:Z
+
+    iput-boolean v1, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO:Z
+
+    const/4 v0, 0x1
+
+    iput v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOO0:I
+
+    iput-object p1, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0oo:LOooO0Oo/OooO00o/OooO00o/OooO00o;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public OooO()Z
+    .locals 2
+
+    monitor-enter p0
+
+    :try_start_0
+    const-string v0, "BufferedAudioRecorder"
+
+    const-string v1, "stopRecording() called"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-boolean v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0o:Z
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    monitor-exit p0
+
+    return v1
+
+    :cond_0
+    iput-boolean v1, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0o:Z
+
+    iget-object v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO00o:Landroid/media/AudioRecord;
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO00o:Landroid/media/AudioRecord;
+
+    invoke-virtual {v0}, Landroid/media/AudioRecord;->getState()I
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO00o:Landroid/media/AudioRecord;
+
+    invoke-virtual {v0}, Landroid/media/AudioRecord;->stop()V
+
+    goto :goto_0
+
+    :cond_1
+    const-string v0, "BufferedAudioRecorder"
+
+    const-string v1, "\u672a\u542f\u52a8\u97f3\u9891\u6a21\u5757\u4f46\u8c03\u7528stopRecording"
+
+    invoke-static {v0, v1}, Lcom/ss/android/medialib/common/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_2
+    :goto_0
+    iget-object v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0oO:Lcom/ss/android/medialib/audio/AudioDataProcessThread;
+
+    if-eqz v0, :cond_3
+
+    iget-object v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0oO:Lcom/ss/android/medialib/audio/AudioDataProcessThread;
+
+    invoke-virtual {v0}, Lcom/ss/android/medialib/audio/AudioDataProcessThread;->stop()V
+
+    :cond_3
+    monitor-exit p0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+.end method
+
+.method public OooO00o()V
+    .locals 0
+
+    iget-object p0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0oO:Lcom/ss/android/medialib/audio/AudioDataProcessThread;
+
+    if-eqz p0, :cond_0
+
+    invoke-virtual {p0}, Lcom/ss/android/medialib/audio/AudioDataProcessThread;->discard()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public OooO0O0(I)I
+    .locals 0
+
+    const/16 p0, 0x10
+
+    if-ne p0, p1, :cond_0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :cond_0
+    const/4 p0, 0x2
+
+    return p0
+.end method
+
+.method public OooO0OO(I)V
+    .locals 20
+
+    move-object/from16 v1, p0
+
+    const-string v2, " "
+
+    move/from16 v9, p1
+
+    iput v9, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOO0:I
+
+    iget-object v0, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO00o:Landroid/media/AudioRecord;
+
+    const-string v10, "BufferedAudioRecorder"
+
+    if-eqz v0, :cond_0
+
+    const-string v0, "second time audio init(), skip"
+
+    :goto_0
+    invoke-static {v10, v0}, Lcom/ss/android/vesdk/VELogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+
+    :cond_0
+    const/4 v11, -0x1
+
+    :try_start_0
+    sget v0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOOO:I
+
+    if-eq v0, v11, :cond_1
+
+    sget v0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOO0o:I
+
+    if-eq v0, v11, :cond_1
+
+    sget-object v0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOOOO:[I
+
+    sget v3, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOOO:I
+
+    aget v0, v0, v3
+
+    iput v0, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0Oo:I
+
+    sget-object v3, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOOO0:[I
+
+    sget v4, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOO0o:I
+
+    aget v3, v3, v4
+
+    iput v3, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0O0:I
+
+    iget v4, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0o0:I
+
+    invoke-static {v3, v0, v4}, Landroid/media/AudioRecord;->getMinBufferSize(III)I
+
+    move-result v0
+
+    iput v0, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0OO:I
+
+    new-instance v0, Landroid/media/AudioRecord;
+
+    iget v5, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0O0:I
+
+    iget v6, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0Oo:I
+
+    iget v7, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0o0:I
+
+    iget v8, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0OO:I
+
+    move-object v3, v0
+
+    move/from16 v4, p1
+
+    invoke-direct/range {v3 .. v8}, Landroid/media/AudioRecord;-><init>(IIIII)V
+
+    iput-object v0, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO00o:Landroid/media/AudioRecord;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_1
+
+    :catch_0
+    move-exception v0
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "\u4f7f\u7528\u9884\u8bbe\u914d\u7f6e"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget v4, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOOO:I
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v4, ","
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget v4, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOO0o:I
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v4, "\u5b9e\u4f8b\u5316audio recorder\u5931\u8d25\uff0c\u91cd\u65b0\u6d4b\u8bd5\u914d\u7f6e\u3002"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v10, v0}, Lcom/ss/android/vesdk/VELogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    iget-object v0, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0oo:LOooO0Oo/OooO00o/OooO00o/OooO00o;
+
+    invoke-interface {v0}, LOooO0Oo/OooO00o/OooO00o/OooO00o;->lackPermission()V
+
+    :cond_1
+    :goto_1
+    iget-object v0, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO00o:Landroid/media/AudioRecord;
+
+    const/4 v12, 0x1
+
+    if-nez v0, :cond_5
+
+    sput v11, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOOO:I
+
+    sget-object v13, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOOOO:[I
+
+    array-length v14, v13
+
+    const/4 v8, 0x0
+
+    const/16 v16, 0x0
+
+    :goto_2
+    if-ge v8, v14, :cond_5
+
+    aget v0, v13, v8
+
+    iput v0, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0Oo:I
+
+    sget v0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOOO:I
+
+    add-int/2addr v0, v12
+
+    sput v0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOOO:I
+
+    sput v11, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOO0o:I
+
+    sget-object v7, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOOO0:[I
+
+    array-length v6, v7
+
+    const/4 v5, 0x0
+
+    :goto_3
+    if-ge v5, v6, :cond_3
+
+    aget v4, v7, v5
+
+    sget v0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOO0o:I
+
+    add-int/2addr v0, v12
+
+    sput v0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOO0o:I
+
+    :try_start_1
+    iget v0, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0Oo:I
+
+    iget v3, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0o0:I
+
+    invoke-static {v4, v0, v3}, Landroid/media/AudioRecord;->getMinBufferSize(III)I
+
+    move-result v0
+
+    iput v0, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0OO:I
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "\u8bd5\u7528hz "
+
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v3, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0Oo:I
+
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v3, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0o0:I
+
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v10, v0}, Lcom/ss/android/vesdk/VELogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    iget v0, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0OO:I
+
+    if-lez v0, :cond_2
+
+    iput v4, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0O0:I
+
+    new-instance v0, Landroid/media/AudioRecord;
+
+    iget v3, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0O0:I
+
+    iget v11, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0Oo:I
+
+    iget v15, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0o0:I
+
+    iget v12, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0OO:I
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_2
+
+    move/from16 v17, v3
+
+    move-object v3, v0
+
+    move-object/from16 v18, v2
+
+    move v2, v4
+
+    move/from16 v4, p1
+
+    move/from16 v19, v5
+
+    move/from16 v5, v17
+
+    move/from16 v17, v6
+
+    move v6, v11
+
+    move-object v11, v7
+
+    move v7, v15
+
+    move v15, v8
+
+    move v8, v12
+
+    :try_start_2
+    invoke-direct/range {v3 .. v8}, Landroid/media/AudioRecord;-><init>(IIIII)V
+
+    iput-object v0, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO00o:Landroid/media/AudioRecord;
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x0
+
+    const/16 v16, 0x1
+
+    goto/16 :goto_6
+
+    :cond_2
+    move-object/from16 v18, v2
+
+    move v2, v4
+
+    move/from16 v19, v5
+
+    move/from16 v17, v6
+
+    move-object v11, v7
+
+    move v15, v8
+
+    sget v0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOO0o:I
+
+    const/4 v3, 0x1
+
+    add-int/2addr v0, v3
+
+    sput v0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOO0o:I
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x0
+
+    goto :goto_5
+
+    :catch_1
+    move-exception v0
+
+    goto :goto_4
+
+    :catch_2
+    move-exception v0
+
+    move-object/from16 v18, v2
+
+    move v2, v4
+
+    move/from16 v19, v5
+
+    move/from16 v17, v6
+
+    move-object v11, v7
+
+    move v15, v8
+
+    :goto_4
+    const/4 v3, 0x0
+
+    iput v3, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0O0:I
+
+    const/4 v4, 0x0
+
+    iput-object v4, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO00o:Landroid/media/AudioRecord;
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "apply audio record sample rate "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v2, " failed: "
+
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v10, v0}, Lcom/ss/android/vesdk/VELogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    sget v0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOO0o:I
+
+    const/4 v2, 0x1
+
+    add-int/2addr v0, v2
+
+    sput v0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOO0o:I
+
+    :goto_5
+    add-int/lit8 v5, v19, 0x1
+
+    move v12, v2
+
+    move-object v7, v11
+
+    move v8, v15
+
+    move/from16 v6, v17
+
+    move-object/from16 v2, v18
+
+    const/4 v11, -0x1
+
+    goto/16 :goto_3
+
+    :cond_3
+    move-object/from16 v18, v2
+
+    move v15, v8
+
+    move v2, v12
+
+    const/4 v3, 0x0
+
+    :goto_6
+    if-eqz v16, :cond_4
+
+    goto :goto_7
+
+    :cond_4
+    add-int/lit8 v8, v15, 0x1
+
+    move v12, v2
+
+    move-object/from16 v2, v18
+
+    const/4 v11, -0x1
+
+    goto/16 :goto_2
+
+    :cond_5
+    move v2, v12
+
+    :goto_7
+    iget v0, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0O0:I
+
+    if-gtz v0, :cond_6
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "!Init audio recorder failed, hz "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0O0:I
+
+    :goto_8
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    goto/16 :goto_0
+
+    :cond_6
+    iget v0, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0Oo:I
+
+    const/16 v3, 0x10
+
+    if-ne v0, v3, :cond_7
+
+    move v12, v2
+
+    goto :goto_9
+
+    :cond_7
+    const/4 v12, 0x2
+
+    :goto_9
+    iget-object v0, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0oo:LOooO0Oo/OooO00o/OooO00o/OooO00o;
+
+    iget v2, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0O0:I
+
+    invoke-interface {v0, v2, v12}, LOooO0Oo/OooO00o/OooO00o/OooO00o;->initAudioConfig(II)I
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "Init audio recorder succeed, apply audio record sample rate "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v2, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0O0:I
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v2, " buffer "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v2, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0OO:I
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v2, " state "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, v1, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO00o:Landroid/media/AudioRecord;
+
+    invoke-virtual {v1}, Landroid/media/AudioRecord;->getState()I
+
+    move-result v1
+
+    goto :goto_8
+.end method
+
+.method public declared-synchronized OooO0Oo()Z
+    .locals 1
+
+    monitor-enter p0
+
+    :try_start_0
+    iget-object v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0oO:Lcom/ss/android/medialib/audio/AudioDataProcessThread;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0oO:Lcom/ss/android/medialib/audio/AudioDataProcessThread;
+
+    invoke-virtual {v0}, Lcom/ss/android/medialib/audio/AudioDataProcessThread;->isProcessing()Z
+
+    move-result v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    monitor-exit p0
+
+    return v0
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
+.end method
+
+.method public OooO0o(D)Z
+    .locals 4
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "startFeeding() called with: speed = ["
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1, p2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
+
+    const-string v1, "]"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "BufferedAudioRecorder"
+
+    invoke-static {v1, v0}, Lcom/ss/android/vesdk/VELogUtil;->i(Ljava/lang/String;Ljava/lang/String;)V
+
+    iget-boolean v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0o:Z
+
+    const/4 v2, 0x1
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0oO:Lcom/ss/android/medialib/audio/AudioDataProcessThread;
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {v0}, Lcom/ss/android/medialib/audio/AudioDataProcessThread;->isProcessing()Z
+
+    move-result v0
+
+    const/4 v3, 0x0
+
+    if-eqz v0, :cond_1
+
+    const-string p0, "startFeeding \u5931\u8d25\uff0c\u5df2\u7ecf\u8c03\u7528\u8fc7\u4e00\u6b21\u4e86"
+
+    invoke-static {v1, p0}, Lcom/ss/android/vesdk/VELogUtil;->w(Ljava/lang/String;Ljava/lang/String;)V
+
+    return v3
+
+    :cond_1
+    iput-boolean v3, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO:Z
+
+    iget-object v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0oO:Lcom/ss/android/medialib/audio/AudioDataProcessThread;
+
+    iget p0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0O0:I
+
+    invoke-virtual {v0, p0, p1, p2}, Lcom/ss/android/medialib/audio/AudioDataProcessThread;->startFeeding(ID)V
+
+    return v2
+
+    :cond_2
+    :goto_0
+    const-string v0, "startFeeding \u5f55\u97f3\u672a\u542f\u52a8\uff0c\u5c06\u5148\u542f\u52a8startRecording"
+
+    invoke-static {v1, v0}, Lcom/ss/android/vesdk/VELogUtil;->w(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-virtual {p0, p1, p2, v2}, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0oO(DZ)V
+
+    return v2
+.end method
+
+.method public OooO0o0()V
+    .locals 1
+
+    monitor-enter p0
+
+    const/4 v0, 0x1
+
+    :try_start_0
+    iput-boolean v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO:Z
+
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+.end method
+
+.method public OooO0oO(DZ)V
+    .locals 2
+
+    const-string v0, "BufferedAudioRecorder"
+
+    const-string v1, "startRecording() called"
+
+    invoke-static {v0, v1}, Lcom/ss/android/vesdk/VELogUtil;->i(Ljava/lang/String;Ljava/lang/String;)V
+
+    monitor-enter p0
+
+    :try_start_0
+    iget-boolean v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0o:Z
+
+    if-eqz v0, :cond_1
+
+    const-string v0, "BufferedAudioRecorder"
+
+    const-string v1, "recorder is started"
+
+    invoke-static {v0, v1}, Lcom/ss/android/vesdk/VELogUtil;->w(Ljava/lang/String;Ljava/lang/String;)V
+
+    if-eqz p3, :cond_0
+
+    invoke-virtual {p0, p1, p2}, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0o(D)Z
+
+    :cond_0
+    monitor-exit p0
+
+    return-void
+
+    :cond_1
+    iget-object v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO00o:Landroid/media/AudioRecord;
+
+    if-nez v0, :cond_2
+
+    iget v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooOO0:I
+
+    invoke-virtual {p0, v0}, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0OO(I)V
+
+    iget-object v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO00o:Landroid/media/AudioRecord;
+
+    if-nez v0, :cond_2
+
+    const-string p1, "BufferedAudioRecorder"
+
+    const-string p2, "recorder is null"
+
+    invoke-static {p1, p2}, Lcom/ss/android/vesdk/VELogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    monitor-exit p0
+
+    return-void
+
+    :cond_2
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0o:Z
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    :try_start_1
+    new-instance v0, Ljava/lang/Thread;
+
+    new-instance v1, LOooO0Oo/OooO00o/OooO00o/OooO0O0;
+
+    invoke-direct {v1, p0, p1, p2, p3}, LOooO0Oo/OooO00o/OooO00o/OooO0O0;-><init>(LOooO0Oo/OooO00o/OooO00o/OooO0OO;DZ)V
+
+    invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+
+    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+    :try_end_1
+    .catch Ljava/lang/OutOfMemoryError; {:try_start_1 .. :try_end_1} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Runtime;->gc()V
+
+    const-wide/16 v0, 0x64
+
+    :try_start_2
+    invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
+    :try_end_2
+    .catch Ljava/lang/InterruptedException; {:try_start_2 .. :try_end_2} :catch_1
+
+    :catch_1
+    invoke-static {}, Ljava/lang/System;->runFinalization()V
+
+    new-instance v0, Ljava/lang/Thread;
+
+    new-instance v1, LOooO0Oo/OooO00o/OooO00o/OooO0O0;
+
+    invoke-direct {v1, p0, p1, p2, p3}, LOooO0Oo/OooO00o/OooO00o/OooO0O0;-><init>(LOooO0Oo/OooO00o/OooO00o/OooO0OO;DZ)V
+
+    invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+
+    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+
+    :goto_0
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    :try_start_3
+    monitor-exit p0
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+
+    throw p1
+.end method
+
+.method public OooO0oo()Z
+    .locals 4
+
+    const-string v0, "BufferedAudioRecorder"
+
+    const-string v1, "stopFeeding() called"
+
+    invoke-static {v0, v1}, Lcom/ss/android/vesdk/VELogUtil;->i(Ljava/lang/String;Ljava/lang/String;)V
+
+    iget-boolean v1, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0o:Z
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x0
+
+    if-eqz v1, :cond_1
+
+    iget-object v1, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO00o:Landroid/media/AudioRecord;
+
+    if-nez v1, :cond_1
+
+    const-string v1, "stopFeeding: \u72b6\u6001\u5f02\u5e38\uff0c\u91cd\u7f6e\u72b6\u6001"
+
+    invoke-static {v0, v1}, Lcom/ss/android/vesdk/VELogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    iput-boolean v3, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0o:Z
+
+    iput-boolean v2, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO:Z
+
+    iget-object p0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0oO:Lcom/ss/android/medialib/audio/AudioDataProcessThread;
+
+    if-eqz p0, :cond_0
+
+    invoke-virtual {p0}, Lcom/ss/android/medialib/audio/AudioDataProcessThread;->stop()V
+
+    :cond_0
+    return v3
+
+    :cond_1
+    iget-boolean v1, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0o:Z
+
+    if-eqz v1, :cond_4
+
+    iget-object v1, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0oO:Lcom/ss/android/medialib/audio/AudioDataProcessThread;
+
+    if-nez v1, :cond_2
+
+    goto :goto_1
+
+    :cond_2
+    invoke-virtual {v1}, Lcom/ss/android/medialib/audio/AudioDataProcessThread;->isProcessing()Z
+
+    move-result v1
+
+    if-nez v1, :cond_3
+
+    const-string p0, "stopFeeding \u5931\u8d25\uff0c\u8bf7\u5148startFeeding\u518dstopFeeding"
+
+    :goto_0
+    invoke-static {v0, p0}, Lcom/ss/android/vesdk/VELogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    return v3
+
+    :cond_3
+    iget-object p0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0oO:Lcom/ss/android/medialib/audio/AudioDataProcessThread;
+
+    invoke-virtual {p0}, Lcom/ss/android/medialib/audio/AudioDataProcessThread;->stopFeeding()V
+
+    return v2
+
+    :cond_4
+    :goto_1
+    const-string p0, "stopFeeding \u5931\u8d25\uff0c\u8bf7\u5148\u8c03\u7528startRecording"
+
+    goto :goto_0
+.end method
+
+.method public OooOO0()V
+    .locals 1
+
+    iget-boolean v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0o:Z
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0}, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO()Z
+
+    :cond_0
+    iget-object v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO00o:Landroid/media/AudioRecord;
+
+    if-eqz v0, :cond_2
+
+    :try_start_0
+    invoke-virtual {v0}, Landroid/media/AudioRecord;->getState()I
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO00o:Landroid/media/AudioRecord;
+
+    invoke-virtual {v0}, Landroid/media/AudioRecord;->stop()V
+
+    :cond_1
+    iget-object v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO00o:Landroid/media/AudioRecord;
+
+    invoke-virtual {v0}, Landroid/media/AudioRecord;->release()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    const/4 v0, 0x0
+
+    iput-object v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO00o:Landroid/media/AudioRecord;
+
+    :cond_2
+    const-string p0, "BufferedAudioRecorder"
+
+    const-string v0, "unInit()"
+
+    invoke-static {p0, v0}, Lcom/ss/android/vesdk/VELogUtil;->i(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public OooOO0O()V
+    .locals 0
+
+    iget-object p0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO0oO:Lcom/ss/android/medialib/audio/AudioDataProcessThread;
+
+    if-eqz p0, :cond_0
+
+    invoke-virtual {p0}, Lcom/ss/android/medialib/audio/AudioDataProcessThread;->waitUtilAudioProcessDone()V
+
+    :cond_0
+    return-void
+.end method
+
+.method protected finalize()V
+    .locals 1
+
+    iget-object v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO00o:Landroid/media/AudioRecord;
+
+    if-eqz v0, :cond_1
+
+    :try_start_0
+    invoke-virtual {v0}, Landroid/media/AudioRecord;->getState()I
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO00o:Landroid/media/AudioRecord;
+
+    invoke-virtual {v0}, Landroid/media/AudioRecord;->stop()V
+
+    :cond_0
+    iget-object v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO00o:Landroid/media/AudioRecord;
+
+    invoke-virtual {v0}, Landroid/media/AudioRecord;->release()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    const/4 v0, 0x0
+
+    iput-object v0, p0, LOooO0Oo/OooO00o/OooO00o/OooO0OO;->OooO00o:Landroid/media/AudioRecord;
+
+    :cond_1
+    invoke-super {p0}, Ljava/lang/Object;->finalize()V
+
+    return-void
+.end method

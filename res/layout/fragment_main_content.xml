@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/v6_preview_page" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/more_mode_mask" android:background="@color/mode_more_bg_normal" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/watermark_background_viewstub" android:layout="@layout/watermark_sample_background" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/watermark_viewstub" android:layout="@layout/watermark_sample" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/watermark_extend_viewstub" android:layout="@layout/watermark_sample" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include layout="@layout/v6_preview_panel" />
+    <com.android.camera.ui.ZoomView android:id="@id/v6_zoom_view" android:visibility="gone" android:layout_width="@dimen/pro_view_zoom_view_width" android:layout_height="@dimen/pro_view_zoom_view_slider_height" android:layout_marginTop="@dimen/pro_video_zoom_view_margin_top" android:layout_marginStart="@dimen/pro_video_zoom_view_margin_left" />
+    <com.android.camera.ui.ZoomView android:layout_gravity="center_horizontal" android:id="@id/v6_zoom_view_horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/pro_view_zoom_view_width" android:layout_marginTop="@dimen/mode_select_margin_top" />
+    <FrameLayout android:id="@id/cover_parent" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="left" android:id="@id/left_cover_layout" android:background="@color/black" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <FrameLayout android:layout_gravity="right" android:id="@id/right_cover_layout" android:background="@color/black" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </FrameLayout>
+</FrameLayout>

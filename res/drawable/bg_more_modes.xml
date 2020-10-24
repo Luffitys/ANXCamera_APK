@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="@dimen/mode_more_top_corners" android:topRightRadius="@dimen/mode_more_top_corners" />
+    <solid android:color="@color/mode_more_bg_popup" />
+</shape>

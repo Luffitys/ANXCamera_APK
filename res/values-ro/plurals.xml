@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_focus_face_detect">
+        <item quantity="other">Focalizat. %d chipuri detectate</item>
+        <item quantity="one">Focalizat. %d chip detectat</item>
+    </plurals>
+    <plurals name="accessibility_timer_burst_count">
+        <item quantity="other">%d fotografii într-o rafală</item>
+        <item quantity="one">%d fotografie într-o rafală</item>
+    </plurals>
+    <plurals name="accessibility_timer_burst_interval">
+        <item quantity="other">Interval: %d secunde</item>
+        <item quantity="one">Interval: %d secundă</item>
+    </plurals>
+    <plurals name="accessibility_vv_duartion">
+        <item quantity="other">Durată: %d secunde</item>
+        <item quantity="one">Duration: %d secundă</item>
+    </plurals>
+    <plurals name="clone_guide_tip2">
+        <item quantity="other">Puteți crea maxim %d clone o dată.</item>
+        <item quantity="one">Puteți crea maxim %d clonă o dată.</item>
+    </plurals>
+    <plurals name="pref_camera_fastmotion_duration_unit">
+        <item quantity="other">%1$s minute</item>
+        <item quantity="one">%1$s minut</item>
+    </plurals>
+    <plurals name="timer_burst_setting_total_count">
+        <item quantity="other">%1$s fotografii</item>
+        <item quantity="one">%1$s fotografie</item>
+    </plurals>
+    <plurals name="toast_burst_snap_finished_summary">
+        <item quantity="other">Fotografie în rafală efectuată, s-au făcut %1$s fotografii</item>
+        <item quantity="one">Fotografie în rafală efectuată, s-a făcut %1$s fotografie</item>
+    </plurals>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/pref_customization_title"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:camera="http://schemas.android.com/apk/res/com.android.camera">
+    <Preference android:persistent="false" android:title="@string/pref_custom_feature_layout_title" android:key="pref_custom_feature_layout" />
+    <Preference android:persistent="false" android:title="@string/pref_more_mode_style_title" android:key="pref_custom_more_mode" />
+    <com.android.camera.ui.ValuePreference android:persistent="false" android:title="@string/pref_custom_tint_title" android:key="custom_tint_key" />
+    <com.android.camera.ui.ValuePreference android:persistent="false" android:title="@string/pref_custom_shutter_sound_title" android:key="custom_shutter_sound_key" />
+</PreferenceScreen>

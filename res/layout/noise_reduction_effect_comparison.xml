@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/effect_comparison_padding_hor">
+        <LinearLayout android:orientation="vertical" android:id="@id/open_os" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/effect_comparison_video_margin_top" app:cardCornerRadius="@dimen/effect_comparison_video_radius" app:cardElevation="0.0dip">
+                <VideoView android:layout_gravity="center" android:id="@id/open_os_video" android:layout_width="@dimen/effect_comparison_video_width" android:layout_height="@dimen/effect_comparison_video_height" android:alpha="0.0" android:importantForAccessibility="no" />
+                <View android:layout_gravity="center" android:id="@id/effect_comparison_os_cover" android:background="@drawable/effect_comparison_os" android:layout_width="@dimen/effect_comparison_video_width" android:layout_height="@dimen/effect_comparison_video_height" />
+                <View android:layout_gravity="center" android:id="@id/effect_comparison_os_play" android:background="@drawable/effect_comparison_play_button" android:layout_width="@dimen/effect_comparison_play_button_width" android:layout_height="@dimen/effect_comparison_play_button_height" />
+            </androidx.cardview.widget.CardView>
+            <TextView android:textSize="@dimen/effect_comparison_text_size" android:textStyle="bold" android:textColor="@color/effect_comparison_text_color" android:layout_gravity="center_horizontal" android:id="@id/effect_comparison_text_os" android:layout_width="@dimen/effect_comparison_text_os_width" android:layout_height="@dimen/effect_comparison_text_os_height" android:layout_marginTop="@dimen/effect_comparison_radio_margin_top" android:text="@string/pref_e_c_t_j" />
+        </LinearLayout>
+        <View android:layout_width="@dimen/effect_comparison_centre_margin" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/open_ns" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/effect_comparison_video_margin_top" app:cardCornerRadius="@dimen/effect_comparison_video_radius" app:cardElevation="0.0dip">
+                <VideoView android:layout_gravity="center" android:id="@id/open_ns_video" android:layout_width="@dimen/effect_comparison_video_width" android:layout_height="@dimen/effect_comparison_video_height" android:alpha="0.0" android:importantForAccessibility="no" />
+                <View android:layout_gravity="center" android:id="@id/effect_comparison_ns_cover" android:background="@drawable/effect_comparison_ns" android:layout_width="@dimen/effect_comparison_video_width" android:layout_height="@dimen/effect_comparison_video_height" />
+                <View android:layout_gravity="center" android:id="@id/effect_comparison_ns_play" android:background="@drawable/effect_comparison_play_button" android:layout_width="@dimen/effect_comparison_play_button_width" android:layout_height="@dimen/effect_comparison_play_button_height" />
+            </androidx.cardview.widget.CardView>
+            <TextView android:textSize="@dimen/effect_comparison_text_size" android:textStyle="bold" android:textColor="@color/effect_comparison_text_color" android:layout_gravity="center_horizontal" android:id="@id/effect_comparison_text_ns" android:layout_width="@dimen/effect_comparison_text_nr_width" android:layout_height="@dimen/effect_comparison_text_nr_height" android:layout_marginTop="@dimen/effect_comparison_radio_margin_top" android:text="@string/pref_e_c_p_k" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:allowDividerBelow="true" app:singleLineTitle="false">
+        <CheckBoxPreference android:persistent="false" android:title="@string/pref_i_n_r_b" android:key="pref_intelligent_noise_reduction_key" android:summary="@string/pref_s_n_r_s_c" android:defaultValue="true" />
+        <com.android.camera.preferences.EffectComparisonPreference android:persistent="false" android:layout="@layout/noise_reduction_effect_comparison" android:key="pref_open_effect_comparison_type" />
+    </PreferenceCategory>
+    <PreferenceCategory />
+    <CheckBoxPreference android:persistent="true" android:title="@string/pref_k_h" android:key="pref_karaoke_key" android:summary="@string/pref_k_s_i" android:defaultValue="false" />
+</PreferenceScreen>

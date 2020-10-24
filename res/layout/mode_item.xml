@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mode_item" android:layout_width="@dimen/mode_item_width" android:layout_height="@dimen/mode_item_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/mode_icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.android.camera.fragment.mode.ModeBackground android:id="@id/mode_bg" android:layout_width="@dimen/mode_icon_size" android:layout_height="@dimen/mode_icon_size" />
+        <ImageView android:id="@id/mode_icon" android:layout_width="@dimen/mode_icon_size" android:layout_height="@dimen/mode_icon_size" android:scaleType="fitXY" />
+    </FrameLayout>
+    <com.android.camera.ui.AdaptiveTextView android:textSize="@dimen/mode_name_size" android:textColor="@color/mode_name_color" android:ellipsize="marquee" android:gravity="bottom|center" android:layout_gravity="center_horizontal" android:id="@id/mode_name" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" android:importantForAccessibility="no" />
+</LinearLayout>

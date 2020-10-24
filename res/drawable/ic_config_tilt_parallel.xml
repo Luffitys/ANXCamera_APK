@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/slide_switch_button_item_image_size" android:width="@dimen/slide_switch_button_item_image_size" android:viewportWidth="40.0" android:viewportHeight="40.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#ffffffff" android:pathData="M34,29L34,34L6,34L6,29L34,29ZM14,17.5L14,22.5L6,22.5L6,17.5L14,17.5ZM24,17.5L24,22.5L16,22.5L16,17.5L24,17.5ZM34,17.5L34,22.5L26,22.5L26,17.5L34,17.5ZM34,6L34,11L6,11L6,6L34,6Z" android:fillType="evenOdd" />
+</vector>

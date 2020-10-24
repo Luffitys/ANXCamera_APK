@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/recom_top_tip_bg_color" />
+    <corners android:topLeftRadius="@dimen/music_hint_radius" android:topRightRadius="@dimen/music_hint_radius" android:bottomLeftRadius="@dimen/music_hint_radius" android:bottomRightRadius="@dimen/music_hint_radius" />
+</shape>

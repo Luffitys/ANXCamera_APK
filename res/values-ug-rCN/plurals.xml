@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_focus_face_detect">
+        <item quantity="other">فوكۇسلاش تاماملاندى،%d دانە چىراي بايقالدى</item>
+    </plurals>
+    <plurals name="accessibility_timer_burst_count">
+        <item quantity="other">تارتقان سۈرەت%dپارچە</item>
+    </plurals>
+    <plurals name="accessibility_timer_burst_interval">
+        <item quantity="other">ۋاقىت ئارىلىقى %d سېكۇنت</item>
+    </plurals>
+    <plurals name="accessibility_vv_duartion">
+        <item quantity="other">سىنلاش ۋاقتى %d سېكۇنت</item>
+    </plurals>
+    <plurals name="clone_guide_tip2">
+        <item quantity="other">ئەڭ كۆپ بولغاندا %d دانە ئايرىشنى قوللايدۇ</item>
+    </plurals>
+    <plurals name="fastmotion_pro_min_unit">
+        <item quantity="other">%1$d مىنۇت</item>
+    </plurals>
+    <plurals name="fastmotion_pro_sec_unit">
+        <item quantity="other">%1$d سېكۇنت</item>
+    </plurals>
+    <plurals name="pref_camera_fastmotion_duration_unit">
+        <item quantity="other">%1$s مىنۇت</item>
+    </plurals>
+    <plurals name="timer_burst_setting_total_count">
+        <item quantity="other">%1$s پارچە</item>
+    </plurals>
+    <plurals name="toast_burst_snap_finished_summary">
+        <item quantity="other">ئۇلاپ تارتىش ئاياغلاشتى،جەمئىي تارتىلغىنى %1$s پارچە.</item>
+    </plurals>
+</resources>

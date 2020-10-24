@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="com.android.camera" platformBuildVersionCode="30" platformBuildVersionName="11">
+    <original-package android:name="com.android.camera"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:name="com.android.settings.permission.CLOUD_SETTINGS_PROVIDER"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.fingerprints.service.ACCESS_FINGERPRINT_MANAGER"/>
+    <uses-permission android:name="com.miui.gallery.permission.BIND_SERVICE"/>
+    <uses-permission android:name="com.android.SystemUI.permission.TIGGER_TOGGLE"/>
+    <uses-permission android:name="com.xiaomi.permission.CLOUD_MANAGER"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="com.xiaomi.scanner.receiver.RECEIVER"/>
+    <uses-permission android:name="com.miui.powerkeeper.permission.KILL_CAMERA"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.miui.securitycenter.permission.PERM_USE_INFO"/>
+    <uses-permission android:name="android.permission.CONTROL_DISPLAY_BRIGHTNESS"/>
+    <uses-permission android:name="mediatek.permission.ACCESS_APU_SYS"/>
+    <permission android:name="com.android.camera.permission.RESET_PREF" android:protectionLevel="normal"/>
+    <permission android:name="com.xiaomi.camera.AUX_CONTROL" android:protectionLevel="privileged|signature"/>
+    <permission android:name="com.android.camera.permission.SPLASH" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.android.camera.permission.CAMERA_STATUS" android:protectionLevel="privileged|signature"/>
+    <uses-permission android:name="com.xiaomi.mi_connect_service.permission.RECEIVE_ENDPOINT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INJECT_EVENTS"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:backupAgent="com.android.camera.backup.CameraBackupAgent" android:extractNativeLibs="false" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher_camera" android:label="@string/camera_label" android:largeHeap="true" android:name="com.android.camera.CameraAppImpl" android:networkSecurityConfig="@xml/network_security_config" android:supportsRtl="true" android:theme="@style/ThemeCamera">
+        <meta-data android:name="required_permissions" android:value="@string/required_permissions"/>
+        <meta-data android:name="android.max_aspect" android:value="2.3"/>
+        <uses-library android:name="zxing.jar" android:required="false"/>
+        <uses-library android:name="cloud-common.jar"/>
+        <uses-library android:name="volley.jar"/>
+        <service android:exported="false" android:name="com.android.camera.snap.SnapService"/>
+        <service android:name="com.android.camera.statistic.SettingUploadJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:name="com.android.camera.snap.SnapKeyReceiver" android:permission="com.xiaomi.camera.AUX_CONTROL">
+            <intent-filter>
+                <action android:name="miui.intent.action.CAMERA_KEY_BUTTON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.android.camera.CameraButtonIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.CAMERA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.android.camera.PreloadReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="miui.intent.action.POPUP_UPDOWN_FAILED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="@bool/priority_storage" android:name="com.android.camera.storage.PriorityStorageBroadcastReceiver">
+            <intent-filter>
+                <action android:name="miui.intent.action.PRIORITY_STORAGE"/>
+            </intent-filter>
+            <meta-data android:name="miui.intent.extra.PRIORITY_STORAGE_KILL_APP" android:value="1"/>
+            <meta-data android:name="miui.intent.extra.PRIORITY_STORAGE_HIDE" android:value="@integer/hide_priority_in_system_settings"/>
+        </receiver>
+        <receiver android:name="com.android.camera.preferences.ResetPreferenceBroadcastReceiver" android:permission="com.android.camera.permission.RESET_PREF">
+            <intent-filter>
+                <action android:name="miui.intent.action.RESET_CAMERA_PREF"/>
+            </intent-filter>
+        </receiver>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenSize" android:launchMode="singleTop" android:name="com.android.camera.Camera" android:resizeableActivity="false" android:screenOrientation="portrait" android:uiOptions="splitActionBarWhenNarrow" android:visibleToInstantApps="true" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.STILL_IMAGE_CAMERA_SECURE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE_SECURE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:label="@string/video_camera_label" android:name="com.android.camera.VideoCamera" android:screenOrientation="portrait" android:targetActivity="com.android.camera.Camera">
+            <intent-filter>
+                <action android:name="android.media.action.VIDEO_CAPTURE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.VIDEO_CAMERA"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:label="@string/camera_label" android:name="com.android.camera.VoiceCamera" android:permission="com.xiaomi.camera.AUX_CONTROL" android:screenOrientation="portrait" android:targetActivity="com.android.camera.Camera">
+            <intent-filter>
+                <action android:name="android.media.action.VOICE_COMMAND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.VOICE"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:label="@string/camera_label" android:name="com.android.camera.AssistantCamera" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.media.action.STILL_IMAGE_CAMERA"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.VOICE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|mcc|mnc|orientation|screenSize" android:label="@string/camera_settings_label" android:name="com.android.camera.CameraPreferenceActivity" android:screenOrientation="behind" android:theme="@style/ThemeCameraSettingsMiuiX">
+            <intent-filter android:priority="60">
+                <action android:name="miui.intent.action.APP_SETTINGS"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="functionindex" android:resource="@xml/functionindex"/>
+        </activity>
+        <activity android:label="@string/pref_watermark_title" android:launchMode="singleTop" android:name="com.android.camera.WatermarkActivity" android:theme="@style/ThemeCameraSettingsMiuiX"/>
+        <activity android:label="@string/pref_n_s_a" android:launchMode="singleTop" android:name="com.android.camera.SoundSettingActivity" android:theme="@style/ThemeCameraSettingsMiuiX"/>
+        <activity android:label="@string/pref_p_d_e" android:launchMode="singleTop" android:name="com.android.camera.ProfessionalDisplayActivity" android:theme="@style/ThemeCameraSettingsMiuiX"/>
+        <activity android:label="@string/pref_audio_denoise_title" android:launchMode="singleTop" android:name="com.android.camera.VideoDenoiseActivity" android:theme="@style/ThemeCameraSettingsMiuiX"/>
+        <activity android:label="@string/photo_assistance_tips_title" android:launchMode="singleTop" android:name="com.android.camera.PhotoAssistanceTipsActivity" android:theme="@style/ThemeCameraSettingsMiuiX"/>
+        <activity android:label="@string/pref_customization_title" android:launchMode="singleTop" android:name="com.android.camera.customization.CustomizationActivity" android:theme="@style/ThemeCameraSettingsMiuiX"/>
+        <activity android:label="@string/pref_custom_shutter_sound_title" android:launchMode="singleTop" android:name="com.android.camera.customization.ActivityCustomSound" android:screenOrientation="portrait" android:theme="@style/ThemeCustomizationPage"/>
+        <activity android:label="@string/pref_custom_tint_title" android:launchMode="singleTop" android:name="com.android.camera.customization.CustomTintActivity" android:screenOrientation="portrait" android:theme="@style/ThemeModeEditor"/>
+        <activity android:configChanges="keyboardHidden|mcc|mnc|orientation|screenSize" android:name="com.android.camera.ModeEditorActivity" android:screenOrientation="portrait" android:theme="@style/ThemeModeEditor"/>
+        <activity android:configChanges="keyboardHidden|mcc|mnc|orientation|screenSize" android:label="@string/pref_more_mode_style_title" android:name="com.android.camera.MoreModeActivity" android:screenOrientation="portrait" android:theme="@style/ThemeCameraSettingsMiuiX"/>
+        <activity android:configChanges="keyboardHidden|mcc|mnc|orientation|screenSize" android:label="@string/live_music_change_bgm" android:name="com.android.camera.fragment.music.LiveMusicActivity" android:screenOrientation="portrait" android:theme="@style/ThemeCameraSettingsMiuiX"/>
+        <activity android:label="@string/user_notice_title" android:launchMode="singleTop" android:name="com.android.camera.WebViewActivity" android:theme="@style/ThemeCameraSettingsMiuiX"/>
+        <service android:exported="true" android:name="com.android.camera.backup.CameraSettingsBackupService" android:permission="com.xiaomi.permission.CLOUD_MANAGER">
+            <intent-filter>
+                <action android:name="miui.action.CLOUD_BACKUP_SETTINGS"/>
+                <action android:name="miui.action.CLOUD_RESTORE_SETTINGS"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.android.camera.settings.CameraSettingsSearchProvider" android:exported="true" android:grantUriPermissions="true" android:multiprocess="false" android:name="com.android.camera.settings.CameraSettingsSearchProvider">
+            <intent-filter>
+                <action android:name="miui.intent.action.SETTINGS_SEARCH_PROVIDER"/>
+            </intent-filter>
+        </provider>
+        <service android:enabled="true" android:exported="true" android:name="com.android.camera.LocalParallelService"/>
+        <service android:name="com.xiaomi.camera.rcs.service.RemoteControlService" android:process=":remote">
+            <intent-filter>
+                <action android:name="com.xiaomi.camera.REMOTE_CONTROL_SERVICE_BIND"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.android.camera.splashProvider" android:exported="true" android:name="com.android.camera.provider.SplashProvider" android:permission="com.android.camera.permission.SPLASH"/>
+        <provider android:authorities="com.android.camera.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <provider android:authorities="@string/provider_authority" android:exported="true" android:grantUriPermissions="true" android:name="com.xiaomi.camera.parallelservice.provider.ParallelProcessProvider" android:syncable="false"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="true"/>
+        <service android:exported="false" android:name="com.iqiyi.android.qigsaw.core.splitinstall.remote.SplitInstallService">
+            <intent-filter>
+                <action android:name="com.iqiyi.android.play.core.splitinstall.BIND_SPLIT_INSTALL_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.iqiyi.android.qigsaw.core.splitinstall.SplitCleanService"/>
+        <service android:exported="false" android:name="com.iqiyi.android.qigsaw.core.splitrequest.splitinfo.SplitUpdateService"/>
+        <meta-data android:name="aia-compat-api-min-version" android:value="1"/>
+        <meta-data android:name="folme" android:value="1.0"/>
+        <meta-data android:name="animation" android:value="1.0"/>
+        <meta-data android:name="springback" android:value="1.0"/>
+        <meta-data android:name="nest" android:value="1.0"/>
+        <meta-data android:name="dynamicoverscroller" android:value="1.0"/>
+        <meta-data android:name="core" android:value="1.0"/>
+        <meta-data android:name="preference" android:value="1.0"/>
+        <meta-data android:name="recyclerview" android:value="1.0"/>
+        <meta-data android:name="recyclerview_animator" android:value="1.0"/>
+        <meta-data android:name="spring" android:value="1.0"/>
+        <meta-data android:name="compat" android:value="1.0"/>
+        <meta-data android:name="nestedheader" android:value="1.0"/>
+    </application>
+</manifest>

@@ -1,0 +1,59 @@
+.class public final Lio/reactivex/internal/operators/observable/ObservableGroupBy;
+.super Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;
+.source ""
+
+
+# instance fields
+.field final bufferSize:I
+
+.field final delayError:Z
+
+.field final keySelector:Lio/reactivex/functions/Function;
+
+.field final valueSelector:Lio/reactivex/functions/Function;
+
+
+# direct methods
+.method public constructor <init>(Lio/reactivex/ObservableSource;Lio/reactivex/functions/Function;Lio/reactivex/functions/Function;IZ)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;-><init>(Lio/reactivex/ObservableSource;)V
+
+    iput-object p2, p0, Lio/reactivex/internal/operators/observable/ObservableGroupBy;->keySelector:Lio/reactivex/functions/Function;
+
+    iput-object p3, p0, Lio/reactivex/internal/operators/observable/ObservableGroupBy;->valueSelector:Lio/reactivex/functions/Function;
+
+    iput p4, p0, Lio/reactivex/internal/operators/observable/ObservableGroupBy;->bufferSize:I
+
+    iput-boolean p5, p0, Lio/reactivex/internal/operators/observable/ObservableGroupBy;->delayError:Z
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public subscribeActual(Lio/reactivex/Observer;)V
+    .locals 8
+
+    iget-object v0, p0, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;->source:Lio/reactivex/ObservableSource;
+
+    new-instance v7, Lio/reactivex/internal/operators/observable/ObservableGroupBy$GroupByObserver;
+
+    iget-object v3, p0, Lio/reactivex/internal/operators/observable/ObservableGroupBy;->keySelector:Lio/reactivex/functions/Function;
+
+    iget-object v4, p0, Lio/reactivex/internal/operators/observable/ObservableGroupBy;->valueSelector:Lio/reactivex/functions/Function;
+
+    iget v5, p0, Lio/reactivex/internal/operators/observable/ObservableGroupBy;->bufferSize:I
+
+    iget-boolean v6, p0, Lio/reactivex/internal/operators/observable/ObservableGroupBy;->delayError:Z
+
+    move-object v1, v7
+
+    move-object v2, p1
+
+    invoke-direct/range {v1 .. v6}, Lio/reactivex/internal/operators/observable/ObservableGroupBy$GroupByObserver;-><init>(Lio/reactivex/Observer;Lio/reactivex/functions/Function;Lio/reactivex/functions/Function;IZ)V
+
+    invoke-interface {v0, v7}, Lio/reactivex/ObservableSource;->subscribe(Lio/reactivex/Observer;)V
+
+    return-void
+.end method

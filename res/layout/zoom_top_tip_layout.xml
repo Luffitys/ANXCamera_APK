@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/top_left_english_tip_size" android:textStyle="normal" android:gravity="center" android:layout_gravity="center_horizontal" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#bb000000" android:shadowRadius="2.75" android:textDirection="ltr" style="@style/SettingStatusBarText"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

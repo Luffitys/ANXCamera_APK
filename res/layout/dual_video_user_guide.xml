@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/ambilight_description_page_padding" android:paddingEnd="@dimen/ambilight_description_page_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/dual_video_back" android:layout_width="wrap_content" android:layout_height="@dimen/ambilight_description_title_bar_height" android:layout_marginTop="42.539978dip" android:layout_marginBottom="10.419983dip" android:src="@miui:drawable/action_bar_back_dark" android:contentDescription="@string/mimoji_back" android:layout_marginStart="@dimen/ambilight_description_back_img_padding" android:layout_marginEnd="@dimen/ambilight_description_back_img_padding" />
+    <TextView android:textSize="@dimen/ambilight_description_title_text_size" android:textColor="@color/white" android:id="@id/dual_video_user_guide_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ambilight_description_title_bottom_margin" android:text="@string/dual_video_user_guide_main_title" android:fontFamily="sans-serif-light" />
+    <miuix.recyclerview.widget.RecyclerView android:id="@id/content_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

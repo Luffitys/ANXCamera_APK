@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_focus_face_detect">
+        <item quantity="other">Wyostrzono. Wykrytych twarzy: %d</item>
+        <item quantity="one">Wyostrzono. %d wykryta twarz</item>
+    </plurals>
+    <plurals name="accessibility_timer_burst_count">
+        <item quantity="other">Zdjęcia seryjne: %d</item>
+        <item quantity="one">Zdjęcia seryjne: %d</item>
+    </plurals>
+    <plurals name="accessibility_timer_burst_interval">
+        <item quantity="other">Interwał: %d sekund</item>
+        <item quantity="one">Interwał: %d sekunda</item>
+        <item quantity="few">Interwał: %d sekundy</item>
+    </plurals>
+    <plurals name="accessibility_vv_duartion">
+        <item quantity="other">Czas trwania: %d sekund</item>
+        <item quantity="one">Czas trwania: %d sekunda</item>
+        <item quantity="few">Czas trwania: %d sekundy</item>
+    </plurals>
+    <plurals name="clone_guide_tip2">
+        <item quantity="other">Możesz utworzyć maks. %d klonów na raz.</item>
+        <item quantity="one">Możesz utworzyć maks. %d klon na raz.</item>
+        <item quantity="few">Możesz utworzyć maks. %d klony na raz.</item>
+    </plurals>
+    <plurals name="fastmotion_pro_min_unit">
+        <item quantity="other">%1$d min</item>
+        <item quantity="one">%1$d min</item>
+    </plurals>
+    <plurals name="fastmotion_pro_sec_unit">
+        <item quantity="other">%1$d sek.</item>
+        <item quantity="one">%1$d sek.</item>
+    </plurals>
+    <plurals name="live_workspace_delete_dialog_title">
+        <item quantity="other">Usunąć %1$d szkiców?</item>
+        <item quantity="one">Usunąć %1$d szkic?</item>
+        <item quantity="few">Usunąć %1$d szkice?</item>
+    </plurals>
+    <plurals name="pref_camera_fastmotion_duration_unit">
+        <item quantity="other">%1$s min</item>
+        <item quantity="one">%1$s min</item>
+    </plurals>
+    <plurals name="timer_burst_setting_total_count">
+        <item quantity="other">%1$s zdjęć</item>
+        <item quantity="one">%1$s zdjęcie</item>
+        <item quantity="few">%1$s zdjęcia</item>
+    </plurals>
+    <plurals name="toast_burst_snap_finished_summary">
+        <item quantity="other">Zdjęcia seryjne: zrobiono %1$s zdjęć</item>
+        <item quantity="one">Zdjęcia seryjne: zrobiono %1$s zdjęcie</item>
+        <item quantity="few">Zdjęcia seryjne: zrobiono %1$s zdjęcia</item>
+    </plurals>
+</resources>

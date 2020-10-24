@@ -1,0 +1,11 @@
+.class public interface abstract Lcom/miui/internal/view/menu/MenuBuilder$Callback;
+.super Ljava/lang/Object;
+.source ""
+
+
+# virtual methods
+.method public abstract onMenuItemSelected(Lcom/miui/internal/view/menu/MenuBuilder;Landroid/view/MenuItem;)Z
+.end method
+
+.method public abstract onMenuModeChange(Lcom/miui/internal/view/menu/MenuBuilder;)V
+.end method

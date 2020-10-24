@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rv_padding_h">4.0dip</dimen>
+    <dimen name="rv_padding_left">10.659973dip</dimen>
+    <dimen name="rv_padding_v">20.0dip</dimen>
+</resources>

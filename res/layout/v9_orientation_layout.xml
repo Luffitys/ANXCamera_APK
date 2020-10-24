@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/orient_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/module_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/id_card_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/panorama_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/wideselfie_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/main_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/main_subtitle" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="top" android:id="@id/main_top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/bottom_mimoji" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/bottom_action" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.android.camera.ui.PopupMenuLayout android:layout_gravity="bottom" android:id="@id/popup_menu" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/bottom_beauty" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/bottom_popup_manually" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/bottom_popup_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/bottom_popup_dual_camera_adjust" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.android.camera.ui.PopupMenuLayout>
+    <FrameLayout android:id="@id/full_screen" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/mimoji_full_screen" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/full_screen_feature" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/v9_smart_camera_control" />
+    <include layout="@layout/on_screen_hint" />
+</FrameLayout>

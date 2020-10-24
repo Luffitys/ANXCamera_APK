@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/dual_layout_parent" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/sat_optical_zoom_switch_simulator" android:background="@color/transparent" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="1.0px" android:layout_height="1.0px" android:layout_centerInParent="true" android:importantForAccessibility="no" />
+    <LinearLayout android:orientation="vertical" android:id="@id/dual_camera_button_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/dual_camera_bokeh_indicator" android:background="@drawable/bg_popup_indicator_no_stroke" android:focusable="false" android:layout_width="@dimen/manually_indicator_layout_width" android:layout_height="@dimen/manually_indicator_layout_height" android:src="@drawable/ic_vector_bokeh" android:scaleType="center" android:contentDescription="@string/accessibility_portrait_depth_effect_panel_on" />
+        <include android:layout_gravity="center" android:id="@id/zoom_ratio_toggle_button" android:layout_width="wrap_content" android:layout_height="@dimen/manually_indicator_layout_height" android:layout_marginBottom="@dimen/popup_indicator_button_extra_margin_bottom" layout="@layout/zoom_ratio_toggle_view" />
+        <com.android.camera.ui.zoom.ZoomIndexButtonsLayout android:layout_gravity="bottom|center" android:id="@id/zoom_index_buttons_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/manually_indicator_layout_height" android:layout_marginBottom="@dimen/popup_indicator_button_extra_margin_bottom" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/dual_camera_zoom_slider_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/manual_popup_layout_height" android:layout_below="@id/dual_camera_button_layout">
+        <com.android.camera.ui.HorizontalZoomView android:id="@id/dual_camera_zoom" android:paddingLeft="@dimen/zoom_popup_padding_left" android:paddingRight="@dimen/zoom_popup_padding_left" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:center_y_marginbottom="@dimen/zoom_popup_horizontalview_center_padbottom" />
+    </LinearLayout>
+</RelativeLayout>

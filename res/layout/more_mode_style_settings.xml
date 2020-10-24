@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/more_mode_settings_padding_hor"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/open_type_tab" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/more_mode_settings_video_margin_top" app:cardCornerRadius="@dimen/more_mode_settings_video_radius" app:cardElevation="0.0dip">
+            <VideoView android:layout_gravity="center" android:id="@id/open_type_tab_video" android:layout_width="@dimen/more_mode_settings_video_width" android:layout_height="@dimen/more_mode_settings_video_height" android:alpha="0.0" android:importantForAccessibility="no" />
+            <View android:layout_gravity="center" android:id="@id/tab_cover" android:background="@drawable/video_cover_tab" android:layout_width="@dimen/more_mode_settings_video_width" android:layout_height="@dimen/more_mode_settings_video_height" />
+        </androidx.cardview.widget.CardView>
+        <RadioButton android:textSize="@dimen/more_mode_settings_title_size" android:textColor="@color/more_mode_style_setting_text_color" android:id="@id/open_type_tab_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/more_mode_settings_radio_margin_top" android:text="@string/more_mode_style_tab" style="@miui:style/Widget.CompoundButton.RadioButton.Circle" />
+    </LinearLayout>
+    <View android:layout_width="@dimen/more_mode_settings_centre_margin" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/open_type_popup" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/more_mode_settings_video_margin_top" app:cardCornerRadius="@dimen/more_mode_settings_video_radius" app:cardElevation="0.0dip">
+            <VideoView android:layout_gravity="center" android:id="@id/open_type_popup_video" android:layout_width="@dimen/more_mode_settings_video_width" android:layout_height="@dimen/more_mode_settings_video_height" android:alpha="0.0" android:importantForAccessibility="no" />
+            <View android:layout_gravity="center" android:id="@id/popup_cover" android:background="@drawable/video_cover_popup" android:layout_width="@dimen/more_mode_settings_video_width" android:layout_height="@dimen/more_mode_settings_video_height" />
+        </androidx.cardview.widget.CardView>
+        <RadioButton android:textSize="@dimen/more_mode_settings_title_size" android:textColor="@color/more_mode_style_setting_text_color" android:id="@id/open_type_popup_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/more_mode_settings_radio_margin_top" android:text="@string/more_mode_style_popup" style="@miui:style/Widget.CompoundButton.RadioButton.Circle" />
+    </LinearLayout>
+</LinearLayout>

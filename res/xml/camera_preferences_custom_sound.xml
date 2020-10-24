@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory>
+        <com.android.camera.customization.PreferenceCustomSound android:persistent="false" android:layout="@layout/activity_shutter_sound" android:key="custom_shutter_sound_key" />
+    </PreferenceCategory>
+</PreferenceScreen>

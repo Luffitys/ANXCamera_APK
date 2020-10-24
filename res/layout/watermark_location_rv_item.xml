@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="@dimen/aiwatermark_location_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/aiwatermark_location_list_item_text_size" android:textColor="@color/black" android:ellipsize="end" android:layout_gravity="center|left" android:id="@id/watermark_location_text" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/aiwatermark_location_list_item_text_margin_left" android:maxWidth="@dimen/aiwatermark_location_list_item_text_max_width" android:maxLines="1" android:maxEms="14" android:fontFamily="mipro-medium" />
+    <ImageView android:layout_gravity="center|right" android:id="@id/watermark_location_image" android:background="@drawable/ic_watermark_location_selected" android:visibility="invisible" android:layout_width="@dimen/aiwatermark_location_list_item_image_width" android:layout_height="@dimen/aiwatermark_location_list_item_image_width" android:layout_marginRight="@dimen/aiwatermark_location_list_item_image_margin_right" />
+</FrameLayout>

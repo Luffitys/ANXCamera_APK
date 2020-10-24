@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/more_mode_style">
+        <com.android.camera.preferences.MoreModeStylePreference android:persistent="false" android:layout="@layout/more_mode_style_settings" android:key="pref_open_more_mode_type" />
+    </PreferenceCategory>
+</PreferenceScreen>

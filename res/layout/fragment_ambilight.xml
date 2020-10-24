@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ambilight_scenes_list_root" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/debug_info" android:background="@color/white" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="13.819977sp" android:textColor="#ffffffff" android:gravity="center|top" android:id="@id/ambilight_use_hint_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/super_night_toast" android:shadowColor="#c0000000" android:shadowRadius="4.0" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/ambilight_indicator" android:focusable="false" android:visibility="gone" android:layout_marginBottom="@dimen/popup_indicator_button_extra_margin_bottom" android:src="@drawable/ic_vector_manually_indicator" android:scaleType="center" android:contentDescription="@string/accessibility_ambilight_panel_on" style="@style/PopupButtonIndicatorNoStroke" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ambilight_scenes_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ambilight_scenes_selector_margin_top">
+        <miuix.recyclerview.widget.RecyclerView android:layout_gravity="center_vertical" android:id="@id/ambilight_scenes_list" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/fragment_ambilight_scenes_list_margin_vertical" android:paddingHorizontal="@dimen/vv_list_item_margin_h" />
+    </LinearLayout>
+</LinearLayout>

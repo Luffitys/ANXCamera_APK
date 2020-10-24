@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/toast_top_tip_shape_height" />
+    <corners android:radius="@dimen/toast_top_tip_corners_radius" />
+    <solid android:color="@color/recom_top_tip_bg_color" />
+    <padding android:left="@dimen/toast_top_tip_shape_padding_left_right" android:right="@dimen/toast_top_tip_shape_padding_left_right" />
+</shape>
