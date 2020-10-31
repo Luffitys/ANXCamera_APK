@@ -95,12 +95,13 @@
 
     sget-object v0, Lmiui/os/DeviceFeature;->SYSTEM_RESOURCES:Landroid/content/res/Resources;
 
-    const v3, 0x11040019
+#    const v3, 0x11040019
+#
+#    invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getBoolean(I)Z
+#
+#    move-result v0
 
-    invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getBoolean(I)Z
-
-    move-result v0
-
+	const/4 v0, 0x1
 
     sput-boolean v0, Lmiui/os/DeviceFeature;->SUPPORT_DISPLAYFEATURE_CALLBACK:Z
 
