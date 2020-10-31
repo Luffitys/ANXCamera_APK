@@ -1,0 +1,121 @@
+.class public Lcom/miui/internal/variable/v16/Android_Os_Process_class;
+.super Lcom/miui/internal/variable/Android_Os_Process_class;
+.source "Android_Os_Process_class.java"
+
+
+# static fields
+.field private static final getFreeMemory:Lmiui/reflect/Method;
+
+.field private static final getTotalMemory:Lmiui/reflect/Method;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 3
+
+    const-class v0, Landroid/os/Process;
+
+    const-string v1, "getTotalMemory"
+
+    const-string v2, "()J"
+
+    invoke-static {v0, v1, v2}, Lmiui/reflect/Method;->of(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lmiui/reflect/Method;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/miui/internal/variable/v16/Android_Os_Process_class;->getTotalMemory:Lmiui/reflect/Method;
+
+    const-class v0, Landroid/os/Process;
+
+    const-string v1, "getFreeMemory"
+
+    invoke-static {v0, v1, v2}, Lmiui/reflect/Method;->of(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lmiui/reflect/Method;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/miui/internal/variable/v16/Android_Os_Process_class;->getFreeMemory:Lmiui/reflect/Method;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .registers 1
+
+    invoke-direct {p0}, Lcom/miui/internal/variable/Android_Os_Process_class;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getFreeMemory()J
+    .registers 4
+
+    :try_start_0
+    sget-object v0, Lcom/miui/internal/variable/v16/Android_Os_Process_class;->getFreeMemory:Lmiui/reflect/Method;
+
+    const/4 v1, 0x0
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v2, v2, v1}, Lmiui/reflect/Method;->invokeLong(Ljava/lang/Class;Ljava/lang/Object;[Ljava/lang/Object;)J
+
+    move-result-wide v0
+    :try_end_a
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_a} :catch_b
+
+    return-wide v0
+
+    :catch_b
+    move-exception v0
+
+    invoke-static {}, Lcom/miui/internal/variable/VariableExceptionHandler;->getInstance()Lcom/miui/internal/variable/VariableExceptionHandler;
+
+    move-result-object v1
+
+    const-string v2, "android.os.Process.getFreeMemory"
+
+    invoke-virtual {v1, v2, v0}, Lcom/miui/internal/variable/VariableExceptionHandler;->onThrow(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    const-wide/16 v0, 0x0
+
+    return-wide v0
+.end method
+
+.method public getTotalMemory()J
+    .registers 4
+
+    :try_start_0
+    sget-object v0, Lcom/miui/internal/variable/v16/Android_Os_Process_class;->getTotalMemory:Lmiui/reflect/Method;
+
+    const/4 v1, 0x0
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v2, v2, v1}, Lmiui/reflect/Method;->invokeLong(Ljava/lang/Class;Ljava/lang/Object;[Ljava/lang/Object;)J
+
+    move-result-wide v0
+    :try_end_a
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_a} :catch_b
+
+    return-wide v0
+
+    :catch_b
+    move-exception v0
+
+    invoke-static {}, Lcom/miui/internal/variable/VariableExceptionHandler;->getInstance()Lcom/miui/internal/variable/VariableExceptionHandler;
+
+    move-result-object v1
+
+    const-string v2, "android.os.Process.getTotalMemory"
+
+    invoke-virtual {v1, v2, v0}, Lcom/miui/internal/variable/VariableExceptionHandler;->onThrow(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    const-wide/16 v0, 0x0
+
+    return-wide v0
+.end method

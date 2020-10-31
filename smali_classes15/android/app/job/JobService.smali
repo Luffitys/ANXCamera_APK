@@ -1,0 +1,64 @@
+.class public abstract Landroid/app/job/JobService;
+.super Landroid/app/Service;
+.source "JobService.java"
+
+
+# static fields
+.field public static final PERMISSION_BIND:Ljava/lang/String; = "android.permission.BIND_JOB_SERVICE"
+
+.field private static final TAG:Ljava/lang/String; = "JobService"
+
+
+# instance fields
+.field private mEngine:Landroid/app/job/JobServiceEngine;
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    invoke-direct {p0}, Landroid/app/Service;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final jobFinished(Landroid/app/job/JobParameters;Z)V
+    .registers 4
+
+    iget-object v0, p0, Landroid/app/job/JobService;->mEngine:Landroid/app/job/JobServiceEngine;
+
+    invoke-virtual {v0, p1, p2}, Landroid/app/job/JobServiceEngine;->jobFinished(Landroid/app/job/JobParameters;Z)V
+
+    return-void
+.end method
+
+.method public final onBind(Landroid/content/Intent;)Landroid/os/IBinder;
+    .registers 3
+
+    iget-object v0, p0, Landroid/app/job/JobService;->mEngine:Landroid/app/job/JobServiceEngine;
+
+    if-nez v0, :cond_b
+
+    new-instance v0, Landroid/app/job/JobService$1;
+
+    invoke-direct {v0, p0, p0}, Landroid/app/job/JobService$1;-><init>(Landroid/app/job/JobService;Landroid/app/Service;)V
+
+    iput-object v0, p0, Landroid/app/job/JobService;->mEngine:Landroid/app/job/JobServiceEngine;
+
+    :cond_b
+    iget-object v0, p0, Landroid/app/job/JobService;->mEngine:Landroid/app/job/JobServiceEngine;
+
+    invoke-virtual {v0}, Landroid/app/job/JobServiceEngine;->getBinder()Landroid/os/IBinder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public abstract onStartJob(Landroid/app/job/JobParameters;)Z
+.end method
+
+.method public abstract onStopJob(Landroid/app/job/JobParameters;)Z
+.end method

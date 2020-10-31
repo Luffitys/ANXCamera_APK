@@ -1,0 +1,32 @@
+.class public abstract Landroid/webkit/WebMessagePort$WebMessageCallback;
+.super Ljava/lang/Object;
+.source "WebMessagePort.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/webkit/WebMessagePort;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x409
+    name = "WebMessageCallback"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onMessage(Landroid/webkit/WebMessagePort;Landroid/webkit/WebMessage;)V
+    .registers 3
+
+    return-void
+.end method

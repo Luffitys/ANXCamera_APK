@@ -1,0 +1,265 @@
+.class Landroid/media/UnstyledTextExtractor;
+.super Ljava/lang/Object;
+.source "WebVttRenderer.java"
+
+# interfaces
+.implements Landroid/media/Tokenizer$OnTokenListener;
+
+
+# instance fields
+.field mCurrentLine:Ljava/util/Vector;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Vector<",
+            "Landroid/media/TextTrackCueSpan;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field mLastTimestamp:J
+
+.field mLine:Ljava/lang/StringBuilder;
+
+.field mLines:Ljava/util/Vector;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Vector<",
+            "[",
+            "Landroid/media/TextTrackCueSpan;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method constructor <init>()V
+    .registers 2
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    iput-object v0, p0, Landroid/media/UnstyledTextExtractor;->mLine:Ljava/lang/StringBuilder;
+
+    new-instance v0, Ljava/util/Vector;
+
+    invoke-direct {v0}, Ljava/util/Vector;-><init>()V
+
+    iput-object v0, p0, Landroid/media/UnstyledTextExtractor;->mLines:Ljava/util/Vector;
+
+    new-instance v0, Ljava/util/Vector;
+
+    invoke-direct {v0}, Ljava/util/Vector;-><init>()V
+
+    iput-object v0, p0, Landroid/media/UnstyledTextExtractor;->mCurrentLine:Ljava/util/Vector;
+
+    invoke-direct {p0}, Landroid/media/UnstyledTextExtractor;->init()V
+
+    return-void
+.end method
+
+.method private init()V
+    .registers 4
+
+    iget-object v0, p0, Landroid/media/UnstyledTextExtractor;->mLine:Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v2, v1}, Ljava/lang/StringBuilder;->delete(II)Ljava/lang/StringBuilder;
+
+    iget-object v0, p0, Landroid/media/UnstyledTextExtractor;->mLines:Ljava/util/Vector;
+
+    invoke-virtual {v0}, Ljava/util/Vector;->clear()V
+
+    iget-object v0, p0, Landroid/media/UnstyledTextExtractor;->mCurrentLine:Ljava/util/Vector;
+
+    invoke-virtual {v0}, Ljava/util/Vector;->clear()V
+
+    const-wide/16 v0, -0x1
+
+    iput-wide v0, p0, Landroid/media/UnstyledTextExtractor;->mLastTimestamp:J
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getText()[[Landroid/media/TextTrackCueSpan;
+    .registers 3
+
+    iget-object v0, p0, Landroid/media/UnstyledTextExtractor;->mLine:Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
+
+    move-result v0
+
+    if-gtz v0, :cond_10
+
+    iget-object v0, p0, Landroid/media/UnstyledTextExtractor;->mCurrentLine:Ljava/util/Vector;
+
+    invoke-virtual {v0}, Ljava/util/Vector;->size()I
+
+    move-result v0
+
+    if-lez v0, :cond_13
+
+    :cond_10
+    invoke-virtual {p0}, Landroid/media/UnstyledTextExtractor;->onLineEnd()V
+
+    :cond_13
+    iget-object v0, p0, Landroid/media/UnstyledTextExtractor;->mLines:Ljava/util/Vector;
+
+    invoke-virtual {v0}, Ljava/util/Vector;->size()I
+
+    move-result v0
+
+    new-array v0, v0, [[Landroid/media/TextTrackCueSpan;
+
+    iget-object v1, p0, Landroid/media/UnstyledTextExtractor;->mLines:Ljava/util/Vector;
+
+    invoke-virtual {v1, v0}, Ljava/util/Vector;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    invoke-direct {p0}, Landroid/media/UnstyledTextExtractor;->init()V
+
+    return-object v0
+.end method
+
+.method public onData(Ljava/lang/String;)V
+    .registers 3
+
+    iget-object v0, p0, Landroid/media/UnstyledTextExtractor;->mLine:Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    return-void
+.end method
+
+.method public onEnd(Ljava/lang/String;)V
+    .registers 2
+
+    return-void
+.end method
+
+.method public onLineEnd()V
+    .registers 6
+
+    iget-object v0, p0, Landroid/media/UnstyledTextExtractor;->mLine:Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
+
+    move-result v0
+
+    if-lez v0, :cond_24
+
+    iget-object v0, p0, Landroid/media/UnstyledTextExtractor;->mCurrentLine:Ljava/util/Vector;
+
+    new-instance v1, Landroid/media/TextTrackCueSpan;
+
+    iget-object v2, p0, Landroid/media/UnstyledTextExtractor;->mLine:Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    iget-wide v3, p0, Landroid/media/UnstyledTextExtractor;->mLastTimestamp:J
+
+    invoke-direct {v1, v2, v3, v4}, Landroid/media/TextTrackCueSpan;-><init>(Ljava/lang/String;J)V
+
+    invoke-virtual {v0, v1}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
+
+    iget-object v0, p0, Landroid/media/UnstyledTextExtractor;->mLine:Ljava/lang/StringBuilder;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
+
+    move-result v2
+
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->delete(II)Ljava/lang/StringBuilder;
+
+    :cond_24
+    iget-object v0, p0, Landroid/media/UnstyledTextExtractor;->mCurrentLine:Ljava/util/Vector;
+
+    invoke-virtual {v0}, Ljava/util/Vector;->size()I
+
+    move-result v0
+
+    new-array v0, v0, [Landroid/media/TextTrackCueSpan;
+
+    iget-object v1, p0, Landroid/media/UnstyledTextExtractor;->mCurrentLine:Ljava/util/Vector;
+
+    invoke-virtual {v1, v0}, Ljava/util/Vector;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    iget-object v1, p0, Landroid/media/UnstyledTextExtractor;->mCurrentLine:Ljava/util/Vector;
+
+    invoke-virtual {v1}, Ljava/util/Vector;->clear()V
+
+    iget-object v1, p0, Landroid/media/UnstyledTextExtractor;->mLines:Ljava/util/Vector;
+
+    invoke-virtual {v1, v0}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
+
+    return-void
+.end method
+
+.method public onStart(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V
+    .registers 4
+
+    return-void
+.end method
+
+.method public onTimeStamp(J)V
+    .registers 8
+
+    iget-object v0, p0, Landroid/media/UnstyledTextExtractor;->mLine:Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
+
+    move-result v0
+
+    if-lez v0, :cond_2a
+
+    iget-wide v0, p0, Landroid/media/UnstyledTextExtractor;->mLastTimestamp:J
+
+    cmp-long v0, p1, v0
+
+    if-eqz v0, :cond_2a
+
+    iget-object v0, p0, Landroid/media/UnstyledTextExtractor;->mCurrentLine:Ljava/util/Vector;
+
+    new-instance v1, Landroid/media/TextTrackCueSpan;
+
+    iget-object v2, p0, Landroid/media/UnstyledTextExtractor;->mLine:Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    iget-wide v3, p0, Landroid/media/UnstyledTextExtractor;->mLastTimestamp:J
+
+    invoke-direct {v1, v2, v3, v4}, Landroid/media/TextTrackCueSpan;-><init>(Ljava/lang/String;J)V
+
+    invoke-virtual {v0, v1}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
+
+    iget-object v0, p0, Landroid/media/UnstyledTextExtractor;->mLine:Ljava/lang/StringBuilder;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
+
+    move-result v2
+
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->delete(II)Ljava/lang/StringBuilder;
+
+    :cond_2a
+    iput-wide p1, p0, Landroid/media/UnstyledTextExtractor;->mLastTimestamp:J
+
+    return-void
+.end method
