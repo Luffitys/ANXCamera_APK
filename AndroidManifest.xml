@@ -40,12 +40,6 @@
     <uses-permission android:name="com.xiaomi.mi_connect_service.permission.RECEIVE_ENDPOINT"/>
     <uses-permission android:name="android.permission.BLUETOOTH"/>
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.INJECT_EVENTS"/>
     <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:backupAgent="com.android.camera.backup.CameraBackupAgent" android:extractNativeLibs="true" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher_camera" android:label="@string/camera_label" android:largeHeap="true" android:name="com.android.camera.CameraAppImpl" android:networkSecurityConfig="@xml/network_security_config" android:supportsRtl="true" android:theme="@style/ThemeCamera">
