@@ -107,11 +107,13 @@
 
     sget-object v0, Lmiui/os/DeviceFeature;->SYSTEM_RESOURCES:Landroid/content/res/Resources;
 
-    const v3, 0x11040028
+#    const v3, 0x11040028
+#
+#    invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getBoolean(I)Z
+#
+#    move-result v0
 
-    invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getBoolean(I)Z
-
-    move-result v0
+	const/4 v0, 0x1
 
     sput-boolean v0, Lmiui/os/DeviceFeature;->SUPPORT_NIGHT_LIGHT:Z
 
@@ -125,21 +127,29 @@
 
     sget-object v0, Lmiui/os/DeviceFeature;->SYSTEM_RESOURCES:Landroid/content/res/Resources;
 
-    const v3, 0x11040027
+#    const v3, 0x11040027
+#
+#    invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getBoolean(I)Z
+#
+#    move-result v0
 
-    invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getBoolean(I)Z
-
-    move-result v0
+	const/4 v0, 0x1
 
     sput-boolean v0, Lmiui/os/DeviceFeature;->SUPPORT_NIGHT_LIGHT_ADJ:Z
 
     sget-object v0, Lmiui/os/DeviceFeature;->SYSTEM_RESOURCES:Landroid/content/res/Resources;
 
-    const v3, 0x110a0012
+#    const v3, 0x110a0012
+#
+#    invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getInteger(I)I
 
-    invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getInteger(I)I
+	const-string/jumbo v3, "BACKLIGHT_BIT"
 
-    move-result v0
+	const v2, 0x0
+
+	invoke-static {v3, v2}, Lmiui/util/FeatureParser;->getInteger(Ljava/lang/String;I)I
+	
+	move-result v0
 
     sput v0, Lmiui/os/DeviceFeature;->BACKLIGHT_BIT:I
 
